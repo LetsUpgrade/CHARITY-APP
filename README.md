@@ -1,8 +1,8 @@
 # **CHARITY APP**
 
-**Project ID: 13**
+**Project ID: 14**
 >## ✍&nbsp; PROJECT DESCRIPTION
-Frequent travelers often miss their workouts. This helps frequent travelers book a gym for a certain period of time or they can use up the card provided by us in the gym which has tied up with us. Also, this is a platform which connects all the gyms which are available in-out city. With the help of GYMAale, beginners can look at the best-suited gyms, trainers, supplementation and diet charts on free or paid basis and can consult trainers and dietitians as well.
+Helps to help needy people and people suffering from something directly without any 3rd party. The objective of this project is to help those people who need help from others. Many times we face the problem we are donating but the poor person are not get benefits from this because of the 3rd party interference so the needy people get the benefits.
 
 >## 📂&nbsp; RELEVANT TECHNOLOGY
 Any web technology can be used but I am thinking about using NodeJS ecosystem.
