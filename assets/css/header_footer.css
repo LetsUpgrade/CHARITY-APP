@@ -3,10 +3,19 @@ html, body{
     padding:0;
     height:100%;
  }
-
+body {
+    margin: 0;
+    padding: 0;
+}
 .navbar{
     background-color: rgba(0, 0, 0, 0.5) !important;
     min-height: 75px;
+    position: absolute;
+    font-weight: bolder;
+}
+
+.navbar a{
+    color: #FFF8DE;
 }
 
 .navbar_logo {
@@ -14,7 +23,27 @@ html, body{
     padding: 0px 30px;
     text-align: center;
     font-weight: bolder;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    line-height: 35px;
+    /* border-radius: 5px; */
+
 }
+/* 
+#collapsibleNavId
+{
+    background-color: rgba(255, 255, 255, 0.5);
+    max-width: 715px;
+    border-radius: 5px;
+
+} */
+
+.nav-item{
+    marker: 0px 20px;
+    padding: 0px 20px;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
 
 @media screen and (max-width: 320px) 
 {
@@ -31,7 +60,7 @@ html, body{
 }
 
 .dropdown-menu{
-    background-color: rgba(0, 0, 0, 0.5) !important;
+    background-color: rgba(255, 255, 255, 0.5) !important;
 }
 
 .dropdown-menu .dropdown-item{
@@ -82,11 +111,13 @@ html, body{
 # Footer
 --------------------------------------------------------------*/
 
+
 #footer .footer-newsletter {
     padding: 35px 0;
     background: rgba(0,0,0,0.5);
     text-align: center;
     font-size: 15px;
+
   }
   
   #footer .footer-newsletter h4 {
@@ -144,7 +175,7 @@ html, body{
     height: auto;
     width: auto;
     padding-top: 0px;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 #footer .row{
     padding-top: 20px;

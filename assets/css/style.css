@@ -8,20 +8,22 @@
 }
 
 body {
-  display: grid;
+  /* display: grid; */
   background-color: #f4f4f4;
   align-content: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
-section {
+/* section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 90vh;
   width: 85vw;
   margin: 0 auto;
-}
+} */
 .image {
-  background: url("2.jpg") center/cover no-repeat;
+  background: url("../images/2.jpg") center/cover no-repeat;
+  /* width: 200px;
+  height: 200px; */
 }
 .content {
   font-family: "Playfair Display", serif;
@@ -184,23 +186,26 @@ button:hover {
 
 /* for spacing  */
 
-#carouselExampleFade {
+#carousel-top > #carouselExampleFade {
   margin-bottom: 50px;
 }
-.carousel-caption d-md-block h1 {
+#caousel-top > .carousel-caption d-md-block h1 {
   font-weight: bolder;
 }
-.carousel .carousel-item {
-  height: 500px;
+#carousel-top > .carousel .carousel-item {
+  height: 800px;
   text-transform: uppercase;
 }
 
-.carousel-item img {
+#carousel-top > .carousel-item img {
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-attachment: fixed;
   position: absolute;
-  object-fit: cover;
+  /* object-fit: cover; */
   top: 0;
   left: 0;
-  min-height: 500px;
+  min-height: 1000px;
 }
 
 .formargin {
@@ -213,22 +218,143 @@ button:hover {
   padding:40px;
 }
 
-/* faq */
-.btn-link {
-  color: #000;
+
+/*--------------------------------------------------------------
+# Frequently Asked Questions
+--------------------------------------------------------------*/
+
+#faq {
+  padding: 60px 0px;
+  margin: 0; 
+  background: rgba(190,155,123,1);
+
 }
-.btn-link:hover {
-  color: #fa8072;
+.faq .accordion-list {
+  padding: 0 50px;
+}
+.faq h2
+{
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: rgba(255,248,222,1);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.faq .section-title p{
+  color: #fff;
+}
+
+.faq .accordion-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .accordion-list li + li {
+  margin-top: 15px;
+}
+
+.faq .accordion-list li {
+  padding: 20px;
+  background: rgba(0,0,0,1);
+  border-radius: 4px;
+  position: relative;
+}
+
+.faq .accordion-list a {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0 30px;
+  outline: none;
   text-decoration: none;
 }
-.btn.focus,
-.btn:focus {
-  box-shadow: 0 0 0 0.2rem rgb(255, 255, 255, 0);
+
+.faq .accordion-list .icon-help {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  left: 20px;
+  color: #FA8072;
 }
-.btn-link.focus,
-.btn-link:focus {
-  text-decoration: none;
+
+.faq .accordion-list .icon-show, .faq .accordion-list .icon-close {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
-.card-body {
-  padding: 50px;
+
+.faq .accordion-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+  color: rgba(255,248,222,1);
+}
+
+.faq .accordion-list .icon-show {
+  display: none;
+}
+
+.faq .accordion-list a.collapsed {
+  color: rgba(129,216,208,1);
+}
+
+.faq .accordion-list a.collapsed:hover {
+  color: #FA8072;
+}
+
+.faq .accordion-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.faq .accordion-list a.collapsed .icon-close {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .faq .accordion-list {
+    padding: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# End of Frequently Asked Questions
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+/* section {
+  padding: 60px 0;
+  overflow: hidden;
+} */
+
+/* .section-bg {
+  background: rgba(190,155,123,1);
+} */
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/* .section-title h2 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #fecc50;
+  font-family: "Poppins", sans-serif;
+} */
+
+.section-title p {
+  margin-bottom: 0;
+  font-weight: bold;
 }
