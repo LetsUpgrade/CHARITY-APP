@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOgin-Form</title>
+
+    <!-- link to css file -->
+    <link rel="stylesheet" type = "text/css" href="login.css">
+
+    <!-- Link of Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Link of Fontawsm CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="row px-3">
+            <div class="col-lg-10 col-xl-9 card flex-row mx-auto px-0">
+
+                <!------- Image -------->
+                <div class="img-left d-none d-md-flex"></div>
+
+                <div class="card-body">
+
+                    <!---- Login heading ---->
+                    <h4 class="title text-center mt-4">
+                        <i class="fa fa-user-circle-o"></i> Login
+                    </h4>
+
+                    <form class="form-box px-3">
+
+                        <!-----email----->
+                        <div class="form-input">
+                            <!-- fontawsm icon for email -->
+                            <span><i class="fa fa-envelope"></i></span>
+                            <input type="email" name="" placeholder="Email Address" tabindex="10" required>
+                        </div>
+
+                        <!----- password ----->
+                        <div class="form-input">
+                            <!-- fontawsm icon for password -->
+                            <span><i class="fa fa-lock"></i></span>
+                            <input type="password" name="" placeholder="Password" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <!----- checkbox ---->
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  id="cb1" name="">
+                                <label class="custom-control-label" for="cb1">
+                                    Remember me
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <!------submit button ------>
+                            <button type="submit" class="btn btn-block text-uppercase">
+                                Log in
+                            </button>
+                        </div>
+
+                        <div class="text-center mb-3">
+                            or login with
+                        </div>
+
+                        <div class="row mn-3">
+
+                            <!-- Facebook icon -->
+                            <div class="col-4">
+                                <a href="#" class="btn btn-block btn-social btn-facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </div>
+
+                            <!-- twitter icon -->
+                            <div class="col-4">
+                                <a href="#" class="btn btn-block btn-social btn-twitter">
+                                    <i class="fa fa-twitter"></i> Twitter
+                                </a>
+                            </div>
+
+                            <!-- google icon -->
+                            <div class="col-4">
+                                <a href="#" class="btn btn-block btn-social btn-google">
+                                    <i class="fa fa-google"></i> Google
+                                </a>
+                            </div>
+                        </div>
+
+                        <!---- horizontal line ---->
+                        <hr class="my-4">
+
+                        <!-- create account -->
+                        <div class="text-center mb-2">
+                            Don't have an account?
+                            <a href="signup_page.html" class="register-link">
+                                Create here
+                            </a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
