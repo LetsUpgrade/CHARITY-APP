@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHARITY-APP</title>
     <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/header_footer.css">
+
     <!-- Vendor CSS Files -->
     <!-- Icon css link -->
-    <link href="./assets/vendor/fontawesome/css/fontawesome.min.css"  rel="stylesheet">
+    <link href="./assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet">
     <link href="./assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
-    <link href="./assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" >
-   
+    <link href="./assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <link rel="stylesheet" href="./assets/css/contact.css">
+
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light" >
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
         <a class="navbar-brand navbar_logo" href="./index.html">CHARITY-APP</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>   
-        <div class="collapse navbar-collapse navbar_link"  id="collapsibleNavId">
+        </button>
+        <div class="collapse navbar-collapse navbar_link" id="collapsibleNavId">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
@@ -29,7 +34,8 @@
                     <a class="nav-link" href="./aboutus.html">AboutUs</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="./DoCharity.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DoCharity</a>
+                    <a class="nav-link dropdown-toggle" href="./DoCharity.html" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">DoCharity</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
                         <a class="dropdown-item" href="#">Emergency</a>
                         <a class="dropdown-item" href="#">Individual</a>
@@ -48,13 +54,104 @@
             </ul>
         </div>
     </nav>
-    <section style="width: 100%; height: 100%;">
-        <div class="container-fluid">
-            
-        </div>
-    </section>
 
-    
+    <div class="container-contact100">
+        <div class="wrap-contact100">
+            <form class="contact100-form validate-form">
+                <span class="contact100-form-title">
+                    Send Us A Message
+                </span>
+
+                <label class="label-input100" for="first-name">Tell us your name *</label>
+                <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
+                    <input id="first-name" class="input100" type="text" name="first-name" placeholder="First name">
+                    <span class="focus-input100"></span>
+                </div>
+                <div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
+                    <input class="input100" type="text" name="last-name" placeholder="Last name">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <label class="label-input100" for="email">Enter your email *</label>
+                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                    <input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <label class="label-input100" for="phone">Enter phone number</label>
+                <div class="wrap-input100">
+                    <input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +1 800 000000">
+                    <span class="focus-input100"></span>
+                </div>
+
+                <label class="label-input100" for="message">Message *</label>
+                <div class="wrap-input100 validate-input" data-validate="Message is required">
+                    <textarea id="message" class="input100" name="message" placeholder="Write us a message"></textarea>
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="container-contact100-form-btn">
+                    <button class="contact100-form-btn">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+
+            <div class="contact100-more flex-col-c-m" style="background-image: url('./assets/images/11.jpg');">
+                <div class="flex-w size1 p-b-47">
+                    <div class="txt1 p-r-25">
+                        <span class="lnr lnr-map-marker"></span>
+                    </div>
+
+                    <div class="flex-col size2">
+                        <span class="txt1 p-b-20">
+                            Address
+                        </span>
+
+                        <span class="txt2">
+                            Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US
+                        </span>
+                    </div>
+                </div>
+
+                <div class="dis-flex size1 p-b-47">
+                    <div class="txt1 p-r-25">
+                        <span class="lnr lnr-phone-handset"></span>
+                    </div>
+
+                    <div class="flex-col size2">
+                        <span class="txt1 p-b-20">
+                            Lets Talk
+                        </span>
+
+                        <span class="txt3">
+                            +1 800 1236879
+                        </span>
+                    </div>
+                </div>
+
+                <div class="dis-flex size1 p-b-47">
+                    <div class="txt1 p-r-25">
+                        <span class="lnr lnr-envelope"></span>
+                    </div>
+
+                    <div class="flex-col size2">
+                        <span class="txt1 p-b-20">
+                            General Support
+                        </span>
+
+                        <span class="txt3">
+                            contact@example.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- map  -->
+    <div id="googleMap" style="width:100%;height:400px;"></div>
+
     <!-- ======= Footer ======= -->
     <!-- Footer -->
     <footer class="page-footer font-small unique-color-dark" id="footer">
@@ -62,63 +159,63 @@
         <div class="container text-center text-md-left">
             <!-- Grid row -->
             <div class="row ">
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 column_1">
-                <!-- Content -->
-                <h6 class="text-uppercase font-weight-bold">CHARITY-APP</h6>
-                <hr class="deep-purple " style="width: 60px;" >
-                <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-                consectetur
-                adipisicing elit.</p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto column_2">
-                <!-- Links -->
-                <h6 class="text-uppercase font-weight-bold">Get Started</h6>
-                <hr class="deep-purple accent-2 " style="width: 60px;">
-                <p>
-                <a href="./index.html">Home</a>
-                </p>
-                <p>
-                <a href="./aboutus.html">AboutUs</a>
-                </p>
-                <p>
-                <a href="./DoCharity.html">DoCharity</a>
-                </p>
-                <p>
-                <a href="./verify.html">Verify</a>
-                </p>
-                <p>
-                <a href="#!">FAQ's</a>
-                </p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-7 col-lg-4 col-xl-7 mx-auto ">
-
-                <!-- Links -->
-                <div class="social-links">    
-                    <a href="#"><i class="bx bxl-linkedin"></i></a>
-                    <a href="#"><i class="bx bxl-git"></i></a>
-                    <a href="#"><i class="bx bxl-twitter"></i></a>
-                    <a href="#"><i class="bx bxl-youtube"></i></a>
-                    <a href="#"><i class="bx bxl-instagram"></i></a>
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 column_1">
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold">CHARITY-APP</h6>
+                    <hr class="deep-purple " style="width: 60px;">
+                    <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                        consectetur
+                        adipisicing elit.</p>
                 </div>
-                <!-- Contact -->
-                <div class="footer_contact">
-                    <a href="./contact.html">
-                    <svg>
-                        <rect />
-                    </svg>
-                    Contact
-                    </a>
-                </div>
+                <!-- Grid column -->
 
-            </div>
-            <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto column_2">
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Get Started</h6>
+                    <hr class="deep-purple accent-2 " style="width: 60px;">
+                    <p>
+                        <a href="./index.html">Home</a>
+                    </p>
+                    <p>
+                        <a href="./aboutus.html">AboutUs</a>
+                    </p>
+                    <p>
+                        <a href="./DoCharity.html">DoCharity</a>
+                    </p>
+                    <p>
+                        <a href="./verify.html">Verify</a>
+                    </p>
+                    <p>
+                        <a href="#!">FAQ's</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-7 col-lg-4 col-xl-7 mx-auto ">
+
+                    <!-- Links -->
+                    <div class="social-links">
+                        <a href="#"><i class="bx bxl-linkedin"></i></a>
+                        <a href="#"><i class="bx bxl-git"></i></a>
+                        <a href="#"><i class="bx bxl-twitter"></i></a>
+                        <a href="#"><i class="bx bxl-youtube"></i></a>
+                        <a href="#"><i class="bx bxl-instagram"></i></a>
+                    </div>
+                    <!-- Contact -->
+                    <div class="footer_contact">
+                        <a href="./contact.html">
+                            <svg>
+                                <rect />
+                            </svg>
+                            Contact
+                        </a>
+                    </div>
+
+                </div>
+                <!-- Grid column -->
             </div>
             <!-- Grid row -->
 
@@ -131,17 +228,36 @@
         </div>
         <!-- Copyright -->
     </footer>
-    
+
     <!-- End Footer -->
-    
-    
-    
-    
-    
-    
+
+
+    <!-- new 0 -->
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 5,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+
+    <script src=".assests/js/contact.js"></script>
     <script src="./assets/js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>
