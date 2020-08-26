@@ -492,7 +492,7 @@ body {
     bottom: 15px;
     transition: display 0.5s ease-in-out;
     z-index: 99999;
-  }
+}
   
 .back-to-top i {
     display: flex;
