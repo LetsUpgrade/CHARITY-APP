@@ -3,10 +3,19 @@ html, body{
     padding:0;
     height:100%;
  }
-
+body {
+    margin: 0;
+    padding: 0;
+}
 .navbar{
     background-color: rgba(0, 0, 0, 0.5) !important;
     min-height: 75px;
+    position: absolute;
+    font-weight: bolder;
+}
+
+.navbar a{
+    color: #FFF8DE;
 }
 
 .navbar_logo {
@@ -14,7 +23,27 @@ html, body{
     padding: 0px 30px;
     text-align: center;
     font-weight: bolder;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    line-height: 35px;
+    /* border-radius: 5px; */
+
 }
+/* 
+#collapsibleNavId
+{
+    background-color: rgba(255, 255, 255, 0.5);
+    max-width: 715px;
+    border-radius: 5px;
+
+} */
+
+.nav-item{
+    marker: 0px 20px;
+    padding: 0px 20px;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
 
 @media screen and (max-width: 320px) 
 {
@@ -38,43 +67,6 @@ html, body{
     color: #FFF8DE;
 }
 
-
-
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-    position: fixed;
-    display: none;
-    width: 40px;
-    height: 40px;
-    text-decoration: none;
-    text-align: center;
-    /* border-radius: 50px; */
-    right: 40px;
-    bottom: 40px;
-    background: #fecc50;
-    transition: display 0.5s ease-in-out;
-    z-index: 999;
-  }
-  
-  .back-to-top i {
-    font-size: 24px;
-    position: absolute;
-    top: 7px;
-    left: 8px;
-  }
-  
-  .back-to-top:hover {
-    color: #fff;
-    background: #748ec6;
-    transition: background 0.2s ease-in-out;
-  }
-  
-  #main {
-    margin-top: 75px;
-  }
-
   
   
 
@@ -82,11 +74,13 @@ html, body{
 # Footer
 --------------------------------------------------------------*/
 
+
 #footer .footer-newsletter {
     padding: 35px 0;
     background: rgba(0,0,0,0.5);
     text-align: center;
     font-size: 15px;
+
   }
   
   #footer .footer-newsletter h4 {
@@ -144,7 +138,7 @@ html, body{
     height: auto;
     width: auto;
     padding-top: 0px;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 #footer .row{
     padding-top: 20px;
@@ -309,7 +303,6 @@ html, body{
         height: auto;
         width: auto;
         padding-top: 0px;
-        margin-top: 15px;
     }
     #footer .row{
         padding-top: 20px;
@@ -467,3 +460,58 @@ html, body{
         color: #FA8072;
     }
 }
+
+
+#btnScrollToTop{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #FA8072;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+#btnScrollToTop:active{
+    background: #46423b;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+    position: fixed;
+    display: none;
+    text-decoration: none !important;
+    text-align: center;
+    right: 15px;
+    bottom: 15px;
+    transition: display 0.5s ease-in-out;
+    z-index: 99999;
+  }
+  
+.back-to-top i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background: #3498db;
+    color: #fff;
+    transition: all 0.4s;
+}
+  
+.back-to-top i:hover {
+    background: #2980b9;
+    color: #fff;
+    transition: background 0.2s ease-in-out;
+}
+
+
+
