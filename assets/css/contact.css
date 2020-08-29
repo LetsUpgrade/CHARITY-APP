@@ -141,6 +141,7 @@ iframe {
   font-size: 18px;
   line-height: 1.2;
   color: #fff;
+  text-align: center;
 }
 
 .txt2 {
@@ -148,6 +149,7 @@ iframe {
   font-size: 15px;
   line-height: 1.6;
   color: #999999;
+  text-align: center;
 }
 
 .txt3 {
@@ -155,19 +157,34 @@ iframe {
   font-size: 15px;
   line-height: 1.6;
   color: #00ad5f;
+  text-align: center;
 }
+
 
 /*==================================================================
 [ Size ]*/
 .size1 {
   width: 355px;
   max-width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 300px;
+  margin-bottom: 15px
 }
 
 .size2 {
   width: calc(100% - 43px);
 }
 
+.size3 {
+  width: 355px;
+  max-width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ Contact ]*/
@@ -185,7 +202,7 @@ iframe {
   align-items: center;
   padding: 15px;
   background: #f2f2f2;
-  
+  margin: 150px 0px;
 }
 
 .wrap-contact100 {
@@ -200,7 +217,8 @@ iframe {
   flex-wrap: wrap;
   align-items: stretch;
   flex-direction: row-reverse;
-
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
 }
 
 /*==================================================================
