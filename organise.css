@@ -22,7 +22,7 @@ body
 }
 .sec
 {
-    background: url(assets/images/forms/back2.jpg);
+    background: url(img/back2.jpg);
     background-size: cover;
 }
 .pagewrap-overlay
@@ -160,6 +160,11 @@ button
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     cursor: pointer;
 }
+button:hover
+{
+    border-top: 5px solid rgba(0, 0, 0, 0.6);
+    border-left: 5px solid rgba(0, 0, 0, 0.6);
+}
 h4
 {
     color: wheat;
@@ -186,6 +191,10 @@ h4
     float: left;
     margin-left: 40px !important;
     font-family: Arial, Helvetica, sans-serif ;
+}
+.btn-success:hover
+{
+    background-color: rgb(0, 162, 255) !important;
 }
 hr
 {

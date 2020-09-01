@@ -37,120 +37,89 @@
         
                     <!-- Organization Name -->
                     <div class="form-group">
-                        <label>Organization Name:</label>
-                        <input type="text" name="name" class="form-control text" placeholder=" Enter Organization Name">
+                        <label for="orgname">Organization Name:</label>
+                        <input type="text" name="orgname" id="orgname" class="form-control text" placeholder=" Enter Organization Name">
                     </div>
 
                     <!-- Organization Address -->
                     <div class="form-group">
-                        <label>Organization Address:</label>
-                        <input type="text" name="name" class="form-control text" placeholder=" Enter Organization Address">
+                        <label for="orgadd">Organization Address:</label>
+                        <input type="text" name="orgadd" id="orgadd" class="form-control text" placeholder=" Enter Organization Address">
                     </div>
 
                     <!-- Organization ID -->
                     <div class="form-group">
-                        <label>Organization ID:</label>
-                        <input type="text" name="name" class="form-control text" placeholder=" Enter Organization ID">
+                        <label for="orgid">Organization ID:</label>
+                        <input type="text" name="orgid" id="orgid" class="form-control text" placeholder=" Enter Organization ID">
                     </div>
 
                     <!-- Organization Type -->
                     <div class="form-group">
-                        <label>Organization Type:</label>
-                        <select class="form-control text">
-                            <option>Functional</option>
-                            <option>Projectized</option>
-                            <option>Matrix</option>
+                        <label for="orgtype">Organization Type:</label>
+                        <select id="orgtype" name="orgtype" class="form-control text">
+                            <option id="status_0">Functional</option>
+                            <option id="status_1">Projectized</option>
+                            <option id="status_2">Matrix</option>
                         </select>
                     </div>
 
-                    <!------ No of ppl -------->
+                    <!------ No of people -------->
                     <div class="form-group">
                         <label>No of Ppl:</label>
-                        <input type="text" name="name" class="form-control text" placeholder=" Enter No of Ppl">
+                        <input type="number" name="ppl" id="ppl" class="form-control text" placeholder=" Enter No of Ppl">
                     </div>
 
                     <!-- Established Year -->
                     <div class="form-group">
                         <label>Established Year:</label>
-                        <select class="form-control text">
-                            <option>1990</option>
-                            <option>1991</option>
-                            <option>1992</option>
-                            <option>1993</option>
-                            <option>1994</option>
-                            <option>1995</option>
-                            <option>1996</option>
-                            <option>1997</option>
-                            <option>1998</option>
-                            <option>1999</option>
-                            <option>2000</option>
-                            <option>2001</option>
-                            <option>2002</option>
-                            <option>2003</option>
-                            <option>2004</option>
-                            <option>2005</option>
-                            <option>2006</option>
-                            <option>2007</option>
-                            <option>2008</option>
-                            <option>2009</option>
-                            <option>2010</option>
-                            <option>2011</option>
-                            <option>2012</option>
-                            <option>2013</option>
-                            <option>2014</option>
-                            <option>2015</option>
-                            <option>2016</option>
-                            <option>2017</option>
-                            <option>2018</option>
-                            <option>2019</option>
-                            <option>2020</option>
-                        </select>
+                        <input type="text" name="estyr" id="estyr" class="form-control text" placeholder=" Established Year">
+                        
                     </div>
 
                     <!-- Organization Head -->
                     <div class="form-group">
                         <label>Organization Head:</label>
-                        <input type="text" name="email" class="form-control text" placeholder=" Enter Organization Head">
+                        <input type="text" name="orghead" id="orghead" class="form-control text" placeholder=" Enter Organization Head">
                     </div>
 
                     <!-- Email ID -->
                     <div class="form-group">
                         <label>Email ID:</label>
-                        <input type="email" name="name" class="form-control text" placeholder=" Email ID (Optional)">
+                        <input type="email" name="email" id="email" class="form-control text" placeholder=" Email ID (Optional)">
                     </div>
 
                     <!-- Contact No -->
                     <div class="form-group">
                         <label>Contact No:</label>
-                        <input type="text" name="mobile" class="form-control text" placeholder=" Enter Contact No">
+                        <input type="text" name="mobile_num" id="mobile_num" class="form-control text" placeholder=" Enter Contact No">
                     </div>
                     
                     <br>
 
                     <!-- -----------Paragraphs---------------- -->
                     <div>
-                        <p class="para1">NOTE: For Verification of Contact number we will be sending you OTP</p>
+                        <p id="paragraph1" class="para1">NOTE: For Verification of Contact number we will be sending you OTP</p>
                     </div>
 
                     <br>
 
                     <div>
-                        <p class="para2">Our Team will be Contacting You within 48 hours.</p>
+                        <p id="paragraph2" class="para2">Our Team will be Contacting You within 48 hours.</p>
                     </div>
                 
                     <hr>
 
                     <!-- ------------Documents upload----------- -->
                     <div>
-                        <h4>Mandatory to upload below documents:</h4>
-                        <p class="docs">1. Organisation Available Proof (Any government proof</p>
-                        <p class="docs">2. Organisation Photo/Website/FB Pages/etc.</p>
-                        <p class="docs">3. Organization Head Aadhar Card & PAN Card</p>
-                        <p class="docs">4. Organisation Head ID Proof (i.e. Proof that He/She is the head of that organisation)</p>
+                        <h4 id="dochead">Mandatory to upload below documents:</h4>
+                        <p id="docpara1" class="docs">1. Organisation Available Proof (Any government proof</p>
+                        <p id="docpara2" class="docs">2. Organisation Photo/Website/FB Pages/etc.</p>
+                        <p id="docpara3" class="docs">3. Organization Head Aadhar Card & PAN Card</p>
+                        <p id="docpara4" class="docs">4. Organisation Head ID Proof (i.e. Proof that He/She is the head of that organisation)</p>
                             
                         <!-- Upload button -->
                         <div class="form-group">
-                            <input type="submit" class="btn btn-success" value="Upload">
+                            <input type="submit" id="uploadbutton" class="btn btn-success" value="Upload">
                         </div>
                     </div>
                     <br>
@@ -160,7 +129,7 @@
 
             </section>
 
-            <button>Submit</button>
+            <button id="submitbutton">Submit</button>
 
         </div>
 
