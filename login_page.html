@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOgin-Form</title>
+
+    <!-- link to css file -->
+    <link rel="stylesheet" type = "text/css" href="./assets/css/login.css">
+
+
+
+
+    <!-- problem in this file so I commented this -->
+    <!-- Vendor CSS Files -->
+    <!-- Icon css link -->
+    <link href="./assets/vendor/fontawesome/css/fontawesome.min.css"  rel="stylesheet">
+    <link href="./assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
+    <link href="./assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" >
+
+    <!-- for grid -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+
+
+
+    <!-- Link of Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Link of Fontawsm CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="row px-3">
+            <div class="col-lg-10 col-xl-9 card flex-row mx-auto px-0">
+
+                <!------- Image -------->
+                <div class="img-left d-none d-md-flex"></div>
+                
+
+                <div class="card-body">
+
+                    <!------- logo -------->
+                    <div class="logo d-none d-md-flex"></div>
+
+                    <!---- Login heading ---->
+                    <h4 class="title text-center mt-4">
+                        <i class="fa fa-user-circle-o"></i> Login
+                    </h4>
+
+                    <form class="form-box px-3">
+
+                        <!-----email----->
+                        <div class="form-input">
+                            <!-- fontawsm icon for email -->
+                            <span><i class="fa fa-envelope"></i></span>
+                            <input type="email" name="" placeholder="Email Address" tabindex="10" required>
+                        </div>
+
+                        <!----- password ----->
+                        <div class="form-input">
+                            <!-- fontawsm icon for password -->
+                            <span><i class="fa fa-lock"></i></span>
+                            <input type="password" name="" placeholder="Password" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <!----- checkbox ---->
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input"  id="cb1" name="">
+                                <label class="custom-control-label" for="cb1">
+                                    Remember me
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <!------submit button ------>
+                            <button type="submit" class="btn btn-block text-uppercase">
+                                Login
+                            </button>
+                        </div>
+
+                        <div class="text-center mb-3">
+                            or login with
+                        </div>
+
+                        <div class="row mn-3">
+
+                            <!-- Facebook icon -->
+                            <div class="col-4">
+                                <a href="#" class="btn btn-block btn-social btn-facebook">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </div>
+
+                            <!-- twitter icon -->
+                            <div class="col-4">
+                                <a href="#" class="btn btn-block btn-social btn-twitter">
+                                    <i class="fa fa-twitter"></i> 
+                                </a>
+                            </div>
+
+                            <!-- google icon -->
+                            <div class="col-4">
+                                <a href="#" class="btn btn-block btn-social btn-google">
+                                    <i class="fa fa-google"></i> 
+                                </a>
+                            </div>
+                        </div>
+
+                        <!---- horizontal line ---->
+                        <hr class="my-4">
+
+                        <!-- create account -->
+                        <div class="text-center mb-2">
+                            Don't have an account?
+                            <a href="signup_page.html" class="register-link">
+                                Create here
+                            </a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script> 
+    
+    <script src="./assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

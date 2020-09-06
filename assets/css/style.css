@@ -1,0 +1,662 @@
+/*--------------------------------------------------------------
+# Top Carousel
+--------------------------------------------------------------*/
+#top-carousel{
+  /* height: 800px; */
+}
+
+#carouselExampleCaptions, .carousel-inner{
+
+
+}
+#top-carousel .carousel-inner .carousel-item img{
+  /* display: flex; */
+  overflow: auto;
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  /* object-fit: cover; */
+  /* object-fit: cover; */
+  /* object-fit:scale-down; */
+  object-fit: cover;  
+  object-position: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 0; 
+  bottom: 0;
+  height: 900px;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.5);
+
+}
+
+
+#top-carousel h5{
+  font-size: 30px;
+  font-weight: bolder;
+  color: #EA4335;
+}
+
+#top-carousel p{
+  font-size: 30px;
+  font-weight: 20px;
+  color: #4267B2;
+}
+/*--------------------------------------------------------------
+# About us
+--------------------------------------------------------------*/
+#about{
+  /* height: 300px; */
+  padding: 70px 0px;
+  background-color: #bba9da ;  /* background-image: url(../images/bla1.jpg); */
+  object-fit: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+#about .about-title h3{
+  text-align: center;
+  font-weight: bold;
+  font-size: 55px;
+  color: #000;
+}
+
+
+#what-we-do {
+  width: 100%;
+  height: 100%;
+  
+	padding: 80px 0px;
+	color: #F7EB70;
+}
+
+#what-we-do .right-image img {
+	width: 100%;
+	overflow: hidden;
+}
+
+#what-we-do h4 {
+	font-size: 35px;
+	font-weight: bold;
+	letter-spacing: 1x;
+	line-height: 35px;
+	margin-bottom: 25px;
+}
+
+#what-we-do p {
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: #fff;
+  
+}
+
+#what-we-do ul li {
+	display: inline-block;
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# for grid  Our Servies
+--------------------------------------------------------------*/
+#service-section{
+  padding: 70px 0px;
+  background-color: #fff;
+}
+
+.formargin {
+  padding-bottom: 30px;
+}
+
+.formargin h3{
+  font-weight: bold;
+  font-size: 55px;
+  color: #000;
+}
+/* .faqmargin {
+  margin-top: 40px;
+  margin: 50px;
+} */
+
+
+.iconBox {
+  /* box-shadow: 0 0 10px #9f81d3; */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: 0.5s;
+  background-color: #bba9da;
+}
+
+.iconBox  h3 {
+  color: #efefef !important;
+  font-size: 25px;
+  font-weight: bold;
+}
+.iconBox button{
+  background: #efefef;
+  color: #000;
+  transition: transform .2s; /* Animation */
+}
+.iconBox button:hover{
+  color: #000;
+  background: #efefef;
+  transform: scale(1.1);
+}
+
+
+.iconBox:hover {
+  box-shadow: 0 0 30px #937cb9, 0 0 30px #937cb9;
+}
+
+.iconBox .icon {
+  display: flex;
+  margin-bottom: 20px;
+}
+/* .iconBox .icon i.fab {
+  font-size: 50px;
+} */
+.iconBox .icon h3 {
+  font-size: 19px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  padding-left: 0px;
+  line-height: 60px;
+  color: #666;
+  word-wrap: break-word;
+}
+button {
+  padding: 5px 10px;
+  border-radius: 3px;
+  border-width: 0;
+  background: #efefef;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+
+button:hover {
+  color: skyblue;
+}
+
+
+
+/* #carousel-top > #carouselExampleFade {
+  margin-bottom: 50px;
+}
+#caousel-top > .carousel-caption d-md-block h1 {
+  font-weight: bolder;
+}
+#carousel-top > .carousel .carousel-item {
+  height: 800px;
+  text-transform: uppercase;
+}
+
+#carousel-top > .carousel-item img {
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 1000px;
+} */
+
+/*--------------------------------------------------------------
+# Counter Section
+--------------------------------------------------------------*/
+#counter-section{
+  padding: 60px 0px;
+}
+#counter-section .container {
+  margin-top: 100px
+}
+
+#counter-section .counter-box {
+  display: block;
+  background: #f6f6f6;
+  padding: 40px 20px 37px;
+  text-align: center
+}
+
+#counter-section .counter-box p {
+  margin: 5px 0 0;
+  padding: 0;
+  color: #909090;
+  font-size: 18px;
+  font-weight: 500
+}
+
+#counter-section.counter-box i {
+  font-size: 100px;
+  margin: 0 0 15px;
+  color: #d2d2d2
+}
+
+#counter-section .counter {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  color: #666;
+  line-height: 28px
+}
+
+#counter-section .counter-box.colored {
+  background: #3acf87
+}
+
+#counter-section .counter-box.colored p,
+#counter-section .counter-box.colored i,
+#counter-section .counter-box.colored .counter {
+  color: #fff
+}
+
+
+/*--------------------------------------------------------------
+# News
+--------------------------------------------------------------*/
+#news-section{
+  padding: 70px 0px;
+  background-color: #fff;
+}
+.news-title{
+  padding-bottom: 0px;
+}
+
+.news-title h3{
+  text-align: center;
+  font-weight: bold;
+  font-size: 55px;
+  color: #000;
+}
+
+#news-section .container{
+  margin-top: 40px;
+}
+
+#news-section img{
+  position: relative;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  /* z-index: -1; */
+  border-radius: 10px;
+  object-fit: cover;  
+  object-position: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 00px;
+  margin: 0px;
+  margin-bottom: 0px;
+  width: 250px;
+  height: 250px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  margin-top: 30px;
+  border-radius: 10px;
+  /* border: 1px solid #f1f1f1; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  border-radius: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back button{
+  background: #FEAA71;
+  color: white;
+  transition: transform .2s; /* Animation */
+}
+.flip-card-back button:hover{
+  color: #FEAA71;
+  background: rgb(0, 0, 0, 0.8);
+  transform: scale(1.1);
+}
+
+.flip-content{
+  /* box-shadow: 0 0 10px #fdfdfd; */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: 0.5s;
+  background-color: #bba9da;
+}
+
+
+.flip-content h4{
+  margin-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #F7EB70;
+  font-weight: bold;
+}
+
+.flip-content p{
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.flip-content .flip-content-a{
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.flip-content a{
+  display:inline-block;
+  width: 150px;
+  text-decoration: none !important;
+  line-height: 2.5em;
+  border-radius: 10px;
+  /* text-align: center; */
+  border-width: 0;
+  background: #543864;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-top: 10px;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
+
+.flip-content a:hover{
+  text-decoration: none;
+  background: #ffcef3;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+
+/*--------------------------------------------------------------
+# Frequently Asked Questions
+--------------------------------------------------------------*/
+
+#faq {
+  padding: 60px 0px;
+  margin: 0; 
+  background: #442e69;
+
+}
+.faq .accordion-list {
+  padding: 0 50px;
+}
+.faq h2
+{
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.faq .section-title p{
+  color: #fff;
+}
+
+.faq .accordion-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .accordion-list li + li {
+  margin-top: 15px;
+}
+
+.faq .accordion-list li {
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+}
+
+.faq .accordion-list a {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0 30px;
+  outline: none;
+  text-decoration: none;
+}
+
+.faq .accordion-list .icon-help {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  left: 20px;
+  color: #FA8072;
+}
+
+.faq .accordion-list .icon-show, .faq .accordion-list .icon-close {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.faq .accordion-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+  color: #000;
+}
+
+.faq .accordion-list .icon-show {
+  display: none;
+}
+
+.faq .accordion-list a.collapsed {
+  color: #000;
+}
+
+.faq .accordion-list a.collapsed:hover {
+  color: #FA8072;
+}
+
+.faq .accordion-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.faq .accordion-list a.collapsed .icon-close {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .faq .accordion-list {
+    padding: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# End of Frequently Asked Questions
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+/* section {
+  padding: 60px 0;
+  overflow: hidden;
+} */
+
+/* .section-bg {
+  background: rgba(190,155,123,1);
+} */
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/* .section-title h2 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #fecc50;
+  font-family: "Poppins", sans-serif;
+} */
+
+.section-title p {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 420px) 
+{
+    /* ---------facebook icon------------ */
+    .form-box .btn-facebook
+    {
+        background: #4267B2;
+        width: 85px;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 9px;
+        /* padding-right: 5px;
+        padding-left: 5px; */
+    }
+
+    /* ---------twitter icon------------ */
+    .form-box .btn-twitter
+    {
+        background: #1DA1F2;
+        width: 70px;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 9px;
+        /* padding-right: 5px;
+        padding-left: 5px; */
+    }
+
+    /* ---------google icon------------ */
+    .form-box .btn-google
+    {
+        background: #EA4335;
+        width: 70px;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 9px;
+        /* padding-right: 5px;
+        padding-left: 5px; */
+    }
+}
+
+@media screen and (max-width: 320px) 
+{
+    /* ---------facebook icon------------ */
+    .form-box .btn-facebook
+    {
+        background: #4267B2;
+        width: 80px;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 6px;
+        /* padding-right: 5px;
+        padding-left: 5px; */
+    }
+
+    /* ---------twitter icon------------ */
+    .form-box .btn-twitter
+    {
+        background: #1DA1F2;
+        width: 65px;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 8px;
+        /* padding-right: 5px;
+        padding-left: 5px; */
+    }
+
+    /* ---------google icon------------ */
+    .form-box .btn-google
+    {
+        background: #EA4335;
+        width: 65x;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 8px;
+        /* padding-right: 5px;
+        padding-left: 5px; */
+    }
+}
