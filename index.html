@@ -6,404 +6,515 @@
     <title>CHARITY-APP</title>
     <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
     
-    
-    <!-- problem in this file so I commented this -->
-    <!-- <link rel="stylesheet" href="./assets/css/header_footer.css"> -->
+    <!-- !-- style css file --> 
+    <link rel="stylesheet" href="./assets/css/header_footer.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+      <!-- <link rel="stylesheet" href="./assets/css/hero-slider.css"> -->
 
+
+    <!-- problem in this file so I commented this -->
     <!-- Vendor CSS Files -->
     <!-- Icon css link -->
     <link href="./assets/vendor/fontawesome/css/fontawesome.min.css"  rel="stylesheet">
     <link href="./assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
-    <link href="./assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" >
+    <link href="./assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 
-     <!-- for about -->
-     <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script> 
- 
-     <!-- for grid -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
-     <!-- Bootstrap CSS -->
+    <!-- for grid -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <!-- style css file -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light" >
-        <a class="navbar-brand navbar_logo" href="./index.html">CHARITY-APP</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>   
-        <div class="collapse navbar-collapse navbar_link"  id="collapsibleNavId">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./aboutus.html">AboutUs</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="./DoCharity.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DoCharity</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">Emergency</a>
-                        <a class="dropdown-item" href="#">Individual</a>
-                        <a class="dropdown-item" href="#">Organization</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./verify.html">Verify</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">FAQ's</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top" >
+            <!-- <div class="d-flex align-items-center ">
+                <div class="logo mr-auto navbar_logo">
+                  <a href="index.html"></a>Charity -App<img src="" alt="" class="img-fluid"/></a>
+                   <h1 class="text-light"><a href="index.html"><span>Delicious</span></a></h1> 
+                </div> -->
+            <a class="navbar-brand navbar_logo" href="./index.html">CHARITY-APP</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>   
+            <div class="collapse navbar-collapse navbar_link ml-auto"  id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#about">AboutUs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./index.html#aboutus">Need Help!</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./DoCharity.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DoCharity</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Emergency</a>
+                            <a class="dropdown-item" href="#">Individual</a>
+                            <a class="dropdown-item" href="#">Organization</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./verify.html">Verify</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ's</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    
-    <!-- <section style="width: 100%; height: 100%;">
-        <div class="container-fluid">
-            
-        </div>
-    </section> -->
 
- <!--carousal -->
- <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./assets/images/7.jpg" class="d-block w-100 h-50" alt="...">
-        <div class="carousel-caption d-md-block">
-            <h1>YOUR GATEWAY TO THE WORLD OF GIVING.</h1>
-            <h3>DISCOVER AND DONATE</h3>
+    <section id="top-carousel">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/images/kat-yukawa-K0E6E0a0R3A-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
           </div>
+          <div class="carousel-item">
+            <img src="./assets/images/markus-winkler-wLBVAF-kMR0-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/tim-marshall-cAtzHUz7Z8g-unsplash.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      <div class="carousel-item">
-        <img src="./assets/images/2.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-md-block">
-          <h1>Let's Ensure no one sleeps empty stomach.</h1>
+    </section>
 
+
+    <!-- Causes -->
+    <section id="service-section">
+      <div class="formargin">
+          <h3 style="text-align: center;">OUR CAUSES</h3>
+      </div>
+          <div class="container" >
+              <div class="row">
+                <div class="col-sm-12">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="iconBox">
+                    <div class="icon">
+                      <!-- <div>
+                        <i class="fab fa-html5"></i>
+                      </div> -->
+                      <div>
+                        <h3 style="align-content:center; font-weight: bold; font-size: 25px;">Emergency</h3>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <p>
+                          Raise funds in response to a natural disaster or humanitarian
+                          crisis. Make a difference in minutes.Support them in their
+                          mission and help your friends make a difference too.
+                      </p>
+                      <button>Register</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="iconBox">
+                    <div class="icon">
+                      <!-- <div>
+                        <i class="fab fa-html5"></i>
+                      </div> -->
+                      <div>
+                        <h3 style="align-content:center; font-weight: bold; font-size: 25px;">Individual</h3>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <p>
+                          Provide direct support to an individual, family or community by
+                          paying medical expenses or offering financial aid. Support them
+                          in their mission and help your friends make a difference too.
+                      </p>
+                      <button>Register</button>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="col-sm-4"> 
+                  <div class="iconBox">
+                    <div class="icon">
+                      <!-- <div>
+                        <i class="fab fa-html5"></i>
+                      </div> -->
+                      <div>
+                        <h3 style="align-content:center; font-weight: bold; font-size: 25px;">Organization</h3>
+                      </div>
+                    </div>
+                    <div class="details">
+                      <p>
+                          Choose from hundreds of official events including marathons,
+                          bike rides, Dryathlons and bake off. Let’s make a difference
+                          together. Raise money or make a donation and make the difference.
+                      </p>
+                      <button>Register</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+      </div>
+  </section>
+
+
+  
+    <!-- about -->
+    <section id="about">
+      <div class="about-title">
+        <h3> About Us </h3>
+      </div>
+      <div id="what-we-do">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="left-text">
+                        <h4>New offers just arrived,<br>Get it now and take profit.</h4>
+                        <p>Gochujang pitchfork post-ironic hammock kombucha fanny pack cronut. Raw denim chicharrones semiotics af truffaut pinterest. Distillery letterpress authentic adaptogen. Meditation schlitz humblebrag photo booth celiac cliche chartreuse.<br><br>Pinterest 90's wolf celiac dreamcatcher listicle deep v semiotics. Intelligentsia literally meggings trust fund put a bird on it. Shoreditch crucifix artisan pug shaman twee. Health goth bicycle rights retro iPhone.</p>
+                        <!-- <ul>
+                            <li>
+                                <div class="white-button">
+                                    <a href="#" class="scroll-link" data-id="portfolio">Discover More</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="primary-button">
+                                    <a href="#">Purchase Now</a>
+                                </div>
+                            </li>
+                        </ul> -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="right-image">
+                        <img src="./assets/images/what-we-do-right-image.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="./assets/images/3.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-md-block">
-          <h1>Help Us send Every Girl to School.</h1>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <img src="./assets/images/4.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-md-block">
-          <h1 ">No Chid is Homeless in India.</h1>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-    
-      <!-- about -->
-      <section>
-        <div class = "image">
-            <!-- image here -->
-        </div>
-
-        <div class = "content">
-            <h2>About Us</h2>
-            <span><!-- line here --></span>
-
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis aspernatur voluptas inventore ab voluptates nostrum minus illo laborum harum laudantium earum ut, temporibus fugiat sequi explicabo facilis unde quos corporis!</p>
-
-            <ul class = "links">
-                <li>Donate</li>
-
-                <div class = "vertical-line"></div>
-
-                <li>CHARITY-APP</li>
-
-                <div class = "vertical-line"></div>
-                
-                <li>Change Lives</li>
-            </ul>
-
-            <ul class = "icons">
-                <li>
-                  <i class="fa fa-handshake-o" aria-hidden="true"></i>
-                </li>
-            </ul>
-        </div>
     </section>
     <!-- about -->
-   
-    <!-- grid -->
-<div class="formargin">
-    <h3 style="text-align: center;">OUR SERVICES</h3>
-</div>
-    <div class="container" >
+
+
+
+    <section id="counter-section">
+      <div class="container">
         <div class="row">
-          <div class="col-sm-12">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="iconBox">
-              <div class="icon">
-                <!-- <div>
-                  <i class="fab fa-html5"></i>
-                </div> -->
-                <div>
-                  <h3 style="align-content:center ;">Emergency</h3>
+            <div class="four col-md-3">
+                <div class="counter-box colored"> <i class="fas fa-smile"></i> <span class="counter" data-target="60000">0</span>
+                    <p>Total Donations</p>
                 </div>
-              </div>
-              <div class="details">
-                <p>
-                    Raise funds in response to a natural disaster or humanitarian
-                    crisis. Make a difference in minutes.Support them in their
-                    mission and help your friends make a difference too.
-                </p>
-                <button>Register</button>
-              </div>
             </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="iconBox">
-              <div class="icon">
-                <!-- <div>
-                  <i class="fab fa-html5"></i>
-                </div> -->
-                <div>
-                  <h3>Individual</h3>
+            <div class="four col-md-3">
+                <div class="counter-box"> <i class="fa fa-group"></i> <span class="counter" data-target="60000">0</span>
+                    <p>Organisation</p>
                 </div>
-              </div>
-              <div class="details">
-                <p>
-                    Provide direct support to an individual, family or community by
-                    paying medical expenses or offering financial aid. Support them
-                    in their mission and help your friends make a difference too.
-                </p>
-                <button>Donate</button>
-              </div>
             </div>
-          </div>
-  
-          <div class="col-sm-4"> 
-            <div class="iconBox">
-              <div class="icon">
-                <!-- <div>
-                  <i class="fab fa-html5"></i>
-                </div> -->
-                <div>
-                  <h3>Organization</h3>
+            <div class="four col-md-3">
+                <div class="counter-box"> <i class="fa fa-shopping-cart"></i> <span class="counter" data-target="60000">0</span>
+                    <p>Individual</p>
                 </div>
-              </div>
-              <div class="details">
-                <p>
-                    Choose from hundreds of official events including marathons,
-                    bike rides, Dryathlons and bake off.Let’s make a difference
-                    together.Raise money or make a donation.
-                </p>
-                <button>Donate</button>
-              </div>
-          </div>
+            </div>
+            <div class="four col-md-3">
+                <div class="counter-box"> <i class="fa fa-user"></i> <span class="counter" data-target="60000">0</span>
+                    <p>Emergency</p>
+                </div>
+            </div>
         </div>
-      </div>
-</div>
+      </div>      
+    </section>
     
-<!--news carousel -->
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-    <h3 style="text-align: center;margin-bottom: 20px;">Upcoming Events</h3>
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./assets/images/3.jpg" class="d-block w-100" alt="..." width="400px" height="400px">
-        <div class="carousel-caption d-md-block">
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/images/7.jpg" class="d-block w-100" alt="..." width="400px" height="400px">
-        <div class="carousel-caption d-md-block">
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/images/1.jpg" class="d-block w-100" alt="..." width="200px" height="400px">
-        <div class="carousel-caption d-md-block">
-          <h5>Third slide label</h5>
-          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+    
+    
+
+    
 
   <!-- news carousel  -->
-
-  <!-- faq --> 
-  <div class="faqmargin">
-    <div id="accordion">
-        <div class="card">
-            <h3 style="text-align: center; margin: 40px;">FAQ'S</h3>
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0" style="color: black;">
-              <button
-                class="btn btn-link"
-                data-toggle="collapse"
-                data-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-              
-                Here is why you should donate
-              </button>
-            </h5>
-          </div>
-
-          <div
-            id="collapseOne"
-            class="collapse"
-            aria-labelledby="headingOne"
-            data-parent="#accordion"
-          >
-            <div class="card-body">
-              <ul>
-                <li>Choice: 1200+ non-profits to donate to Simple.</li>
-                <li>Give at a click of a button Convenience:</li>
-                <li>Contribute monthly with ease Credible</li>
-                <li>Donate with confidence to the verified partner NGOs.</li>
-              </ul>
+<section id="news-section">
+  <div class="news-title">
+    <h3>News </h3>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/images/images.jpeg" alt="Avatar" style="width:100%;height:auto;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Emergency</h1>
+              <p>Lorem ipsum dolor sit, </p>
+              <p>Help the Need!!</p>
+              <button>Donate</button>
             </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h5 class="mb-0">
-              <button
-                class="btn btn-link collapsed"
-                data-toggle="collapse"
-                data-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                What Benefits you will get?
-              </button>
-            </h5>
-          </div>
-          <div
-            id="collapseTwo"
-            class="collapse"
-            aria-labelledby="headingTwo"
-            data-parent="#accordion"
-          >
-            <div class="card-body">
-              <ul>
-                <li>Make a big impact with your small amounts.</li>
-                <li>Donate as little as Rs.50/-</li>
-                <li>
-                  Tax exemption - Receive e-receipt for every donation to claim
-                  tax exemption.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-              <button
-                class="btn btn-link collapsed"
-                data-toggle="collapse"
-                data-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                Our core values
-              </button>
-            </h5>
-          </div>
-          <div
-            id="collapseThree"
-            class="collapse"
-            aria-labelledby="headingThree"
-            data-parent="#accordion"
-          >
-            <div class="card-body">
-              <ul>
-                <li>
-                  Every person is of equal value and worth. Therefore, we are
-                  committed to working with poor people and communities,
-                  supporting them as they strive to meet their basic needs,
-                  overcome injustice and fulfil their dreams and potentials. In
-                  so doing we are committed to fully acknowledging the
-                  integrity, worth and initiative of those who are oppressed by
-                  poverty and injustice.
-                </li>
-                <li>
-                  We are committed to work with people in the context of family,
-                  community and environment, with concern for their physical,
-                  mental, social and emotional well-being. We always adopt
-                  holistic approach in our call and commitment.
-                </li>
-                <li>
-                  We are committed to work with partners, supporters, co-workers
-                  and volunteers in a professional manner. We will strive for
-                  excellence, encouraging creativity and innovation.
-                </li>
-                <li>
-                  We are committed to learning from others in humility, and will
-                  seek to respond well to constructive criticism, and the
-                  changing needs of those we serve.
-                </li>
-                <li>
-                  We are committed to working with other organisations in a
-                  spirit of collaboration rather than competition, locally,
-                  nationally and internationally.
-                </li>
-                <li>
-                  We are accountable to our partners,members, well wishers and
-                  supporters, striving to be honest, trustworthy and
-                  transparent. We are accountable to them for the time and
-                  resources at our disposal
-                </li>
-              </ul>
-            </div>
+        <div class="flip-content">
+          <h4>Lorem ipsum dolor sit</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+             Modi quidem vel adipisci ea delectus laudantium obcaecati similique quae perferendis,
+             animi minus est maxime. Dolorem ipsa pariatur illo et dicta culpa!</p>
+          <div class="flip-content-a">
+            <a href="">Read More</a>
           </div>
         </div>
       </div>
+
+      <div class="col-sm-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/images/images 2.jpeg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+              <button>Donate</button>
+            </div>
+          </div>
+        </div>
+        <div class="flip-content">
+          <h4>Lorem ipsum dolor sit</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+             Modi quidem vel adipisci ea delectus laudantium obcaecati similique quae perferendis,
+             animi minus est maxime. Dolorem ipsa pariatur illo et dicta culpa!</p>
+          <div class="flip-content-a">
+            <a href="">Read More</a>
+          </div>
+        </div>      
+      </div>
+
+      <div class="col-sm-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="#" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+              <button>Donate</button>
+            </div>
+          </div>
+        </div>
+        <div class="flip-content">
+          <h4>Lorem ipsum dolor sit</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+             Modi quidem vel adipisci ea delectus laudantium obcaecati similique quae perferendis,
+             animi minus est maxime. Dolorem ipsa pariatur illo et dicta culpa!</p>
+          <div class="flip-content-a">
+            <a href="">Read More</a>
+          </div>
+        </div> 
+      </div>
+
     </div>
   </div>
 
 
 
 
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/images/images.jpeg" alt="Avatar" style="width:100%;height:auto;">
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+              <button>Donate</button>
+            </div>
+          </div>
+        </div>
+        <div class="flip-content">
+          <h4>Lorem ipsum dolor sit</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+             Modi quidem vel adipisci ea delectus laudantium obcaecati similique quae perferendis,
+             animi minus est maxime. Dolorem ipsa pariatur illo et dicta culpa!</p>
+          <div class="flip-content-a">
+            <a href="">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/images/images 2.jpeg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+              <button>Donate</button>
+            </div>
+          </div>
+        </div>
+        <div class="flip-content">
+          <h4>Lorem ipsum dolor sit</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+             Modi quidem vel adipisci ea delectus laudantium obcaecati similique quae perferendis,
+             animi minus est maxime. Dolorem ipsa pariatur illo et dicta culpa!</p>
+          <div class="flip-content-a">
+            <a href="">Read More</a>
+          </div>
+        </div>      
+      </div>
+
+      <div class="col-sm-4">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="#" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+              <button>Donate</button>
+            </div>
+          </div>
+        </div>
+        <div class="flip-content">
+          <h4>Lorem ipsum dolor sit</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+             Modi quidem vel adipisci ea delectus laudantium obcaecati similique quae perferendis,
+             animi minus est maxime. Dolorem ipsa pariatur illo et dicta culpa!</p>
+          <div class="flip-content-a">
+            <a href="">Read More</a>
+          </div>
+        </div> 
+      </div>
+
+    </div>
+  </div>
 
 
-    
+  
+</section>
+  
+<!-- ======= Frequently Asked Questions Section ======= -->
+<section id="faq" class="faq section-bg">
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Frequently Asked Questions</h2>
+        <p></p>
+      </div>
+      <div class="accordion-list">
+        <ul>
+          <li data-aos="fade-up">
+            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#accordion-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
+              <p>
+                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+              </p>
+            </div>
+          </li>
+          <li data-aos="fade-up" data-aos-delay="100">
+            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#accordion-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
+              <p>
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="200">
+            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#accordion-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="accordion-list-3" class="collapse" data-parent=".accordion-list">
+              <p>
+                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="300">
+            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#accordion-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="accordion-list-4" class="collapse" data-parent=".accordion-list">
+              <p>
+                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="400">
+            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#accordion-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="accordion-list-5" class="collapse" data-parent=".accordion-list">
+              <p>
+                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- End Frequently Asked Questions Section -->
+
+
+
+
     <!-- ======= Footer ======= -->
     <!-- Footer -->
     <footer class="page-footer font-small unique-color-dark" id="footer">
+        <div class="footer-newsletter" data-aos="fade-up">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-6">
+                  <h4>Join Our Newsletter</h4>
+                  <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                  <form action="" method="post">
+                    <input type="email" name="email"><input type="submit" value="Subscribe">
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
         <!-- Footer Links -->
         <div class="container text-center text-md-left">
             <!-- Grid row -->
@@ -424,21 +535,11 @@
                 <!-- Links -->
                 <h6 class="text-uppercase font-weight-bold">Get Started</h6>
                 <hr class="deep-purple accent-2 " style="width: 60px;">
-                <p>
-                <a href="./index.html">Home</a>
-                </p>
-                <p>
-                <a href="./aboutus.html">AboutUs</a>
-                </p>
-                <p>
-                <a href="./DoCharity.html">DoCharity</a>
-                </p>
-                <p>
-                <a href="./verify.html">Verify</a>
-                </p>
-                <p>
-                <a href="#!">FAQ's</a>
-                </p>
+                <p><i class="bx bx-chevron-right"></i><a href="./index.html">Home</a></p>
+                <p><i class="bx bx-chevron-right"></i><a href="./index.html#aboutus">AboutUs</a></p>
+                <p><i class="bx bx-chevron-right"></i><a href="./DoCharity.html">DoCharity</a></p>
+                <p><i class="bx bx-chevron-right"></i><a href="./verify.html">Verify</a></p>
+                <p><i class="bx bx-chevron-right"></i><a href="#!">FAQ's</a></p>
             </div>
             <!-- Grid column -->
 
@@ -479,14 +580,14 @@
     </footer>
     
     <!-- End Footer -->
-    
-    
-    
-    
-    
-    
-    <script src="./assets/js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  
+    <a href="#" class="back-to-top"><i class='fas fa-arrow-up'></i></a>
+
+
+    <script src="./assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script> 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
 
@@ -495,5 +596,6 @@
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
