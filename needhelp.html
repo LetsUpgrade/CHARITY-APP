@@ -1,38 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHARITY-APP</title>
     <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
-
-    <!-- style css file --> 
-    <link rel="stylesheet" href="./assets/css/contact.css">
+    
+    <!-- !-- style css file --> 
     <link rel="stylesheet" href="./assets/css/header_footer.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+      <link rel="stylesheet" href="./assets/css/needhelp.css">
 
+
+    <!-- problem in this file so I commented this -->
     <!-- Vendor CSS Files -->
     <!-- Icon css link -->
-    <link href="./assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="./assets/vendor/fontawesome/css/fontawesome.min.css"  rel="stylesheet">
     <link href="./assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <!-- <link rel="icon" type="image/png" href="./images/icons/favicon.ico" /> -->
 
     <!-- for grid -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <!-- Link of Bootstrap CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-    <!-- Link of Fontawsm CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark fixed-top" >
@@ -54,8 +47,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./index.html#about">AboutUs</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./index.html#aboutus">Need Help!</a>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="./needhelp.html">Need Help!</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="./DoCharity.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DoCharity</a>
@@ -67,9 +60,9 @@
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="#faq">FAQ's</a>
+                        <a class="nav-link" href="./index.html#faq">FAQ's</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="./contact.html">Contact Us</a>
                     </li>
                 </ul>
@@ -77,102 +70,169 @@
         </nav>
     </header>
 
-    <div class="container-contact100">
-        <div class="wrap-contact100">
-            <form class="contact100-form validate-form">
-                <span class="contact100-form-title">
-                    Send Us A Message
-                </span>
 
-                <label class="label-input100" for="first-name">Tell us your name *</label>
-                <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
-                    <input id="first-name" class="input100" type="text" name="first-name" placeholder="First name">
-                    <span class="focus-input100"></span>
-                </div>
-                <div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
-                    <input class="input100" type="text" name="last-name" placeholder="Last name">
-                    <span class="focus-input100"></span>
-                </div>
-
-                <label class="label-input100" for="email">Enter your email *</label>
-                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                    <input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
-                    <span class="focus-input100"></span>
-                </div>
-
-                <label class="label-input100" for="phone">Enter phone number</label>
-                <div class="wrap-input100">
-                    <input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +1 800 000000">
-                    <span class="focus-input100"></span>
-                </div>
-
-                <label class="label-input100" for="message">Message *</label>
-                <div class="wrap-input100 validate-input" data-validate="Message is required">
-                    <textarea id="message" class="input100" name="message" placeholder="Write us a message"></textarea>
-                    <span class="focus-input100"></span>
-                </div>
-
-                <div class="container-contact100-form-btn">
-                    <button class="contact100-form-btn">
-                        Send Message
-                    </button>
-                </div>
-            </form>
-
-            <div class="contact100-more flex-col-c-m" style="background-image: url('./assets/images/11.jpg');">
-                <div class="flex-w size1 p-b-47">
-                    <div class="txt1 p-r-25">
-                        <span class="lnr lnr-map-marker"></span>
+    <section id="help-banner">
+        <div class="help-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 header-image">
+                        <img src="./assets/images/unnamed.jpg" alt="">
                     </div>
-
-                    <div class="flex-col size2" flex-column>
-                        <div class="txt1 p-b-20">
-                            Address
-                        </div>
-
-                        <div class="txt2">
-                            Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US
-                        </div>
-                    </div>
-                </div>
-
-                <div class="dis-flex size3 p-b-47">
-                    <div class="txt1 p-r-25">
-                        <span class="lnr lnr-phone-handset"></span>
-                    </div>
-
-                    <div class="flex-col size2">
-                        <span class="txt1 p-b-20">
-                            Lets Talk
-                        </span>
-
-                        <span class="txt3">
-                            +1 800 1236879
-                        </span>
-                    </div>
-                </div>
-
-                <div class="dis-flex size3 p-b-47">
-                    <div class="txt1 p-r-25">
-                        <span class="lnr lnr-envelope"></span>
-                    </div>
-
-                    <div class="flex-col size2">
-                        <span class="txt1 p-b-20">
-                            General Support
-                        </span>
-
-                        <span class="txt3">
-                            contact@example.com
-                        </span>
+                    <div class="col-sm-6 header-content">
+                        <h1>Need Help!</h1>
+                        <p>Content which will tell aboput our registration funda......................................</p>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="counter-section">
+        <div class="container">
+          <div class="row counter-row">
+              <div class="four col-md-3">
+                  <div class="counter-box colored"> <i class="fas fa-smile"></i> <span class="counter" data-target="60000">0</span>
+                      <p>Total Registration</p>
+                  </div>
+              </div>
+              <div class="four col-md-3">
+                  <div class="counter-box"> <i class="fa fa-group"></i> <span class="counter" data-target="60000">0</span>
+                      <p>Organisation</p>
+                  </div>
+              </div>
+              <div class="four col-md-3">
+                  <div class="counter-box"> <i class="fa fa-shopping-cart"></i> <span class="counter" data-target="60000">0</span>
+                      <p>Individual</p>
+                  </div>
+              </div>
+              <div class="four col-md-3">
+                  <div class="counter-box"> <i class="fa fa-user"></i> <span class="counter" data-target="60000">0</span>
+                      <p>Emergency</p>
+                  </div>
+              </div>
+          </div>
+        </div>      
+      </section>
+
+    <!-- ======= Hero Section ======= -->
+  <!-- <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-5 pt-lg-0 order-2 order-lg-1" data-aos="fade-up">
+          <div>
+            <h1>Need Help! </h1> <h2>Then Register!!!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse numquam consequatur, dolor dolores praesentium in quae asperiores, exercitationem provident, illum quo labore? In velit amet facere. Harum obcaecati nihil temporibus?</p>
+          </div>
+        </div>
+        <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">
+          <img src="./assets/images/unnamed.jpg" class="img-fluid" alt="" no-repeat center >
+        </div>
+      </div>
     </div>
 
-    <!-- map  -->
-    <div id="googleMap" style="width:100%;height:400px;"></div>
+  </section>End Hero -->
+
+
+    <section id="Emg-help" class="need-help">
+        <div class="container text-center">
+            <div class="help-title">
+                <h1>Emergency</h1>
+            </div>
+            <div class="row help-content">
+                
+                <div class="col-6">
+                    <div class="help_Details">
+                        <h3>Details</h3>
+                        <h4>Who?</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, hic omnis. Maxime eaque quaerat ipsum possimus id harum doloremque ab, blanditiis sequi assumenda minima cupiditate sit, cum sed tenetur consequuntur.</p>
+                        <h4>Documents required for registration:</h4>
+
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="help_steps">
+                        <h3>Steps for Registeration</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="help-Emg-btn" class="help-button">
+                <button>Register</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Ind-help" class="need-help">
+        <div class="container text-center">
+            <div class="help-title">
+                <h1>Individual</h1>
+            </div>
+            <div class="row help-content">
+                
+                <div class="col-6">
+                    <div class="help_Details">
+                        <h3>Details</h3>
+                        <h4>Who?</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, hic omnis. Maxime eaque quaerat ipsum possimus id harum doloremque ab, blanditiis sequi assumenda minima cupiditate sit, cum sed tenetur consequuntur.</p>
+                        <h4>Documents required for registration:</h4>
+
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="help_steps">
+                        <h3>Steps for Registeration</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="help-Ind-btn" class="help-button">
+                <button>Register</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Org-help" class="need-help">
+        <div class="container text-center">
+            <div class="help-title">
+                <h1>Organisation</h1>
+            </div>
+            <div class="row help-content">
+                
+                <div class="col-6">
+                    <div class="help_Details">
+                        <h3>Details</h3>
+                        <h4>Who?</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, hic omnis. Maxime eaque quaerat ipsum possimus id harum doloremque ab, blanditiis sequi assumenda minima cupiditate sit, cum sed tenetur consequuntur.</p>
+                        <h4>Documents required for registration:</h4>
+
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="help_steps">
+                        <h3>Steps for Registeration</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="help-Org-btn" class="help-button">
+                <button>Register</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
 
     <!-- ======= Footer ======= -->
     <!-- Footer -->
@@ -258,10 +318,8 @@
   
     <a href="#" class="back-to-top"><i class='fas fa-arrow-up'></i></a>
 
+
     <script src="./assets/vendor/jquery/jquery.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-    <script src="./assets/js/contact.js"></script>
-    <script src="./assets/js/main.js"></script>
     <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script> 
@@ -274,16 +332,5 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
-    
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script> -->
-
 </body>
 </html>
