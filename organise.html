@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Individual</title>
+    <title>Organise</title>
 
     <!-- link to css file -->
     <link rel="stylesheet" type = "text/css" href="organise.css">
 
+    <!-- Link of Bootstrap CDN -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
 
     <!-- Link of Fontawsm CDN -->
@@ -24,67 +25,61 @@
             <!-- ------------Header------------ -->
             <header>
                 <div class="header-content">
-                    <h1><span class="main-heading">Personal Details</span></h1>
+                    <h1><span class="main-heading">Organization Details</span></h1>
                 </div>
                 <div class="slanted"></div>
             </header>
 
             <section class="sec">
 
-                <!-- ------------------Individual Form-------------------- -->
+                <!-- ------------------Organization Form-------------------- -->
                 <form>
         
-                    <!-- Full Name -->
+                    <!-- Organization Name -->
                     <div class="form-group">
-                        <label for="name">Full Name:</label>
-                        <input type="text" name="name" id="name" class="form-control text" placeholder=" Enter Full Name">
+                        <label for="orgname">Organization Name:</label>
+                        <input type="text" name="orgname" id="orgname" class="form-control text" placeholder=" Enter Organization Name">
                     </div>
 
-                    <!-- Address -->
+                    <!-- Organization Address -->
                     <div class="form-group">
-                        <label for="add">Address:</label>
-                        <input type="text" name="add" id="add" class="form-control text" placeholder=" Enter Address">
+                        <label for="orgadd">Organization Address:</label>
+                        <input type="text" name="orgadd" id="orgadd" class="form-control text" placeholder=" Enter Organization Address">
                     </div>
 
-                    <!-- Heighest Qualification -->
+                    <!-- Organization ID -->
                     <div class="form-group">
-                        <label for="qual">Heighest Qualification:</label>
-                        <input type="text" name="qual" id="qual" class="form-control text" placeholder=" Enter heighest Qualification">
+                        <label for="orgid">Organization ID:</label>
+                        <input type="text" name="orgid" id="orgid" class="form-control text" placeholder=" Enter Organization ID">
                     </div>
 
-                    <!-- Occupation -->
+                    <!-- Organization Type -->
                     <div class="form-group">
-                        <label for="occ">Occupation:</label>
-                        <select id="occ" name="occ" class="form-control text">
-                            <option id="status_0">Profession</option>
-                            <option id="status_1">Employment</option>
-                            <option id="status_2">Business</option>
+                        <label for="orgtype">Organization Type:</label>
+                        <select id="orgtype" name="orgtype" class="form-control text">
+                            <option id="status_0">Functional</option>
+                            <option id="status_1">Projectized</option>
+                            <option id="status_2">Matrix</option>
                         </select>
                     </div>
 
-                    <!------ Need of charity-------->
+                    <!------ No of people -------->
                     <div class="form-group">
-                        <label>Need of Charity:</label>
-                        <input type="text" name="need" id="need" class="form-control text" placeholder=" Need of Charity">
+                        <label>No of Ppl:</label>
+                        <input type="number" name="ppl" id="ppl" class="form-control text" placeholder=" Enter No of Ppl">
                     </div>
 
-                    <!-- Family Head -->
+                    <!-- Established Year -->
                     <div class="form-group">
-                        <label>Family Head:</label>
-                        <input type="text" name="head" id="head" class="form-control text" placeholder=" Enter Family head">
+                        <label>Established Year:</label>
+                        <input type="text" name="estyr" id="estyr" class="form-control text" placeholder=" Established Year">
                         
                     </div>
 
-                    <!-- Occupation of family head -->
+                    <!-- Organization Head -->
                     <div class="form-group">
-                        <label>Family Head Occupation:</label>
-                        <input type="text" name="occhead" id="occhead" class="form-control text" placeholder=" Enter the Occupation of Family Head">
-                    </div>
-
-                    <!-- Annual Income -->
-                    <div class="form-group">
-                        <label>Annual income:</label>
-                        <input type="text" name="income" id="income" class="form-control text" placeholder=" Enter Annual income (Should be less than 2LPA)">
+                        <label>Organization Head:</label>
+                        <input type="text" name="orghead" id="orghead" class="form-control text" placeholder=" Enter Organization Head">
                     </div>
 
                     <!-- Email ID -->
@@ -117,10 +112,10 @@
                     <!-- ------------Documents upload----------- -->
                     <div>
                         <h4 id="dochead">Mandatory to upload below documents:</h4>
-                        <p id="docpara1" class="docs">1. Identity Proof (Any government proof</p>
-                        <p id="docpara2" class="docs">2. Address Proof (LightBill / Aadhar Card / PAN Card / Driving License)</p>
-                        <p id="docpara3" class="docs">3. Annual Income Certificate (Present Year / Latest & Income should be less than 2 LPA)</p>
-                        <p id="docpara4" class="docs">4. Family Head ID Proof</p>
+                        <p id="docpara1" class="docs">1. Organisation Available Proof (Any government proof</p>
+                        <p id="docpara2" class="docs">2. Organisation Photo/Website/FB Pages/etc.</p>
+                        <p id="docpara3" class="docs">3. Organization Head Aadhar Card & PAN Card</p>
+                        <p id="docpara4" class="docs">4. Organisation Head ID Proof (i.e. Proof that He/She is the head of that organisation)</p>
                             
                         <!-- Upload button -->
                         <div class="form-group">
