@@ -65,6 +65,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./contact.html">Contact Us</a>
                     </li>
+                    <div id="username"></div>
                 </ul>
             </div>
         </nav>
@@ -224,7 +225,7 @@
             </div>
 
             <div id="help-Org-btn" class="help-button">
-                <button>Register</button>
+                <button onclick="org_register()">Register</button>
             </div>
         </div>
     </section>
@@ -317,6 +318,26 @@
     <!-- End Footer -->
   
     <a href="#" class="back-to-top"><i class='fas fa-arrow-up'></i></a>
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+
+    <script>
+      var firebaseConfig = {
+            apiKey: "AIzaSyDQRPjwzQY6wO1e0oxQMamKRPW7td_wQbs",
+            authDomain: "charity-app-e31cc.firebaseapp.com",
+            databaseURL: "https://charity-app-e31cc.firebaseio.com",
+            projectId: "charity-app-e31cc",
+            storageBucket: "charity-app-e31cc.appspot.com",
+            messagingSenderId: "233446000003",
+            appId: "1:233446000003:web:d253ffd11f923d21a422b6",
+            measurementId: "G-NJ0H9ZQ056"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="assets/js/login-logout.js"></script>
 
 
     <script src="./assets/vendor/jquery/jquery.min.js"></script>
