@@ -1,0 +1,310 @@
+#Emergency-donate-cards
+{
+    background-color: #e6e6e6;
+}
+
+#Individual-donate-cards
+{
+    background-color: #e6e6e6;
+}
+
+#Organisation-donate-cards
+{
+    background-color: #e6e6e6;
+
+}
+.donate-cards{
+    margin: 100px 0px;
+}
+.donate-cards-title h2
+{
+    text-align: center;
+    padding: 10px 0px;
+    font-weight: bolder;
+}
+
+
+.donate-cards .card-box{
+    border-radius: 10px;
+    margin: 20px 0px;
+    border: 0.5px;
+    border-style: solid;
+    border-color: #e6e3e3;
+    transition: box-shadow 0.3s;
+    background-color: #fff;
+}
+
+
+.donate-cards .card-box:hover{
+    border-radius: 10px;
+    margin: 20px 0px;
+    border: 0.5px;
+    border-style: solid;
+    border-color: #000;
+    box-shadow: 5px 5px 10px #888888;
+}
+
+.donate-cards .card-box .card-pic{
+}
+
+.donate-cards .card-box .card-pic img{
+    /* position: absolute; */
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;    
+}
+
+
+.donate-cards .card-box .card-content{
+    padding: 15px 0px;
+}
+
+
+.donate-cards .card-box .card-content h4{
+    text-align: center;
+}
+
+
+.donate-cards .card-box .card-content p{
+    text-align: center;
+    padding-top: 5px;
+}
+
+
+.donate-cards .card-box .card-progressbar{
+    padding: auto;
+}
+
+
+.donate-cards .card-box .card-progressbar .stat-row{
+    line-height: 30px;
+}
+
+
+.donate-cards .card-box .card-progressbar .stat-row .stat-col1{
+    text-align: center;
+    padding: auto auto;
+}
+
+
+.donate-cards .card-box .card-progressbar .stat-row .stat-col2{
+    text-align: center;
+}
+
+
+.donate-cards .card-box .card-progressbar .stat-row .stat-col3{
+    text-align: center;
+
+}
+
+.donate-cards .card-box .card-progressbar .stat{
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+
+.donate-cards .card-box .card-progressbar .stat-dis{
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: bold;
+}
+
+/* Button entire box */
+.donate-cards .card-box .card-buttons{
+    margin: 10px;
+    text-align: center;
+}
+
+/* button view more for Emergency */
+.donate-cards .card-box .card-buttons .card-button1 button{
+    border: none;
+    width: 75%;
+    height: 50px;
+    background: #e6e6e6;
+    color: #000;
+    /* padding: auto; */
+    text-align: center;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* button hover view more for Emergency */
+.donate-cards .card-box .card-buttons .card-button1 button:hover{
+    border: none;
+    width: 75%;
+    height: 50px;
+    background: #e6e3e3;
+    color: #000;
+    /* padding: auto; */
+    border-style: solid;
+    border-color: #F9A23A;
+    text-align: center;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* button view more for Individual */
+.donate-cards .card-box .card-buttons .card-button2 button{
+    border: none;
+    width: 75%;
+    height: 50px;
+    background: #e6e6e6;
+    color: #000;
+    /* padding: auto; */
+    text-align: center;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* button hover view more for Individual */
+.donate-cards .card-box .card-buttons .card-button2 button:hover{
+    border: none;
+    width: 75%;
+    height: 50px;
+    background: #e6e3e3;
+    color: #000;
+    /* padding: auto; */
+    border-style: solid;
+    border-color: #A878E0;
+    text-align: center;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* button view more for Organisation */
+.donate-cards .card-box .card-buttons .card-button3 button{
+    border: none;
+    width: 75%;
+    height: 50px;
+    background: #e6e6e6;
+    color: #000;
+    /* padding: auto; */
+    text-align: center;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* button hover view more for Organisation */
+.donate-cards .card-box .card-buttons .card-button3 button:hover{
+    border: none;
+    width: 75%;
+    height: 50px;
+    background: #e6e3e3;
+    color: #000;
+    /* padding: auto; */
+    border-style: solid;
+    border-color: #61C524;
+    text-align: center;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* button Donate for emergency */
+.donate-cards .card-box .card-buttons .card-button-emg button{
+    border: none;
+    width: 75%;
+    height: 50px;
+    background: #F9A23A;
+    color: #fff;
+    /* padding: auto; */
+    text-align: center;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* button hover Donate for emergency */
+.donate-cards .card-box .card-buttons .card-button-emg button:hover{
+    border: none;
+    width: 75%;
+    height: 50px;
+    background: #fff;
+    color: #F9A23A;
+    /* padding: auto; */
+    text-align: center;
+    border-style: solid;
+    border-color: #F9A23A;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* button Donate for Individual */
+.donate-cards .card-box .card-buttons .card-button-ind button{
+    border: none;
+    width: 75%;
+    height: 50px;
+    background: #A878E0;
+    color: #fff;
+    /* padding: auto; */
+    text-align: center;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* button hover Donate for Individual */
+.donate-cards .card-box .card-buttons .card-button-ind button:hover{
+    border: none;
+    width: 75%;
+    height: 50px;
+    background: #fff;
+    color: #A878E0;
+    /* padding: auto; */
+    text-align: center;
+    border-style: solid;
+    border-color: #c1b3d1;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* button Donate for Organisation */
+.donate-cards .card-box .card-buttons .card-button-org button{
+    border: none;
+    width: 75%;
+    height: 50px;
+    background: #61C524;
+    color: #fff;
+    /* padding: auto; */
+    text-align: center;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+/* button hover Donate for Organisation */
+.donate-cards .card-box .card-buttons .card-button-org button:hover{
+    border: none;
+    width: 75%;
+    height: 50px;
+    background: #fff;
+    color: #61C524;
+    /* padding: auto; */
+    text-align: center;
+    border-style: solid;
+    border-color: #61C524;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+}
