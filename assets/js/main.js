@@ -42,9 +42,9 @@ counters.forEach(counter => {
       counter.innerText = target;
     }
 
-    console.log(count);
-    console.log(inc)
-    console.log(typeof target);
+    // console.log(count);
+    // console.log(inc)
+    // console.log(typeof target);
   }
   updateCount();
 });
