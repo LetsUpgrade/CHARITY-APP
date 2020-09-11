@@ -57,7 +57,7 @@ const signInWithPhone = sentCodeId => {
   auth.signInWithCredential(credential)
   .then(() => {
     //console.log('Signed in successfully !');
-    window.location.assign('./profile');
+    window.location.assign('./profile.html');
   })
   .catch(error => {
     console.error(error);
@@ -87,7 +87,7 @@ const signInWithGoogle = () => {
   auth.signInWithPopup(googleProvider)
   .then(() => {
     //console.log('You\'re now signed in !');
-    window.location.assign('./profile');
+    window.location.assign('./profile.html');
   })
   .catch(error => {
     console.error(error);
@@ -105,7 +105,7 @@ const signInWithEmailFunction = () => {
   auth.signInWithEmailAndPassword(email, password)
   .then(() => {
     //Signed in successfully
-    window.location.assign('./profile')
+    window.location.assign('../../index.html')
   })
   .catch(error => {
     //Something went wrong
@@ -120,7 +120,7 @@ signInWithMail.addEventListener('click', signInWithEmailFunction);
 
 //Go to signup page
 signUp.addEventListener('click', () => {
-  window.location.assign('./signup');
+  window.location.assign('./signup.html');
 });
 
 //Animations
