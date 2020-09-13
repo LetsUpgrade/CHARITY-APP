@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="UserProfile.css" />
+    <title>Profile</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <a class="navbar-brand" href="#">Profile</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div class="container shadow-lg p-3 mb-5 bg-white rounded">
+        <div class="row">
+            <div class="col p-4 d-flex flex-column position-static">
+                <div class="list-group " id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-aboutme-list" data-toggle="list" href="#list-aboutme" role="tab" aria-controls="aboutme">AboutMe</a>
+                    <a class="list-group-item list-group-item-action" id="list-donations-list" data-toggle="list" href="#list-donations" role="tab" aria-controls="donations">Your Donations</a>
+                    <a class="list-group-item list-group-item-action" id="list-taken-list" data-toggle="list" href="#list-taken" role="tab" aria-controls="taken">Amount Taken</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Edit Your Profile</a>
+                    <a class="list-group-item list-group-item-action" id="list-social-list" data-toggle="list" href="#list-social" role="tab" aria-controls="social">Social Media</a>
+                </div>
+            </div>
+            <div class="col-8 ">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-aboutme" role="tabpanel" aria-labelledby="list-aboutme-list">
+                        <div class="row">
+                            <h2><b><i><u>YOUR DETAILS</u></i></b></h2>
+                            <table class="table table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">NAME</th>
+                                        <td>JAMALPUR SHIRISHA</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">EMAIL</th>
+                                        <td>jamalpurshirisha1999@gmail.com</td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">CONTACT NUMBER</th>
+                                        <td colspan="2">9652230110</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">ADDRESS</th>
+                                        <td colspan="2">Hyderabad, Telangana</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">GENDER</th>
+                                        <td colspan="2">Female</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">QUALIFICATION</th>
+                                        <td colspan="2">B.Tech</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">NEED OF CHARITY</th>
+                                        <td colspan="2">For continuing further Studeis</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="list-donations" role="tabpanel" aria-labelledby="list-donations-list">
+                        <div class="container my-4">
+                            <div class="row no-gutters border rounded flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                <div class="col p-4 d-flex flex-column position-static bg-light">
+                                    <strong class="d-inline-block mb-2 text-primary ">YOUR DONATIONS</strong>
+                                    <h3 class="mb-0">Last Visited</h3>
+                                    <div class="mb-1 text-muted"><i>September 2 2020</i></div>
+                                    <p class="card-text mb-auto"><i>Till now You haven;t done any donations. Please explore our portal and donate something to make someone smile</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="list-taken" role="tabpanel" aria-labelledby="list-taken-list">
+                        <div class="container my-4">
+                            <div class="row no-gutters border rounded flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                                <div class="col p-4 d-flex flex-column position-static bg-light">
+                                    <strong class="d-inline-block mb-2 text-primary ">Amount Taken</strong>
+                                    <h3 class="mb-0">Last Visited</h3>
+                                    <div class="mb-1 text-muted"><i>September 2 2020</i></div>
+                                    <p class="card-text mb-auto"><i>Till now You haven;t done any donations. Please explore our portal and donate something to make someone smile</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade show " id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1"><b>NAME</b></label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Change your name">
+                                <small id="emailHelp" class="form-text text-muted"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1"><b>EMAIL</b></label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="New Email Address">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">PASSWORD</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Password">
+                                <small id="emailHelp" class="form-text text-muted"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1"><b>CONFIRM PASSWORD</b></label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Confirm Password">
+                                <small id="emailHelp" class="form-text text-muted"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1"><b>CONTACT NO</b></label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Change your Contact no">
+                                <small id="emailHelp" class="form-text text-muted"></small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1"><b>NEED OF CHARITY</b></label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Need of charity">
+                                <small id="emailHelp" class="form-text text-muted"></small>
+                            </div>
+                            <button type="submit" class="btn btn-primary">SAVE CHANGES</button>
+                        </form>
+                    </div>
+
+                    <div class="tab-pane fade" id="list-social" role="tabpanel" aria-labelledby="list-social-list">
+                        <div class="container my-4 soc">
+                            <div class="row no-gutters border rounded flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+
+                                <a href="#"><img src="https://img.icons8.com/fluent/48/000000/facebook-new.png" />
+                                    <p>facebook</p>
+                                </a>
+
+                                <a href="#"><img src="https://img.icons8.com/cute-clipart/64/000000/instagram-new.png" />
+                                    <p>Instagram</p>
+                                </a>
+
+                                <a href="#"><img src="https://img.icons8.com/fluent/48/000000/google-plus.png" />
+                                    <p>GooglePlus</p>
+                                </a>
+
+                                <a href="#"><img src="https://img.icons8.com/cute-clipart/64/000000/twitter.png" />
+                                    <p>Twitter</p>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js " integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV " crossorigin="anonymous "></script>
+</body>
+
+</html>
