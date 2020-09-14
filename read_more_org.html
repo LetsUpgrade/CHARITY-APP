@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHARITY-APP</title>
     <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
     
-    <!-- !-- style css file --> 
+    <!-- !-- style css file -->
     <link rel="stylesheet" href="./assets/css/header_footer.css">
-    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
-      <link rel="stylesheet" href="./assets/css/needhelp.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+      <!-- <link rel="stylesheet" href="./assets/css/hero-slider.css"> -->
 
 
     <!-- problem in this file so I commented this -->
@@ -24,7 +23,152 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Read More Organization</title>
+    <style>
+body{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
     
+   
+}
+section{
+    width: 100%;
+    height:400px;
+    position: relative;
+    
+    background: url(../CHARITY-APP/assets/images/read_more2.jpeg);
+    background-size: cover;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+ section:before{
+     content: '';
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 200px;
+     background: #fff;
+     
+     clip-path:polygon(100% 50%,0 100%,100% 100%);
+
+ }
+ h3{
+    font-size: 70px;
+    padding-top: 160px;
+    color: white;
+    font-weight: bolder;
+    padding-left: 50px;
+    text-shadow: 0px 6px 4px black,
+         0px 10px 18px white;
+ }
+
+
+ h1{
+    color:red;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 0px 6px 4px white,
+         0px 10px 18px black;
+   
+}
+#read .container h2{
+    text-align: center;
+    
+    text-shadow: 0px 4px 3px white,
+         0px 8px 13px red;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#read .container p{
+   text-align: justify;
+   margin-top: 30px;
+   float: left;
+   margin-bottom: 30px;
+  
+ }
+#read .container img{
+   
+    float: right;
+    padding-left: 50px;
+    width: 45%; 
+    height: 350px; 
+    margin-bottom: 30px;
+}
+button{
+    outline: none;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 250px;
+    cursor: pointer;
+    height: 50px;
+    margin-left: 20px;
+    background-color:black;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 2px 3px 26px 0px rgba(0,0,0,0.75);
+
+}
+
+button:hover{
+    background-color: greenyellow;
+    /* border: darkgreen; */
+     color:black ; 
+}
+
+input[type=text] {
+    width: 350px;
+    padding: 8px 10px;
+   margin-top: 40px;
+    box-sizing: border-box;
+    border: 3px solid #555;
+    outline: none;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 15px;
+    margin-bottom: 60px;
+    box-shadow: 2px 3px 26px 0px rgba(0,0,0,0.75);
+ }
+
+input[type=text]:focus {
+background-color: rgb(145, 210, 218);
+color:black
+}
+
+/* responsiveness */
+
+@media screen and (max-width: 590px){
+ h3{
+    font-size: 55px;
+    padding-left: 30px;
+ }
+
+    button{
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    input[type=text]{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #read .container img{
+   
+   padding-left: 20px;
+   width: 60%;  
+   margin-bottom: 11px;
+}
+}
+    </style>
 </head>
 <body>
     <header>
@@ -41,14 +185,14 @@
             </button>   
             <div class="collapse navbar-collapse navbar_link ml-auto"  id="collapsibleNavId">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./index.html#about">AboutUs</a>
                     </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="./needhelp.html">Need Help!</a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./index.html#aboutus">Need Help!</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="./DoCharity.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DoCharity</a>
@@ -58,184 +202,37 @@
                             <a class="dropdown-item" href="#">Organization</a>
                         </div>
                     </li>
-                    
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html#faq">FAQ's</a>
+                        <a class="nav-link" href="./verify.html">Verify</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">FAQ's</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./contact.html">Contact Us</a>
                     </li>
-                    <div id="username"></div>
                 </ul>
             </div>
         </nav>
     </header>
+  <!-- Header ends -->
 
+  <section><h3>NO CHILD ALONE</h3></section>
+  <h1>Why Should We DONATE?</h1>
+  <div id="read">
+  <div class="container">
+  <p><img src="../CHARITY-APP/assets/images/10.jpg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe ea quis ipsum. Perspiciatis labore odit eveniet corporis amet cumque adipisci ipsam saepe modi veritatis, soluta unde, qui nihil natus quos voluptatem ab vero autem, consequuntur ratione molestias. Similique pariatur voluptas in, fugit iure voluptatem tempore ad, magni amet sequi nam ipsa incidunt iste laboriosam maxime a cupiditate sed recusandae nisi inventore. Itaque sit vitae impedit ullam ab ratione amet soluta enim similique, assumenda at temporibus nulla fuga eveniet. Unde esse odit sequi aliquam placeat quo nisi et officia, doloribus a debitis. Totam nihil minima possimus nisi error cupiditate molestias reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id expedita minima fugit perferendis molestias totam commodi nihil ut quos tenetur? Quia natus deserunt in explicabo, veritatis inventore praesentium iure fugit minima repellendus quos ipsam aspernatur dolor saepe fugiat. Veritatis eum, ducimus neque eligendi voluptas vel rem at dolore. Repudiandae consequatur animi, eum neque .</p>
+  <h2>I Would Like To Donate</h2>
+ </div></div>
+ <div class="row justify-content-center"> 
+<form >
+    
+   <input type="text" placeholder="Donation Amount" required>
+   <button class="button ">DONATE NOW</button>
+</form></div>
 
-    <section id="help-banner">
-        <div class="help-header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 header-image">
-                        <img src="./assets/images/unnamed.jpg" alt="">
-                    </div>
-                    <div class="col-sm-6 header-content">
-                        <h1>Need Help!</h1>
-                        <p>Content which will tell aboput our registration funda......................................</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="counter-section">
-        <div class="container">
-          <div class="row counter-row">
-              <div class="four col-md-3">
-                  <div class="counter-box colored"> <i class="fas fa-smile"></i> <span class="counter" data-target="60000">0</span>
-                      <p>Total Registration</p>
-                  </div>
-              </div>
-              <div class="four col-md-3">
-                  <div class="counter-box"> <i class="fa fa-group"></i> <span class="counter" data-target="60000">0</span>
-                      <p>Organisation</p>
-                  </div>
-              </div>
-              <div class="four col-md-3">
-                  <div class="counter-box"> <i class="fa fa-shopping-cart"></i> <span class="counter" data-target="60000">0</span>
-                      <p>Individual</p>
-                  </div>
-              </div>
-              <div class="four col-md-3">
-                  <div class="counter-box"> <i class="fa fa-user"></i> <span class="counter" data-target="60000">0</span>
-                      <p>Emergency</p>
-                  </div>
-              </div>
-          </div>
-        </div>      
-      </section>
-
-    <!-- ======= Hero Section ======= -->
-  <!-- <section id="hero" class="d-flex align-items-center">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-lg-flex flex-lg-column justify-content-center align-items-stretch pt-5 pt-lg-0 order-2 order-lg-1" data-aos="fade-up">
-          <div>
-            <h1>Need Help! </h1> <h2>Then Register!!!</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse numquam consequatur, dolor dolores praesentium in quae asperiores, exercitationem provident, illum quo labore? In velit amet facere. Harum obcaecati nihil temporibus?</p>
-          </div>
-        </div>
-        <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">
-          <img src="./assets/images/unnamed.jpg" class="img-fluid" alt="" no-repeat center >
-        </div>
-      </div>
-    </div>
-
-  </section>End Hero -->
-
-
-    <section id="Emg-help" class="need-help">
-        <div class="container text-center">
-            <div class="help-title">
-                <h1>Emergency</h1>
-            </div>
-            <div class="row help-content">
-                
-                <div class="col-6">
-                    <div class="help_Details">
-                        <h3>Details</h3>
-                        <h4>Who?</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, hic omnis. Maxime eaque quaerat ipsum possimus id harum doloremque ab, blanditiis sequi assumenda minima cupiditate sit, cum sed tenetur consequuntur.</p>
-                        <h4>Documents required for registration:</h4>
-
-                    </div>
-                </div>
-
-                <div class="col-6">
-                    <div class="help_steps">
-                        <h3>Steps for Registeration</h3>
-                    </div>
-                </div>
-
-            </div>
-
-            <div id="help-Emg-btn" class="help-button">
-                <button>Register</button>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="Ind-help" class="need-help">
-        <div class="container text-center">
-            <div class="help-title">
-                <h1>Individual</h1>
-            </div>
-            <div class="row help-content">
-                
-                <div class="col-6">
-                    <div class="help_Details">
-                        <h3>Details</h3>
-                        <h4>Who?</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, hic omnis. Maxime eaque quaerat ipsum possimus id harum doloremque ab, blanditiis sequi assumenda minima cupiditate sit, cum sed tenetur consequuntur.</p>
-                        <h4>Documents required for registration:</h4>
-
-                    </div>
-                </div>
-
-                <div class="col-6">
-                    <div class="help_steps">
-                        <h3>Steps for Registeration</h3>
-                    </div>
-                </div>
-
-            </div>
-
-            <div id="help-Ind-btn" class="help-button">
-                <button>Register</button>
-            </div>
-        </div>
-    </section>
-
-
-    <section id="Org-help" class="need-help">
-        <div class="container text-center">
-            <div class="help-title">
-                <h1>Organisation</h1>
-            </div>
-            <div class="row help-content">
-                
-                <div class="col-6">
-                    <div class="help_Details">
-                        <h3>Details</h3>
-                        <h4>Who?</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, hic omnis. Maxime eaque quaerat ipsum possimus id harum doloremque ab, blanditiis sequi assumenda minima cupiditate sit, cum sed tenetur consequuntur.</p>
-                        <h4>Documents required for registration:</h4>
-
-                    </div>
-                </div>
-
-                <div class="col-6">
-                    <div class="help_steps">
-                        <h3>Steps for Registeration</h3>
-                    </div>
-                </div>
-
-            </div>
-
-            <div id="help-Org-btn" class="help-button">
-                <button onclick="org_register()">Register</button>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-    <!-- ======= Footer ======= -->
+        
+  <!-- ======= Footer ======= -->
     <!-- Footer -->
     <footer class="page-footer font-small unique-color-dark" id="footer">
         <div class="footer-newsletter" data-aos="fade-up">
@@ -319,26 +316,6 @@
   
     <a href="#" class="back-to-top"><i class='fas fa-arrow-up'></i></a>
 
-    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
-
-    <script>
-      var firebaseConfig = {
-            apiKey: "AIzaSyDQRPjwzQY6wO1e0oxQMamKRPW7td_wQbs",
-            authDomain: "charity-app-e31cc.firebaseapp.com",
-            databaseURL: "https://charity-app-e31cc.firebaseio.com",
-            projectId: "charity-app-e31cc",
-            storageBucket: "charity-app-e31cc.appspot.com",
-            messagingSenderId: "233446000003",
-            appId: "1:233446000003:web:d253ffd11f923d21a422b6",
-            measurementId: "G-NJ0H9ZQ056"
-          };
-          // Initialize Firebase
-          firebase.initializeApp(firebaseConfig);
-    </script>
-    <script src="assets/js/login-logout.js"></script>
-
 
     <script src="./assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
@@ -352,6 +329,8 @@
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>    
+       
+</div>
 </body>
 </html>
