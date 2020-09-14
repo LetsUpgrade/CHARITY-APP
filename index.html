@@ -48,7 +48,7 @@
                         <a class="nav-link" href="./index.html#about">AboutUs</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="./index.html#aboutus">Need Help!</a>
+                      <a class="nav-link" href="./needhelp.html">Need Help!</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="./DoCharity.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DoCharity</a>
@@ -58,15 +58,16 @@
                             <a class="dropdown-item" href="#">Organization</a>
                         </div>
                     </li>
+                    
                     <li class="nav-item">
-                        <a class="nav-link" href="./verify.html">Verify</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#faq">FAQ's</a>
+                        <a class="nav-link" href="./index.html#faq">FAQ's</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./contact.html">Contact Us</a>
                     </li>
+                    <div id="username">
+                    
+                  </div>
                 </ul>
             </div>
         </nav>
@@ -145,7 +146,7 @@
                         Let’s donate for those who struck in natural calamities or for those who fight for their lives 
                         as well as for ours or for many unexpected problems like that.                        
                       </p>
-                      <button>Register</button>
+                      <button onclick="window.location.href='./needhelp.html#Emg-help';">Register</button>
                     </div>
                   </div>
                 </div>
@@ -167,7 +168,7 @@
                       <p> 
                         You can either donate your time or your money or anything that can help anyone.                        
                       </p>
-                      <button>Register</button>
+                      <button onclick="window.location.href='./needhelp.html#Ind-help';">Register</button>
                     </div>
                   </div>
                 </div>
@@ -191,7 +192,7 @@
                         Donate for organizations who give home to homeless peoples and provide them food, education,
                         health and many other essential items of daily needs to those who can’t afford all these.                        
                       </p>
-                      <button>Register</button>
+                      <button onclick="window.location.href='./needhelp.html#Org-help';">Register</button>
                     </div>
                 </div>
               </div>
@@ -250,7 +251,7 @@
 
     <section id="counter-section">
       <div class="container">
-        <div class="row">
+        <div class="row counter-row">
             <div class="four col-md-3">
                 <div class="counter-box colored"> <i class="fas fa-smile"></i> <span class="counter" data-target="60000">0</span>
                     <p>Total Donations</p>
@@ -612,6 +613,27 @@
     <a href="#" class="back-to-top"><i class='fas fa-arrow-up'></i></a>
 
 
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+
+    <script>
+      var firebaseConfig = {
+            apiKey: "AIzaSyDQRPjwzQY6wO1e0oxQMamKRPW7td_wQbs",
+            authDomain: "charity-app-e31cc.firebaseapp.com",
+            databaseURL: "https://charity-app-e31cc.firebaseio.com",
+            projectId: "charity-app-e31cc",
+            storageBucket: "charity-app-e31cc.appspot.com",
+            messagingSenderId: "233446000003",
+            appId: "1:233446000003:web:d253ffd11f923d21a422b6",
+            measurementId: "G-NJ0H9ZQ056"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="assets/js/login-logout.js"></script>
+    
+
     <script src="./assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -625,5 +647,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
+    
 </body>
 </html>

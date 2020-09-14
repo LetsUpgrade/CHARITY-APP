@@ -1,38 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHARITY-APP</title>
     <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
-
-    <!-- style css file --> 
-    <link rel="stylesheet" href="./assets/css/contact.css">
+    
+    <!-- !-- style css file -->
     <link rel="stylesheet" href="./assets/css/header_footer.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+      <!-- <link rel="stylesheet" href="./assets/css/hero-slider.css"> -->
 
+
+    <!-- problem in this file so I commented this -->
     <!-- Vendor CSS Files -->
     <!-- Icon css link -->
-    <link href="./assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="./assets/vendor/fontawesome/css/fontawesome.min.css"  rel="stylesheet">
     <link href="./assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <!-- <link rel="icon" type="image/png" href="./images/icons/favicon.ico" /> -->
 
     <!-- for grid -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Read More Emergency</title>
+    <style>
+        body{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+    
+   
+}
+section{
+    width: 100%;
+    height:400px;
+    position: relative;
+    background: url(../CHARITY-APP/assets/images/read_more1.jpeg);
+    background-size: cover;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+ section:before{
+     content: '';
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 200px;
+     background: #fff;
+     
+     clip-path:polygon(100% 50%,0 100%,100% 100%);
 
-    <!-- Link of Bootstrap CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ }
+ h3{
+    font-size: 70px;
+    padding-top: 160px;
+    color: white;
+    font-weight: bolder;
+    padding-left: 50px;
+    text-shadow: 0px 6px 4px black,
+         0px 10px 18px white;
+ }
 
-    <!-- Link of Fontawsm CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+ h1{
+    color:red;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 0px 6px 4px white,
+         0px 10px 18px black;
+   
+}
+#read .container h2{
+    text-align: center;
+    
+    text-shadow: 0px 4px 3px white,
+         0px 8px 13px red;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#read .container p{
+   text-align: justify;
+   margin-top: 30px;
+   float: left;
+   margin-bottom: 30px;
+  
+ }
+#read .container img{
+   
+    float: right;
+    padding-left: 50px;
+    width: 45%; 
+    height: 350px; 
+    margin-bottom: 30px;
+}
+button{
+    outline: none;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 250px;
+    cursor: pointer;
+    height: 50px;
+    margin-left: 20px;
+    background-color:black;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 2px 3px 26px 0px rgba(0,0,0,0.75);
+
+}
+
+button:hover{
+    background-color: greenyellow;
+    /* border: darkgreen; */
+     color:black ; 
+}
+
+input[type=text] {
+    width: 350px;
+    padding: 8px 10px;
+   margin-top: 40px;
+    box-sizing: border-box;
+    border: 3px solid #555;
+    outline: none;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 15px;
+    margin-bottom: 60px;
+    box-shadow: 2px 3px 26px 0px rgba(0,0,0,0.75);
+ }
+
+input[type=text]:focus {
+background-color: rgb(145, 210, 218);
+color:black
+}
+
+/* responsiveness */
+
+@media screen and (max-width: 590px){
+ h3{
+    font-size: 55px;
+    padding-left: 30px;
+ }
+
+    button{
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+    }
+
+    input[type=text]{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #read .container img{
+   
+    padding-left: 20px;
+    width: 60%;  
+    margin-bottom: 11px;
+        }
+    }
+    </style>
 </head>
-
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark fixed-top" >
@@ -48,7 +184,7 @@
             </button>   
             <div class="collapse navbar-collapse navbar_link ml-auto"  id="collapsibleNavId">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
@@ -65,116 +201,37 @@
                             <a class="dropdown-item" href="#">Organization</a>
                         </div>
                     </li>
-                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="./verify.html">Verify</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#faq">FAQ's</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="./contact.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
+  <!-- Header ends -->
 
-    <div class="container-contact100">
-        <div class="wrap-contact100">
-            <form class="contact100-form validate-form">
-                <span class="contact100-form-title">
-                    Send Us A Message
-                </span>
+  <section><h3>CORONAVIRUS FUND</h3></section>
+  <h1>Why Should We DONATE?</h1>
+  <div id="read">
+  <div class="container">
+  <p><img src="../CHARITY-APP/assets/images/10.jpg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe ea quis ipsum. Perspiciatis labore odit eveniet corporis amet cumque adipisci ipsam saepe modi veritatis, soluta unde, qui nihil natus quos voluptatem ab vero autem, consequuntur ratione molestias. Similique pariatur voluptas in, fugit iure voluptatem tempore ad, magni amet sequi nam ipsa incidunt iste laboriosam maxime a cupiditate sed recusandae nisi inventore. Itaque sit vitae impedit ullam ab ratione amet soluta enim similique, assumenda at temporibus nulla fuga eveniet. Unde esse odit sequi aliquam placeat quo nisi et officia, doloribus a debitis. Totam nihil minima possimus nisi error cupiditate molestias reprehenderit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id expedita minima fugit perferendis molestias totam commodi nihil ut quos tenetur? Quia natus deserunt in explicabo, veritatis inventore praesentium iure fugit minima repellendus quos ipsam aspernatur dolor saepe fugiat. Veritatis eum, ducimus neque eligendi voluptas vel rem at dolore. Repudiandae consequatur animi, eum neque .</p>
+  <h2>I Would Like To Donate</h2>
+ </div></div>
+ <div class="row justify-content-center"> 
+<form >
+    
+   <input type="text" placeholder="Donation Amount" required>
+   <button class="button ">DONATE NOW</button>
+</form></div>
 
-                <label class="label-input100" for="first-name">Tell us your name *</label>
-                <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
-                    <input id="first-name" class="input100" type="text" name="first-name" placeholder="First name">
-                    <span class="focus-input100"></span>
-                </div>
-                <div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
-                    <input class="input100" type="text" name="last-name" placeholder="Last name">
-                    <span class="focus-input100"></span>
-                </div>
-
-                <label class="label-input100" for="email">Enter your email *</label>
-                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                    <input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
-                    <span class="focus-input100"></span>
-                </div>
-
-                <label class="label-input100" for="phone">Enter phone number</label>
-                <div class="wrap-input100">
-                    <input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +1 800 000000">
-                    <span class="focus-input100"></span>
-                </div>
-
-                <label class="label-input100" for="message">Message *</label>
-                <div class="wrap-input100 validate-input" data-validate="Message is required">
-                    <textarea id="message" class="input100" name="message" placeholder="Write us a message"></textarea>
-                    <span class="focus-input100"></span>
-                </div>
-
-                <div class="container-contact100-form-btn">
-                    <button class="contact100-form-btn">
-                        Send Message
-                    </button>
-                </div>
-            </form>
-
-            <div class="contact100-more flex-col-c-m" style="background-image: url('./assets/images/11.jpg');">
-                <div class="flex-w size1 p-b-47">
-                    <div class="txt1 p-r-25">
-                        <span class="lnr lnr-map-marker"></span>
-                    </div>
-
-                    <div class="flex-col size2" flex-column>
-                        <div class="txt1 p-b-20">
-                            Address
-                        </div>
-
-                        <div class="txt2">
-                            Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US
-                        </div>
-                    </div>
-                </div>
-
-                <div class="dis-flex size3 p-b-47">
-                    <div class="txt1 p-r-25">
-                        <span class="lnr lnr-phone-handset"></span>
-                    </div>
-
-                    <div class="flex-col size2">
-                        <span class="txt1 p-b-20">
-                            Lets Talk
-                        </span>
-
-                        <span class="txt3">
-                            +1 800 1236879
-                        </span>
-                    </div>
-                </div>
-
-                <div class="dis-flex size3 p-b-47">
-                    <div class="txt1 p-r-25">
-                        <span class="lnr lnr-envelope"></span>
-                    </div>
-
-                    <div class="flex-col size2">
-                        <span class="txt1 p-b-20">
-                            General Support
-                        </span>
-
-                        <span class="txt3">
-                            contact@example.com
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- map  -->
-    <div id="googleMap" style="width:100%;height:400px;"></div>
-
-    <!-- ======= Footer ======= -->
+        
+  <!-- ======= Footer ======= -->
     <!-- Footer -->
     <footer class="page-footer font-small unique-color-dark" id="footer">
         <div class="footer-newsletter" data-aos="fade-up">
@@ -258,10 +315,8 @@
   
     <a href="#" class="back-to-top"><i class='fas fa-arrow-up'></i></a>
 
+
     <script src="./assets/vendor/jquery/jquery.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
-    <script src="./assets/js/contact.js"></script>
-    <script src="./assets/js/main.js"></script>
     <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script> 
@@ -273,17 +328,8 @@
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="./assets/js/main.js"></script>
-    
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script> -->
-
+    <script src="./assets/js/main.js"></script>    
+       
+</div>
 </body>
 </html>
