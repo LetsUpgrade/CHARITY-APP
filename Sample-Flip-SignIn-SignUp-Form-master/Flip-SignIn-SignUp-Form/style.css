@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto|Raleway:700');
+
+
+:root{
+	--default-font: 'Roboto';
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: var(--default-font);
+	perspective: 1000px; 
+	background: url('flipbg.jpg');
+	background-size:100% 100%;
+	height: 100vh;
+	overflow:hidden;
+}
+
+
+a{
+	text-decoration: none;
+	color: #000;
+	transition: color 200ms ease-out;
+}
+
+.container{
+	width: 640px;
+	height: 480px;
+	margin:5%  auto;                           
+	border-radius:0 30px;
+	display: flex;
+}
+.panel, .face, form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.face, .panel{
+	height: 100%;
+	width: 100%;
+	border-radius:0 30px;
+}
+
+.card{
+	position: relative;
+	width: 50%;
+	height: 100%;
+	transition: transform 500ms ease-in-out;
+  transform-style: preserve-3d;
+
+}
+.card.flip {
+  transform: rotateY(180deg);
+}
+/* --------------------------------------------
+this is used to make the back part of the form
+----------------------------------------------*/
+.face{
+	position: absolute;
+	background: #fff;
+	text-align: center;
+	backface-visibility: hidden;
+}
+/*--------------------*/
+.card-back{
+	transform: rotateY(180deg);
+}
+
+
+.panel{
+	color: whitesmoke;
+	background:  #3333ff;
+	letter-spacing: 0.03em;
+}
+.panelspan{
+	margin: 5px 25px;
+	font-size: 15px;
+}
+.panelbtn{
+	margin-top: 20px;
+	background: #3333ff;
+	border: 1px solid whitesmoke;
+}
+
+
+.formspan{
+	font-size: 14px;
+	margin: 5px;
+}
+.forgot{
+	margin: 8px;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+.formbtn{
+	color: #3333ff;
+
+}
+#forgotpassword{
+	font-size: 15px;
+	margin: 8px;
+}
+input{
+	display: block;
+	margin: 6px;
+	padding: 8px 10px;
+	width: 110%;
+	background: #DDD;
+	border: 1.5px solid #DDD;
+	border-radius: 6px;
+	transition: border 250ms ease-out; 
+}
+input:hover, input:focus{
+	outline: none;
+	border: 1.5px solid #3333ff;
+}
+/* Placeholders */
+::placeholder { /* Firefox, Chrome, Opera */
+	letter-spacing: 0.02em;
+	color: rgba(70,70,70,1); 
+}
+
+button{
+	cursor: pointer;
+	width: 140px;
+	padding: 10px;
+	margin: 5px;
+	color: whitesmoke;
+	background: #fff;
+	border: 1px solid #3333ff;
+	border-radius: 25px;
+	font-family: 'Montserrat';
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	transition: color 200ms ease-out, background 200ms ease-out;
+}
+button:hover, button:focus{
+	outline: none;
+}
+button:hover, button:active{
+	background: #3333ff;
+	color: whitesmoke;
+}
+
+h2{
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-size: 1.7em;
+	color:#3333ff;
+}
+.panel h2{
+	font-family: 'Montserrat';
+	font-weight: bold;
+	font-size: 1.7em;
+	color:#fff;
+}
+
+
+.social-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.social-container a{
+	width: 25px;
+	height: 25px;
+	margin: 5px;
+	padding: 10px;
+	color: #222;
+	background: #DDD;
+	border-radius: 25px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: border 200ms ease-out, background 200ms ease-out, color 200ms ease-out;
+}
+.social-container a:hover{
+	border-color: black;
+	background: #3333ff;
+	color: whitesmoke;
+}
+.line{
+	line-height: 0.5;
+	text-align: center;
+}
+.line span{
+	display: inline-block;
+	position: relative;
+}
+.line span:before,
+.line span:after{
+	content: "";
+	position: absolute;
+	height: 5px;
+	border-bottom: 1px solid #3333ff;
+	border-top: 1px solid #3333ff;
+	top:0;
+	width:100px;
+}
+.line span:before{
+	right: 100%;
+	margin-right: 15px;
+}
+.line span:after{
+	left: 100%;
+	margin-left: 15px;
+}
+
+
