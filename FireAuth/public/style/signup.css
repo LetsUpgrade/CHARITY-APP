@@ -28,8 +28,8 @@ main {
 
 fieldset, .feedbackContainer {
     border: rgb(192,192,192,0.1) 1px solid;
-    height: 460px;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.12)
+    height: 500px;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.12)
 }
 
 
