@@ -24,19 +24,20 @@
 }
   
 /* The Close Button */
-.close
+.close1, .close2, .close3
 {
     color: #aaa;
-    float: right !important;
+    float: right;
     font-size: 28px;
     font-weight: bold;
+    cursor: pointer;
 }
   
-.close:hover,
-.close:focus
+.close1:hover, .close2:hover, .close3:hover
+.close:focus, .close2:focus, .close3:focus
 {
-    color: black;
+    color: black !important;
     text-decoration: none;
     cursor: pointer;
-    float: right;
+    /* float: right; */
 }
