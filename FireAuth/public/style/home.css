@@ -267,7 +267,7 @@ label {
 }
 
 .left-side-img img{
-    height: 380px;
+    height: 340px;
     width: 270px;
 }
 
@@ -422,7 +422,7 @@ i{
     }
 
     .wrapper {
-        height: 54%;
+        height: 25%;
         width: 380px;
     }
 
@@ -431,14 +431,14 @@ i{
     }
     
     .whole{
-        height: 685px;
+        height: 600px;
         width: 340px;
         padding: 100px 0px 0px 0px;
         margin: 0px auto;
     }
 
     .container{
-        top: 70%;
+        top: 150%;
     }
 
     fieldset, .feedbackContainer {
@@ -476,7 +476,7 @@ i{
     }
 
     h3{
-        margin: 0 auto;
+        margin: 190px 94px 12px;
         font-size: 14px;
         min-width: 450px;
     }
@@ -507,8 +507,8 @@ i{
     }
 }
 
-@media screen and (max-width:320px){
+@media screen and (max-width:360px){
     .other-links button {
-        margin: 20px 10px 0px 155px;
+        margin: 20px 10px 0px 180px;
     }
 }
