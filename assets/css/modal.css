@@ -1,4 +1,54 @@
-/* The Modal (background) */
+
+
+
+/* The Close Button */
+.close1
+{
+    color: #aaa;
+    text-align: right;
+    justify-content: right;
+    float:right;
+    font-size: 28px;
+    
+    font-weight: bold;
+    cursor: pointer;
+}
+ .close2{
+    color: #aaa;
+    text-align: right;
+    justify-content: right;
+    float:right;
+    font-size: 28px;
+    
+    font-weight: bold;
+    cursor: pointer;
+ }
+.close3{
+    color: #aaa;
+    text-align: right;
+    justify-content: right;
+    float:right;
+    font-size: 28px;
+    
+    font-weight: bold;
+    cursor: pointer;
+   }
+.close1:hover, .close2:hover, .close3:hover
+.close1:focus, .close2:focus, .close3:focus
+{
+    color: black !important;
+    text-decoration: none;
+    cursor: pointer;
+    
+    /* float: right; */
+}  
+
+
+
+
+
+/* The Modal (background) for emergency*/
+
 .modal
 {
     display: none; /* Hidden by default */
@@ -17,26 +67,993 @@
 .modal-content
 {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 100px auto; /* 100px from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
 }
-  
-/* The Close Button */
-.close
-{
-    color: #aaa;
-    float: right !important;
-    font-size: 28px;
-    font-weight: bold;
+
+/*text class elements */
+
+#text h1{
+    color:black;
+    font-weight: bolder;
+    padding-top: 20px;
+    font-size: 45px;
+    padding-left: 30px;
+    background-color:#F9A23A;
+    height: 100px;
+    margin-top: 30px;
+
 }
-  
-.close:hover,
-.close:focus
-{
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+
+
+#text p{
+    text-align: justify;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 18px;
+
+
+}
+#text h2{
+    margin-top: 30px;
+    margin-left: 100px ;
+    font-weight: bolder;
+}
+#text p::first-letter{
+    font-size: 30px;
+}
+
+#text img{
+   
     float: right;
+    padding-left: 50px;
+    width: 45%; 
+    margin-right: 30px;
+    margin-top: 20px;
+    height: 350px; 
+    margin-bottom: 10px;
 }
+
+/*box class elements */
+
+#box{
+
+    border: 3px solid rgb(158, 156, 156);
+    
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#box h2{
+    text-align: center;
+    margin-left: 80px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#box button{
+    outline: none;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 35%;
+    cursor: pointer;
+    height: 50px;
+    
+    margin-left: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+    border: none;
+
+    background:#F9A23A;
+    color:black;
+    /* padding: auto; */
+    text-align: center;
+}
+
+#box button:hover{
+    border: none;
+    font-size: 20px;
+    font-weight: bolder;
+    background:#fff;
+    color:#F9A23A;
+    /* padding: auto; */
+    text-align: center;
+    border-style: solid;
+    border-color:#F9A23A;
+
+
+
+    border-radius: 15px;
+
+}
+
+#box input[type=text] {
+    width: 50%;
+    padding: 8px 10px;
+    margin-top: 40px;
+    margin-left: 30px;
+    box-sizing: border-box;
+    border: 3px solid #555;
+    outline: none;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.75);
+}
+
+#box input[type=text]:focus {
+    background-color:#f1c083;
+    color:black
+}
+
+
+
+
+/* responsiveness for Organisation*/
+/* first break-point */
+
+@media screen and (max-width: 1258px){
+    #box input[type=text]{
+        margin-left: 15px;
+        font-size: 14px;
+    }
+    #box button{
+        font-size: 14px;
+        height: 40px;
+        margin-left: 10px;
+    }
+    #box button:hover{
+        
+        font-size: 13px;
+       
+    }
+}
+/* second break-point */
+
+@media screen and (max-width: 575px){
+    #text h1{
+        color:black;
+        font-weight: bolder;
+        padding-top: 20px;
+        font-size: 28px;
+        text-align: center;
+        
+        height: 100px;
+        margin-top: 30px;
+        
+       
+    }
+    
+    
+    
+    #text h2{
+         margin-left: 20px;
+         font-size: 13px;
+         font-weight: bolder;
+         font-size: 31px;
+         text-align: center;
+        }
+    
+    #text img{
+       
+      
+      
+        width: 100%; 
+        
+        margin-top: 20px;
+        height: 250px; 
+        margin-bottom: 10px;
+    }
+    #box button{
+      
+        font-size: 14px;
+        
+        width:33% ;
+       
+       
+        text-align: center;
+        
+    }
+    
+    #box button:hover{
+       
+        font-size: 14px;
+        text-align: center;
+        border-radius: 15px;
+       
+    }
+    
+    #box input[type=text] {
+      
+        width:50% ;
+        margin-left: 30px;
+        
+        font-size: 18px;
+        
+    }
+     #box{
+    
+        border: 3px solid rgb(158, 156, 156);
+        
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 20px;
+       }
+    
+}
+
+   /* third break-point */
+
+@media screen and (max-width: 467px){
+    #text img{
+        width: 100%; 
+        
+        margin-top: 20px;
+        height: 200px; 
+        margin-bottom: 10px;
+    }
+    #text h2{
+        
+        text-align: center;
+        font-weight: bolder;
+        font-size: 23px;
+    }
+    
+    #box button{
+        outline: none;
+        font-size: 13px;
+        font-weight: bolder;
+        
+        width: 50%;
+        height: 40px;
+       
+        margin-left: 60px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+    
+    #box button:hover{
+        border: none;
+        font-size: 13px;
+        font-weight: bolder;
+       
+        text-align: center;
+        border-style: solid;
+        
+       
+    }
+    
+    #box input[type=text] {
+        width: 95%;
+        padding: 8px 10px;
+      
+        margin-top:10px;
+        margin-left: 8px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bolder;
+        height: 40px;
+        border: 3px solid #555;
+       
+    }
+    #box{
+    
+        border: 3px solid rgb(158, 156, 156);
+        
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    #text p{
+       
+        margin-left: 10px;
+        font-size: 15px;
+        
+    
+    }
+    
+    #box h2{
+        
+        text-align: center;
+       
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    #text h1{
+        color:black;
+        
+        padding-left: 7px;
+        font-size: 32px;
+        height: 100px;
+        margin-top: 30px;
+    
+    }
+    #text p::first-letter{
+        font-size: 25px;
+    }
+}
+
+
+/* The Modal (background) for Individual*/
+
+.modal_1
+{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+/* Modal Content/Box */
+.modal-content_1
+{
+    background-color: #fefefe;
+    margin: 100px auto; /* 100px from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+/* text class elements */
+#text_1 h1{
+    color:black;
+    font-weight: bolder;
+    padding-top: 20px;
+    font-size: 45px;
+    padding-left: 30px;
+    background-color:#A878E0;
+    height: 100px;
+    margin-top: 30px;
+
+}
+
+
+#text_1 p{
+    text-align: justify;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 18px;
+
+
+}
+#text_1 h2{
+    margin-top: 30px;
+    margin-left: 100px ;
+    font-weight: bolder;
+}
+#text_1 p::first-letter{
+    font-size: 30px;
+}
+
+#text_1 img{
+   
+    float: right;
+    padding-left: 50px;
+    width: 45%; 
+    margin-right: 30px;
+    margin-top: 20px;
+    height: 350px; 
+    margin-bottom: 10px;
+}
+
+/* box class elements */
+
+#box_1{
+
+    border: 3px solid rgb(158, 156, 156);
+    
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#box_1 h2{
+    text-align: center;
+    margin-left: 80px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#box_1 button{
+    outline: none;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 35%;
+    cursor: pointer;
+    height: 50px;
+    
+    margin-left: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+    border: none;
+
+    background:#A878E0;
+    color:black;
+    /* padding: auto; */
+    text-align: center;
+}
+
+#box_1 button:hover{
+    border: none;
+    font-size: 20px;
+    font-weight: bolder;
+    background:#fff;
+    color:#A878E0;
+    /* padding: auto; */
+    text-align: center;
+    border-style: solid;
+    border-color:#A878E0;
+
+
+
+    border-radius: 15px;
+
+}
+
+#box_1 input[type=text] {
+    width: 50%;
+    padding: 8px 10px;
+    margin-top: 40px;
+    margin-left: 30px;
+    box-sizing: border-box;
+    border: 3px solid #555;
+    outline: none;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.75);
+}
+
+#box_1 input[type=text]:focus {
+    background-color:#cbaaf1;
+    color:black
+}
+
+
+
+
+/* responsiveness for Organisation*/
+
+/* first break-point */
+
+@media screen and (max-width: 1258px){
+    #box_1 input[type=text]{
+        margin-left: 15px;
+        font-size: 14px;
+    }
+    #box_1 button{
+        font-size: 14px;
+        height: 40px;
+        margin-left: 10px;
+    }
+    #box_1 button:hover{
+        
+        font-size: 13px;
+       
+    }
+}
+
+/* second break-point */
+
+@media screen and (max-width: 575px){
+    #text_1 h1{
+        color:black;
+        font-weight: bolder;
+        padding-top: 20px;
+        font-size: 28px;
+        text-align: center;
+        
+        height: 100px;
+        margin-top: 30px;
+        
+       
+    }
+    
+    
+    
+    #text_1 h2{
+         margin-left: 20px;
+         font-size: 13px;
+         font-weight: bolder;
+         font-size: 31px;
+         text-align: center;
+     }
+    
+    #text_1 img{
+       
+      
+      
+        width: 100%; 
+        
+        margin-top: 20px;
+        height: 250px; 
+        margin-bottom: 10px;
+    }
+    #box_1 button{
+      
+        font-size: 14px;
+        
+        width:33% ;
+       
+       
+        text-align: center;
+        
+    }
+    
+    #box_1 button:hover{
+       
+        font-size: 14px;
+        text-align: center;
+        border-radius: 15px;
+       
+    }
+    
+    #box_1 input[type=text] {
+      
+        width:50% ;
+        margin-left: 30px;
+        
+        font-size: 18px;
+        
+     }
+     #box_1{
+    
+        border: 3px solid rgb(158, 156, 156);
+        
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 20px;
+       }
+    
+}
+
+/* third break-point */
+      
+@media screen and (max-width: 467px){
+    #text_1 img{
+        width: 100%; 
+        
+        margin-top: 20px;
+        height: 200px; 
+        margin-bottom: 10px;
+    }
+    #text_1 h2{
+        
+        text-align: center;
+        font-weight: bolder;
+        font-size: 23px;
+    }
+    
+    #box_1 button{
+        outline: none;
+        font-size: 13px;
+        font-weight: bolder;
+        
+        width: 50%;
+        height: 40px;
+       
+        margin-left: 60px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+    
+    #box_1 button:hover{
+        border: none;
+        font-size: 13px;
+        font-weight: bolder;
+       
+        text-align: center;
+        border-style: solid;
+        
+       
+    }
+    
+    #box_1 input[type=text] {
+        width: 95%;
+        padding: 8px 10px;
+      
+        margin-top:10px;
+        margin-left: 8px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bolder;
+        height: 40px;
+        border: 3px solid #555;
+       
+    }
+    #box_1{
+    
+        border: 3px solid rgb(158, 156, 156);
+        
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    #text_1 p{
+       
+        margin-left: 10px;
+        font-size: 15px;
+        
+    
+    }
+    
+    #box_1 h2{
+        
+        text-align: center;
+       
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    #text_1 h1{
+        color:black;
+        
+        padding-left: 7px;
+        font-size: 32px;
+        height: 100px;
+        margin-top: 30px;
+    
+    }
+    #text_1 p::first-letter{
+        font-size: 25px;
+    }
+}
+
+
+
+/* The Modal (background) for Organisation*/
+.modal_2
+{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+/* Modal Content/Box */
+.modal-content_2
+{
+    background-color: #fefefe;
+    margin: 100px auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* text class elements */
+
+#text_2 h1{
+    color:black;
+    font-weight: bolder;
+    padding-top: 20px;
+    font-size: 45px;
+    padding-left: 30px;
+    background-color:#61C524;
+    height: 100px;
+    margin-top: 30px;
+
+}
+
+
+#text_2 p{
+    text-align: justify;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 18px;
+
+
+}
+#text_2 h2{
+    margin-top: 30px;
+    margin-left: 100px ;
+    font-weight: bolder;
+}
+#text_2 p::first-letter{
+    font-size: 30px;
+}
+
+#text_2 img{
+   
+    float: right;
+    padding-left: 50px;
+    width: 45%; 
+    margin-right: 30px;
+    margin-top: 20px;
+    height: 350px; 
+    margin-bottom: 10px;
+}
+
+/* box class elements */
+
+#box_2{
+
+    border: 3px solid rgb(158, 156, 156);
+    
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#box_2 h2{
+    text-align: center;
+    margin-left: 80px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#box_2 button{
+    outline: none;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 35%;
+    cursor: pointer;
+    height: 50px;
+    
+    margin-left: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+    border: none;
+
+    background:#61C524;
+    color:black;
+    /* padding: auto; */
+    text-align: center;
+}
+
+#box_2 button:hover{
+    border: none;
+    font-size: 20px;
+    font-weight: bolder;
+    background:#fff;
+    color:#61C524;
+    /* padding: auto; */
+    text-align: center;
+    border-style: solid;
+    border-color:#61C524;
+
+
+
+    border-radius: 15px;
+
+}
+
+#box_2 input[type=text] {
+    width: 50%;
+    padding: 8px 10px;
+    margin-top: 40px;
+    margin-left: 30px;
+    box-sizing: border-box;
+    border: 3px solid #555;
+    outline: none;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0px 3px 16px 0px rgba(0,0,0,0.75);
+}
+
+#box_2 input[type=text]:focus {
+    background-color:#97be7e;
+    color:black
+}
+
+
+
+
+/* responsiveness for Organisation*/
+
+/* first break-point */
+
+@media screen and (max-width: 1258px){
+    #box_2 input[type=text]{
+        margin-left: 15px;
+        font-size: 14px;
+    }
+    #box_2 button{
+        font-size: 14px;
+        height: 40px;
+        margin-left: 10px;
+    }
+    #box_2 button:hover{
+        
+        font-size: 13px;
+       
+    }
+}
+
+/* second break-point */
+
+@media screen and (max-width: 575px){
+    #text_2 h1{
+        color:black;
+        font-weight: bolder;
+        padding-top: 20px;
+        font-size: 28px;
+        text-align: center;
+        
+        height: 100px;
+        margin-top: 30px;
+        
+       
+    }
+    
+    
+    
+    #text_2 h2{
+         margin-left: 20px;
+         font-size: 13px;
+         font-weight: bolder;
+         font-size: 31px;
+         text-align: center;
+     }
+    
+    #text_2 img{
+       
+      
+      
+        width: 100%; 
+        
+        margin-top: 20px;
+        height: 250px; 
+        margin-bottom: 10px;
+    }
+    #box_2 button{
+      
+        font-size: 14px;
+        
+        width:33% ;
+       
+       
+        text-align: center;
+        
+    }
+    
+    #box_2 button:hover{
+       
+        font-size: 14px;
+        text-align: center;
+        border-radius: 15px;
+       
+    }
+    
+    #box_2 input[type=text] {
+      
+        width:50% ;
+        margin-left: 30px;
+        
+        font-size: 18px;
+        
+     }
+     #box_2{
+    
+        border: 3px solid rgb(158, 156, 156);
+        
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 20px;
+       }
+    
+}
+
+/* third break-point */
+      
+@media screen and (max-width: 467px){
+    #text_2 img{
+        width: 100%; 
+        
+        margin-top: 20px;
+        height: 200px; 
+        margin-bottom: 10px;
+    }
+    #text_2 h2{
+        
+        text-align: center;
+        font-weight: bolder;
+        font-size: 23px;
+    }
+    
+    #box_2 button{
+        outline: none;
+        font-size: 13px;
+        font-weight: bolder;
+        
+        width: 50%;
+        height: 40px;
+       
+        margin-left: 60px;
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+    
+    #box_2 button:hover{
+        border: none;
+        font-size: 13px;
+        font-weight: bolder;
+       
+        text-align: center;
+        border-style: solid;
+        
+       
+    }
+    
+    #box_2 input[type=text] {
+        width: 95%;
+        padding: 8px 10px;
+      
+        margin-top:10px;
+        margin-left: 8px;
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bolder;
+        height: 40px;
+        border: 3px solid #555;
+       
+    }
+    #box_2{
+    
+        border: 3px solid rgb(158, 156, 156);
+        
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    #text_2 p{
+       
+        margin-left: 10px;
+        font-size: 15px;
+        
+    
+    }
+    
+    #box_2 h2{
+        
+        text-align: center;
+       
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    #text_2 h1{
+        color:black;
+        
+        padding-left: 7px;
+        font-size: 32px;
+        height: 100px;
+        margin-top: 30px;
+    
+    }
+    #text_2 p::first-letter{
+        font-size: 25px;
+    }
+}
+      
+    

@@ -1,12 +1,13 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Montserrat Medium'
+    font-family: 'Montserrat Medium';
 }
 
 main {
     width: 100vw;
-    height: 800px
+    height: 800px;
+    background-color: rgba(240, 240, 226,0.7);
 }
 
 .container,
@@ -15,34 +16,35 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center
+    align-items: center;
 }
 
 .container {
     position: absolute;
     left: 50%;
     top: 80%;
-    transform: translate(-50%, -80%)
+    transform: translate(-50%, -80%);
 }
 
 .socialMedia-container,
-.phone-container {
+.phone-container{
     display: none
 }
 
 .wrapper {
     position: relative;
-    height: 80%;
+    height: 60%;
+    width: 820px;
 }
 
-input[type = "radio"] {
+/* input[type = "radio"] {
     margin: 10px
-}
+} */
 
 fieldset, .feedbackContainer {
-    border: rgb(192,192,192,0.1) 1px solid;
-    height: 500px;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.12)
+    height: 450px;
+    border-style: none;
+    padding: 5px 5px 10px 65px; 
 }
 
 .signUp-container fieldset {
@@ -50,7 +52,7 @@ fieldset, .feedbackContainer {
 }
 
 .phone-container fieldset {
-    height: 550px
+    height: 390px
 }
 
 .shown-container {
@@ -67,8 +69,11 @@ input[type = "tel"],
 input[type = "email"] {
     width: 340px;
     margin-top: 8px;
-    padding: 2px 6px;
+    margin-left: 5px;
+    padding: 2px 6px 2px;
     border: none;
+    border: 1px solid grey;
+    border-radius: 5px;
     background-color: #f7f7f7;
     height: 40px;
     outline-color: #2196f3;
@@ -76,67 +81,77 @@ input[type = "email"] {
 }
 
 button:first-of-type, button {
-    float: right;
-    margin: 20px 42px 0px 0px;
+    float: left;
     padding: 10px 20px;
     border: 1px solid #2196f3
 }
 
+#signUp, #getCode{
+    float: left;
+    margin: 20px 0px 0px 42px;
+}
+
 button {
     background-color: white;
-    color: #2196f3
+    color: #2196f3;
+    border-radius: 5px;
 }
 
 button:first-of-type {
-    float: right;
+    float: left;
     background-color: #2196f3;
-    color: white
+    color: white;
+    margin: 20px 10px 0px 200px;
 }
 
 a {
-    float: right;
-    margin: 10px 44px 0px 0px;
+    float: left;
+    margin: 30px 100px 0px 280px;
     text-decoration: none;
-    color: #2196f3;
-    font-size: 0.8rem
+    /* color: #2196f3; */
+    color: black;
+    font-size: 0.9rem
 }
 
 a:hover {
-    text-decoration: underline
+    /* text-decoration: underline */
+    color: #2196f3;
 }
 
 button:hover {
     background-color: #2196f3;
     color: white;
-    cursor: pointer
+    cursor: pointer;
+    border: 1px solid black;
 }
 
-button {
+/* button {
     margin-right: 5px
-}
+} */
 
 .clearfix {
     clear: both
 }
 
 .container div {
-    margin: 20px 40px;
-    position: relative
+    margin: 20px 0px 0px 150px;  
+    position: relative;
 }
 
 .mail-container img,
 .phone-container img {
-    width: 100px;
-    height: 100px;
-    margin: auto;
+    width: 85px;
+    height: 85px;
+    margin: 15px 30px 0px 270px;
     display: block
 }
 
 .mail-container div:first-of-type,
 .phone-container div:first-of-type {   
-    width: 340px;
-    margin: 40px 40px
-}
+    width: 480px;
+    margin: 15px 15px;
+    /* margin: 40px 40px */
+ }
 
 #recaptcha-container, #recaptcha-container div {
     margin: 10px 0px 0px 0px
@@ -211,7 +226,7 @@ label {
     font-size: 1rem
 }
 
-.socialMedia-container button {
+/* .socialMedia-container button {
     width: 400px;
     display: flex;
     align-items: center;
@@ -228,7 +243,7 @@ label {
 .socialMedia-container button:hover {
     background-color: #f7f7f7;
     box-shadow: 1px 0px 7px 0px rgba(0,0,0,0.15)
-}
+} */
 
 .feedbackContainer {
     height: 300px;
@@ -249,4 +264,251 @@ label {
 
 .failure .feedbackIcon {
     background-image: url('../img/failure.svg');
+}
+
+.left-side-img img{
+    height: 340px;
+    width: 270px;
+}
+
+.whole{
+    border: rgba(179, 153, 153, 0.1) 2px solid;
+    box-shadow: 6px 6px 5px 6px rgba(0,0,0,0.12);
+    height: 510px;
+    width: 690px;
+    padding: 90px 0px 0px 40px;
+    margin: 0px auto;
+    border-radius: 14px;
+    background-color: white;
+}
+
+.other-links{
+    z-index: 4;
+}
+
+.other-links button{
+    display: block;
+    margin: 15px 36px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.other-links #method1{
+    background-color: #dd4b39;
+
+}
+
+.other-links #method1:hover{
+    border: 2px solid black;
+}
+
+.other-links #method2{
+    background-color: #0084ff;
+}
+
+.other-links #method2:hover{
+    border: 2px solid black;
+}
+
+.other-links #method3{
+    background-color: #55acee;
+}
+
+.other-links #method3:hover{
+    border: 2px solid black;
+}
+
+h3{
+    margin: 15px auto;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    min-width: 650px;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    position: relative;
+}
+
+h3::before{
+    content: '';
+    display: block;
+    width: 170px;
+    height: 2px;
+    background-color: gray;
+    left: 85px;
+    top: 50%;
+    position: absolute;
+}
+
+h3::after{
+    content: '';
+    display: block;
+    width: 170px;
+    height: 2px;
+    background-color: gray;
+    right: 85px;
+    top: 50%;
+    position: absolute;
+}
+
+i{
+    margin:0 3px;
+}
+
+@media screen and (max-width:769px){
+    main {
+        /* width: 660px; */
+        width: 100vw;
+        height: 1000px;
+        /* height: 100vh; */
+        background-color: rgba(240, 240, 226,0.7);
+    }
+
+    .wrapper {
+        height: 54%;
+        width: 600px;
+    }
+
+    .whole{
+        height: 630px;
+        width: 560px;
+        padding: 28px 0px 0px 0px;
+    }
+
+    .left-side-img img{
+        height: 340px;
+        width: 210px;
+        margin-top: 150px;
+    }
+
+    input[type = "text"],
+    input[type = "password"],
+    input[type = "tel"],
+    input[type = "email"] {
+    width: 300px;
+}
+
+    .container div {
+        margin: 20px 0px 0px 170px;  
+        position: relative;
+    }
+
+    .mail-container img,
+    .phone-container img {
+        width: 80px;
+        height: 80px;
+        margin: 5px 30px 0px 270px;
+    }
+
+    button:first-of-type {
+        margin: 20px 8px 0px 200px;
+    }
+
+    .other-links button{
+        margin: 15px 36px;
+    }
+
+}
+
+@media screen and (max-width:478px){
+    main {
+        /* width: 660px; */
+        width: 150vw;
+        height: 1000px;
+        /* height: 100vh; */
+        background-color: rgba(240, 240, 226,0.7);
+    }
+
+    .wrapper {
+        height: 25%;
+        width: 380px;
+    }
+
+    .left-side-img img{
+       display: none;
+    }
+    
+    .whole{
+        height: 600px;
+        width: 340px;
+        padding: 100px 0px 0px 0px;
+        margin: 0px auto;
+    }
+
+    .container{
+        top: 150%;
+    }
+
+    fieldset, .feedbackContainer {
+        height: 450px;
+        border-style: none;
+        padding: 5px 5px 0px 65px; 
+        margin: 0px;
+    }
+
+    input[type = "text"],
+    input[type = "password"],
+    input[type = "tel"],
+    input[type = "email"] {
+    width: 280px;
+    }
+
+    .container div {
+        margin: 10px 0px 0px 70px;  
+        position: relative;
+    }
+    
+    .mail-container img,
+    .phone-container img {
+        width: 80px;
+        height: 80px;
+        margin: 5px 30px 0px 170px;
+    }
+
+    a {
+        margin: 30px 100px 0px 170px;
+    }
+
+    button:first-of-type {
+        margin: 20px 10px 0px 105px;
+    }
+
+    h3{
+        margin: 190px 94px 12px;
+        font-size: 14px;
+        min-width: 450px;
+    }
+
+    h3::before{
+        width: 100px;
+        left: 60px;
+    }
+    
+    h3::after{
+        width: 100px;
+        right: 60px;
+    }
+
+    .other-links button{
+        width: 180px;
+        height: 50px;
+        margin: 15px 80px;
+        font-size: 16px;
+    }
+
+    .other-links button:first-of-type, button {
+        padding: 10px 20px;
+    }
+
+    .other-links button {
+        margin: 20px 10px 0px 230px;
+    }
+}
+
+@media screen and (max-width:360px){
+    .other-links button {
+        margin: 20px 10px 0px 180px;
+    }
 }

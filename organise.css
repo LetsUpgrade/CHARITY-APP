@@ -1,0 +1,406 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+    font-size: 20px;
+}
+.pagewrap
+{
+    /* background: url(img/color2.jpg); */
+
+    background-color:rgba(247, 245, 245, 0.836);
+    background-size: cover;
+    max-width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+.sec
+{
+    background: url(images_my/back2.jpg);
+    background-size: cover;
+}
+.pagewrap-overlay
+{
+    /* background-color: #c92; */
+
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.content
+{
+    width: 700px;
+    
+    margin: 0 auto;
+    padding: 10vh 0;
+}
+header
+{
+    background-color: white;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    position: relative;
+}
+header::after
+{
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    z-index: 1;
+    transform: skewY(2deg);
+}
+header h1
+{
+    text-transform: uppercase;
+    font-size: 32px;
+    letter-spacing: 2px;
+    border-bottom-style: solid;
+}
+.header-content
+{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+.main-heading
+{
+    font-weight: 600;
+}
+section
+{
+    position: relative;
+    min-height: 100vh;
+}
+form
+{
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #222;
+    min-height: 100vh;
+    opacity: 0.8;
+    padding: 60px 0;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+label
+{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 0px 3px 20px;
+}
+.para1
+{
+    color:red;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.para2
+{
+    color: cyan;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+input, select
+{
+    display: block;
+    width: 95% !important;
+    height: 60px !important;
+    background: transparent !important;
+    border: 1px solid #555 !important;
+    border-radius: 5px;
+    margin: 0 auto !important;
+    font-size: 18px;
+    color:gray;
+    letter-spacing: 2px;
+    padding-left: 20px;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+    
+}
+input:focus
+{
+    outline: none;
+}
+button
+{
+    background: rgba(248, 164, 7, 0.9) !important;
+    width: 30%;
+    height: 65px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 3px;
+    display: block;
+    text-transform: uppercase !important;
+    font-weight: 900;
+    position: relative !important;
+    top: -30px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    cursor: pointer;
+}
+button:hover
+{
+    border-top: 5px solid rgba(0, 0, 0, 0.6);
+    border-left: 5px solid rgba(0, 0, 0, 0.6);
+}
+h4
+{
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.docs
+{
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin-left: 35px;
+    margin-bottom: 5px;
+}
+.btn-success
+{
+    width: 20% !important;
+    height: 40px !important;
+    color: white;
+    background-color: green !important;
+    padding-left: 2px;
+    float: left;
+    margin-left: 40px !important;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+.btn-success:hover
+{
+    background-color: rgb(0, 162, 255) !important;
+}
+hr
+{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    
+}
+
+
+@media (max-width: 750px){
+    .pagewrap
+    {
+        /* background: url(img/color2.jpg); */
+
+        background-color:white;
+        background-size: cover;
+        max-width: 100%;
+        min-height: 100vh;
+        position: relative;
+        z-index: 1;
+    }
+    .sec
+    {
+        background: url(images_my/back2.jpg);
+        background-size: cover;
+    }
+    .pagewrap-overlay
+    {
+        /* background-color: #c92; */
+
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+    }
+    .content
+    {
+        width: 80%;
+        
+        margin: 0 auto;
+        padding: 10vh 0;
+    }
+    header
+    {
+        background-color: white;
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        position: relative;
+    }
+    header::after
+    {
+        content: "";
+        position: absolute;
+        bottom: -11px;
+        left: 0;
+        width: 100%;
+        height: 30px;
+        background-color: white;
+        z-index: 1;
+        transform: skewY(2deg);
+    }
+    header h1
+    {
+        text-transform: uppercase;
+        font-size: 25px;
+        letter-spacing: 2px;
+        border-bottom-style: solid;
+    }
+    .header-content
+    {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+    .main-heading
+    {
+        font-weight: 600;
+    }
+    section
+    {
+        position: relative;
+        min-height: 100vh;
+    }
+    form
+    {
+        margin: 0 auto;
+        max-width: 100%;
+        background-color: #222;
+        min-height: 100vh;
+        opacity: 0.8;
+        padding: 30px 0;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+    label
+    {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 5px 0px 3px 20px;
+        font-size: 15px;
+    }
+    .para1
+    {
+        color:red;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        
+        padding-left: 10px;
+        font-size:17px ;
+    }
+    .para2
+    {
+        color: cyan;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
+        padding-left: 10px;
+        text-transform: uppercase;
+    }
+    input, select
+    {
+        display: block;
+        width: 95% !important;
+        height: 45px !important;
+        background: transparent !important;
+        border: 1px solid #555 !important;
+        border-radius: 5px;
+        margin: 0 auto !important;
+        font-size: 12px;
+        color:gray;
+        letter-spacing: 2px;
+        padding-left: 10px;
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
+        
+    }
+    input:focus
+    {
+        outline: none;
+    }
+    button
+    {
+        background: rgba(248, 164, 7, 0.9) !important;
+        width: 30%;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        margin: 0 auto;
+        font-size: 13px;
+        color: white;
+        letter-spacing: 3px;
+        display: block;
+        text-transform: uppercase !important;
+        font-weight: 900;
+        position: relative !important;
+        top: -30px;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+        cursor: pointer;
+    }
+    button:hover
+    {
+        border-top: 5px solid rgba(0, 0, 0, 0.6);
+        border-left: 5px solid rgba(0, 0, 0, 0.6);
+    }
+    h4
+    {
+        color: wheat;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    .docs
+    {
+        color: wheat;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        margin-left: 35px;
+        margin-bottom: 5px;
+    }
+    .btn-success
+    {
+        width: 20% !important;
+        height: 30px !important;
+        color: white;
+        background-color: green !important;
+        padding: 2px;
+        padding-right: 5px;
+        float: left;
+        margin-left: 40px !important;
+        font-family: Arial, Helvetica, sans-serif ;
+    }
+    .btn-success:hover
+    {
+        background-color: rgb(0, 162, 255) !important;
+    }
+    hr
+    {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        
+    }
+}

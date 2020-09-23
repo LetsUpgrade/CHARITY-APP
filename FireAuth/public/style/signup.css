@@ -7,7 +7,9 @@
 }
 
 main {
-    width: 100vw
+    width: 100vw;
+    height: 800px;
+    background-color: rgba(240, 240, 226,0.7);
 }
 
 .container,
@@ -19,6 +21,12 @@ main {
     align-items: center
 }
 
+.wrapper {
+    position: relative;
+    height: 60%;
+    width: 820px;
+}
+
 .container {
     position: absolute;
     left: 50%;
@@ -27,9 +35,11 @@ main {
 }
 
 fieldset, .feedbackContainer {
-    border: rgb(192,192,192,0.1) 1px solid;
-    height: 460px;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.12)
+    /* border: rgb(192,192,192,0.1) 1px solid; */
+    height: 500px;
+    border-style: none;
+    padding: 5px 5px 10px 65px; 
+    /* box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.12) */
 }
 
 
@@ -45,25 +55,53 @@ input[type = "url"] {
     background-color: #f7f7f7;
     height: 40px;
     outline-color: #2196f3;
-    font-size: 1rem
+    font-size: 1rem;
+    border: 1px solid grey;
 }
 
 button:first-of-type, button {
-    float: right;
-    margin: 20px 42px 0px 0px;
+    /* float: right; */
+    float: left;
+    /* margin: 20px 42px 0px 0px; */
     padding: 10px 20px;
+    font-size: 16px;
     border: 1px solid #2196f3
 }
 
 button {
     background-color: white;
-    color: #2196f3
+    color: #2196f3;
+    border-radius: 5px;
 }
 
 button:first-of-type {
-    float: right;
+    /* float: right; */
+    float: left;
     background-color: #2196f3;
-    color: white
+    color: white;
+    margin: 20px 10px 0px 390px;
+}
+
+
+
+div p{
+    /* float: left; */
+    margin: 30px 0px 0px 50px;
+    /* color: #2196f3; */
+    color: black;
+    font-size: 18px;
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+    font-size: 18px;
+}
+
+a:hover {
+    /* text-decoration: underline */
+    color: #2196f3;
 }
 
 .clear {
@@ -73,28 +111,32 @@ button:first-of-type {
 button:hover {
     background-color: #2196f3;
     color: white;
-    cursor: pointer
+    cursor: pointer;
+    border: 1px solid black;
 }
 
-button {
+/* button {
     margin-right: 5px
-}
+} */
 
 .container div {
-    margin: 10px 40px;
+    /* margin: 10px 40px; */
+    margin: 20px 0px 0px 240px;  
     position: relative
 }
 
-img {
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    display: block
+.signup-container div:first-of-type {   
+    /* width: 340px;
+    margin-top: 50px; */
+    width: 480px;
+    margin: 15px 15px;
 }
 
-.signup-container div:first-of-type {   
-    width: 340px;
-    margin-top: 50px;
+.signup-container img{
+    width: 90px;
+    height: 90px;
+    margin: 30px 0px 0px 360px;
+    display: block
 }
 
 label {
@@ -181,4 +223,200 @@ label {
 
 .failure .feedbackIcon {
     background-image: url('../img/failure.svg');
+}
+
+.left-side-img img{
+    height: 350px;
+    width: 270px;
+}
+
+.whole{
+    border: rgba(179, 153, 153, 0.1) 2px solid;
+    box-shadow: 6px 6px 5px 6px rgba(0,0,0,0.12);
+    height: 520px;
+    width: 690px;
+    padding: 120px 0px 0px 20px;
+    margin: 0px auto;
+    border-radius: 14px;
+    background-color: white;
+}
+
+.other-links{
+    z-index: 4;
+}
+
+.other-links button{
+    display: block;
+    margin: 0px 36px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.other-links #method1{
+    background-color: #dd4b39;
+
+}
+
+.other-links #method1:hover{
+    border: 2px solid black;
+}
+
+.other-links #method2{
+    background-color: #0084ff;
+}
+
+.other-links #method2:hover{
+    border: 2px solid black;
+}
+
+.other-links #method3{
+    background-color: #55acee;
+}
+
+.other-links #method3:hover{
+    border: 2px solid black;
+}
+
+h3{
+    margin: 60px 280px 30px;
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    min-width: 600px;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    position: relative;
+}
+
+h3::before{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color: gray;
+    left: 85px;
+    top: 50%;
+    position: absolute;
+}
+
+h3::after{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color: gray;
+    right: 85px;
+    top: 50%;
+    position: absolute;
+}
+
+i{
+    margin:0 3px;
+}
+
+.socialMedia-container, .phone-container{
+    display: none;
+}
+
+@media screen and (max-width:425px){
+    main {
+        /* width: 660px; */
+        width: 150vw;
+        height: 1000px;
+        /* height: 100vh; */
+        background-color: rgba(240, 240, 226,0.7);
+    }
+
+    .wrapper {
+        height: 35%;
+        width: 380px;
+    }
+
+    .left-side-img img{
+       display: none;
+    }
+    
+    .whole{
+        height: 770px;
+        width: 340px;
+        padding: 0px 0px 0px 0px;
+        margin: 0px auto;
+    }
+
+    .container{
+        top: 70%;
+    }
+
+    fieldset, .feedbackContainer {
+        height: 450px;
+        border-style: none;
+        padding: 5px 5px 0px 65px; 
+        margin: 0px;
+    }
+
+    input[type = "text"],
+    input[type = "password"],
+    input[type = "tel"],
+    input[type = "email"] {
+    width: 280px;
+    }
+
+    .container div {
+        margin: 10px 0px 0px 80px;  
+        position: relative;
+    }
+    
+    .signup-container img{
+        width: 80px;
+        height: 80px;
+        margin: 0px 30px 0px 170px;
+    }
+
+    button:first-of-type {
+        margin: 20px 10px 0px 155px;
+    }
+
+    div p{
+        margin: 30px 0px 0px 25px;
+    }
+    
+
+    h3{
+        margin: 160px 94px 12px;
+        font-size: 14px;
+        min-width: 450px;
+    }
+
+    h3::before{
+        width: 100px;
+        left: 60px;
+    }
+    
+    h3::after{
+        width: 100px;
+        right: 60px;
+    }
+
+    .other-links button{
+        width: 190px;
+        height: 50px;
+        margin: 15px 80px;
+        font-size: 16px;
+    }
+
+    .other-links button:first-of-type, button {
+        padding: 10px 20px;
+    }
+
+    .other-links button {
+        margin: 20px 10px 0px 230px;
+    }
+}
+
+@media screen and (max-width:360px){
+    .other-links button {
+        margin: 20px 10px 0px 180px;
+    }
 }
