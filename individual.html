@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Individual</title>
+    <title>Individual Details</title>
 
     <!-- link to css file -->
     <link rel="stylesheet" type="text/css" href="organise.css">
 
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
-
     <!-- Link of Fontawsm CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
 
 </head>
 
@@ -129,16 +133,26 @@
                     <div>
                         <h4 id="dochead">Mandatory to upload below documents:</h4>
                         <p id="docpara1" class="docs">1. Identity Proof (Any government proof</p>
+                        <!-- Upload button -->
+                        <input type="file" id="uploadbutton1" style="display:block" accept="image/*" value="Upload"
+                            required>
+
                         <p id="docpara2" class="docs">2. Address Proof (LightBill / Aadhar Card / PAN Card / Driving
                             License)</p>
+                        <!-- Upload button -->
+                        <input type="file" id="uploadbutton2" style="display:block" accept="image/*" value="Upload"
+                            required>
+
                         <p id="docpara3" class="docs">3. Annual Income Certificate (Present Year / Latest & Income
                             should be less than 2 LPA)</p>
+                        <!-- Upload button -->
+                        <input type="file" id="uploadbutton3" style="display:block" accept="image/*" value="Upload"
+                            required>
                         <p id="docpara4" class="docs">4. Family Head ID Proof</p>
 
                         <!-- Upload button -->
-                        <div class="form-group">
-                            <input type="submit" id="uploadbutton" class="btn btn-success" value="Upload">
-                        </div>
+                        <input type="file" id="uploadbutton4" style="display:block" accept="image/*" value="Upload"
+                            required>
                     </div>
                     <br>
                     <hr>
@@ -147,12 +161,13 @@
 
             </section>
 
-            <button id="submitbutton">Submit</button>
+            <button id="submitbutton" onclick="org_reg()">Submit</button>
+            <div class="loading" id="loader">Loading&#8230;</div>
 
         </div>
 
     </div>
-
+    <script src="assets/js/ind.js"></script>
 </body>
 
 </html>
