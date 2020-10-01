@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/profile.css">
+</head>
+<body>
+  <section class="container profile-container">
+    <div>  
+      <p>Welcome :</p>
+      <p id="displayNameHolder"><!-- User --></p> 
+      <div><img id ="photoHolder" src="./img/avatar.svg" alt="Profile picture">
+      </div>
+      <button id="logOut">Logout</button>
+      <button id="mergeAccounts">Merge Accounts</button>
+      <button id="modifyAccount">Modify Account</button>
+    </div>
+  </section>
+   <!-- The core Firebase JS SDK is always required and must be listed first -->
+   <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+   https://firebase.google.com/docs/web/setup#available-libraries -->
+   <!-- <script src="/__/firebase/7.19.1/firebase-analytics.js"></script> -->
+
+   <!-- Initialize Firebase -->
+   <script>
+      var firebaseConfig = {
+         apiKey: "AIzaSyDQRPjwzQY6wO1e0oxQMamKRPW7td_wQbs",
+         authDomain: "charity-app-e31cc.firebaseapp.com",
+         databaseURL: "https://charity-app-e31cc.firebaseio.com",
+         projectId: "charity-app-e31cc",
+         storageBucket: "charity-app-e31cc.appspot.com",
+         messagingSenderId: "233446000003",
+         appId: "1:233446000003:web:d253ffd11f923d21a422b6",
+         measurementId: "G-NJ0H9ZQ056"
+       };
+       // Initialize Firebase
+       firebase.initializeApp(firebaseConfig);
+     </script>
+  <script src="./js/profile.js"></script>   
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Signup</title>
+      <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+     <link rel="stylesheet" href="./style/signup.css">
+  </head>
+  <body>
+    <main>
+      <section class="container signup-container">
+        <fieldset>
+          <div>
+            <img src="./img/signup.svg">
+            <!--https://www.visualpharm.com/free-icon-->
+           </div>
+           <div>
+             <input type="text" id="userName" placeholder="Name" required>
+            </div>
+            <div>
+           <input type="text" id="userContact" placeholder="Contact" required maxlength="10">
+           </div>
+          <div>
+            <!-- <label for="mail">Email</label> <br> -->
+           <input type="email" id="mail" placeholder="mail" required/>
+         </div>
+          <div>
+           <!-- <label for="password">Password</label> <br> -->
+           <input type="password" id="password" placeholder="password" minlength="8" required/> <br>
+          </div>
+          <button id="signUp">Signup</button>
+        </fieldset>
+      </section>
+      <div class="feedbackContainer failure">
+        <div class="feedbackIcon"></div>
+        <p class="feedbackMessage">Signing up failed</p>
+      </div>
+    </main>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+   https://firebase.google.com/docs/web/setup#available-libraries -->
+   <!-- <script src="/__/firebase/7.19.1/firebase-analytics.js"></script> -->
+
+   <!-- Initialize Firebase -->
+   <script>
+     var firebaseConfig = {
+        apiKey: "AIzaSyDQRPjwzQY6wO1e0oxQMamKRPW7td_wQbs",
+        authDomain: "charity-app-e31cc.firebaseapp.com",
+        databaseURL: "https://charity-app-e31cc.firebaseio.com",
+        projectId: "charity-app-e31cc",
+        storageBucket: "charity-app-e31cc.appspot.com",
+        messagingSenderId: "233446000003",
+        appId: "1:233446000003:web:d253ffd11f923d21a422b6",
+        measurementId: "G-NJ0H9ZQ056"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="./js/signup.js"></script>
+  </body>
+</html>
