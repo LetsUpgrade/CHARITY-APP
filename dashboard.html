@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Dashboard</title>
+    
+    <!-- -----------Css File link--------->
+    <link rel="stylesheet" href="dashboard.css">
+
+    <!-- Fontawsome link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+	<script>
+		$(document).ready(function(){
+			$(".hamburger").click(function(){
+			   $(".dashboard").toggleClass("collapse");
+			});
+		});
+    </script>
+    
+</head>
+
+<body>
+
+<div class="dashboard">
+  <div class="top_navbar">
+    <div class="hamburger">
+       <div class="one"></div>
+       <div class="two"></div>
+       <div class="three"></div>
+    </div>
+
+    <div class="top_menu">
+      <div class="logo">LetsCharit</div>
+      <ul class="top">
+        
+        <li class="list"><a title="notification" class="anchortop" href="#">
+            <i class="fas fa-bell"></i>
+            </a></li>
+        <li class="list">
+            <a title="My Profile" class="anchortop" href="#"><i class="fas fa-user"></i></a>
+            <ul class="submenu1">
+                <li><a class="subanchor" href="#"><i class="fas fa-user icons"></i> My Profile</a></li>
+                <li><a class="subanchor" href="#"><i class="far fa-star icons"></i> Favourite</a></li>
+                <li><a class="subanchor" href="#"><i class="fas fa-cog icons"></i> Setting</a></li>
+                <li><a class="subanchor" href="#"><i class="fas fa-sign-out-alt icons"></i> Logout</a></li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  
+  <div class="sidebar">
+      <ul>
+        <li><a href="#" class="active">
+          <span class="icon"><i class="fas fa-volleyball-ball"></i></span>
+          <span class="title">Dashboard</span></a></li>
+        <li><a href="#">
+          <span class="icon"><i class="fas fa-tasks"></i></span>
+          <span class="title">Component</span>
+          </a></li>
+        <li><a href="#">
+          <span class="icon"><i class="fas fa-book"></i></span>
+          <span class="title">Forms</span>
+          </a></li>
+        <li><a href="#">
+          <span class="icon"><i class="fas fa-blog"></i></span>
+          <span class="title">Widges</span>
+          </a></li>
+        <li><a href="#">
+          <span class="icon"><i class="fas fa-leaf"></i></span>
+          <span class="title">Pages</span>
+          </a></li>
+    </ul>
+  </div>
+  
+  <div class="main_container">
+    <div class="item">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut sapiente adipisci nemo atque eligendi reprehenderit minima blanditiis eum quae aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    </div>
+    <div class="item">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut sapiente adipisci nemo atque eligendi reprehenderit minima blanditiis eum quae aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+    <div class="item">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut sapiente adipisci nemo atque eligendi reprehenderit minima blanditiis eum quae aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+    <div class="item">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut sapiente adipisci nemo atque eligendi reprehenderit minima blanditiis eum quae aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+  </div>
+</div>
+
+<script>
+	var dd_main = document.querySelector(".dd_main");
+
+	dd_main.addEventListener("click", function(){
+		this.classList.toggle("active");
+	})
+</script>
+	
+</body>
+</html>
