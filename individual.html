@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Individual</title>
+    <title>Individual Details</title>
 
     <!-- link to css file -->
-    <link rel="stylesheet" type = "text/css" href="organise.css">
-
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="organise.css">
 
     <!-- Link of Fontawsm CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="assets/css/loader.css">
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
+
 </head>
+
 <body>
-    
+
     <div class="pagewrap">
         <div class="pagewrap-overlay"></div>
 
@@ -33,11 +39,12 @@
 
                 <!-- ------------------Individual Form-------------------- -->
                 <form>
-        
+
                     <!-- Full Name -->
                     <div class="form-group">
                         <label for="name">Full Name:</label>
-                        <input type="text" name="name" id="name" class="form-control text" placeholder=" Enter Full Name">
+                        <input type="text" name="name" id="name" class="form-control text"
+                            placeholder=" Enter Full Name">
                     </div>
 
                     <!-- Address -->
@@ -49,7 +56,8 @@
                     <!-- Heighest Qualification -->
                     <div class="form-group">
                         <label for="qual">Heighest Qualification:</label>
-                        <input type="text" name="qual" id="qual" class="form-control text" placeholder=" Enter heighest Qualification">
+                        <input type="text" name="qual" id="qual" class="form-control text"
+                            placeholder=" Enter heighest Qualification">
                     </div>
 
                     <!-- Occupation -->
@@ -65,45 +73,52 @@
                     <!------ Need of charity-------->
                     <div class="form-group">
                         <label>Need of Charity:</label>
-                        <input type="text" name="need" id="need" class="form-control text" placeholder=" Need of Charity">
+                        <input type="text" name="need" id="need" class="form-control text"
+                            placeholder=" Need of Charity">
                     </div>
 
                     <!-- Family Head -->
                     <div class="form-group">
                         <label>Family Head:</label>
-                        <input type="text" name="head" id="head" class="form-control text" placeholder=" Enter Family head">
-                        
+                        <input type="text" name="head" id="head" class="form-control text"
+                            placeholder=" Enter Family head">
+
                     </div>
 
                     <!-- Occupation of family head -->
                     <div class="form-group">
                         <label>Family Head Occupation:</label>
-                        <input type="text" name="occhead" id="occhead" class="form-control text" placeholder=" Enter the Occupation of Family Head">
+                        <input type="text" name="occhead" id="occhead" class="form-control text"
+                            placeholder=" Enter the Occupation of Family Head">
                     </div>
 
                     <!-- Annual Income -->
                     <div class="form-group">
                         <label>Annual income:</label>
-                        <input type="text" name="income" id="income" class="form-control text" placeholder=" Enter Annual income (Should be less than 2LPA)">
+                        <input type="text" name="income" id="income" class="form-control text"
+                            placeholder=" Enter Annual income (Should be less than 2LPA)">
                     </div>
 
                     <!-- Email ID -->
                     <div class="form-group">
                         <label>Email ID:</label>
-                        <input type="email" name="email" id="email" class="form-control text" placeholder=" Email ID (Optional)">
+                        <input type="email" name="email" id="email" class="form-control text"
+                            placeholder=" Email ID (Optional)">
                     </div>
 
                     <!-- Contact No -->
                     <div class="form-group">
                         <label>Contact No:</label>
-                        <input type="text" name="mobile_num" id="mobile_num" class="form-control text" placeholder=" Enter Contact No">
+                        <input type="text" name="mobile_num" id="mobile_num" class="form-control text"
+                            placeholder=" Enter Contact No">
                     </div>
-                    
+
                     <br>
 
                     <!-- -----------Paragraphs---------------- -->
                     <div>
-                        <p id="paragraph1" class="para1">NOTE: For Verification of Contact number we will be sending you OTP</p>
+                        <p id="paragraph1" class="para1">NOTE: For Verification of Contact number we will be sending you
+                            OTP</p>
                     </div>
 
                     <br>
@@ -111,34 +126,48 @@
                     <div>
                         <p id="paragraph2" class="para2">Our Team will be Contacting You within 48 hours.</p>
                     </div>
-                
+
                     <hr>
 
                     <!-- ------------Documents upload----------- -->
                     <div>
                         <h4 id="dochead">Mandatory to upload below documents:</h4>
                         <p id="docpara1" class="docs">1. Identity Proof (Any government proof</p>
-                        <p id="docpara2" class="docs">2. Address Proof (LightBill / Aadhar Card / PAN Card / Driving License)</p>
-                        <p id="docpara3" class="docs">3. Annual Income Certificate (Present Year / Latest & Income should be less than 2 LPA)</p>
-                        <p id="docpara4" class="docs">4. Family Head ID Proof</p>
-                            
                         <!-- Upload button -->
-                        <div class="form-group">
-                            <input type="submit" id="uploadbutton" class="btn btn-success" value="Upload">
-                        </div>
+                        <input type="file" id="uploadbutton1" style="display:block" accept="image/*" value="Upload"
+                            required>
+
+                        <p id="docpara2" class="docs">2. Address Proof (LightBill / Aadhar Card / PAN Card / Driving
+                            License)</p>
+                        <!-- Upload button -->
+                        <input type="file" id="uploadbutton2" style="display:block" accept="image/*" value="Upload"
+                            required>
+
+                        <p id="docpara3" class="docs">3. Annual Income Certificate (Present Year / Latest & Income
+                            should be less than 2 LPA)</p>
+                        <!-- Upload button -->
+                        <input type="file" id="uploadbutton3" style="display:block" accept="image/*" value="Upload"
+                            required>
+                        <p id="docpara4" class="docs">4. Family Head ID Proof</p>
+
+                        <!-- Upload button -->
+                        <input type="file" id="uploadbutton4" style="display:block" accept="image/*" value="Upload"
+                            required>
                     </div>
                     <br>
                     <hr>
-                
+
                 </form>
 
             </section>
 
-            <button id="submitbutton">Submit</button>
+            <button id="submitbutton" onclick="org_reg()">Submit</button>
+            <div class="loading" id="loader">Loading&#8230;</div>
 
         </div>
 
     </div>
-
+    <script src="assets/js/ind.js"></script>
 </body>
+
 </html>
