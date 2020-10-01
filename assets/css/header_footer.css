@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 html, body{
     margin:0;
     padding:0;
     height:100%;
+    font-family: "Open Sans";
  }
 body {
     margin: 0;
@@ -87,11 +89,13 @@ body {
     background: rgba(0,0,0,0.5);
     text-align: center;
     font-size: 15px;
+    font-family: 'Open Sans';
 
   }
   
   #footer .footer-newsletter h4 {
     font-size: 24px;
+    font-family: 'Open Sans';
     margin: 0 0 20px 0;
     padding: 0;
     line-height: 1;
@@ -101,6 +105,8 @@ body {
   
   #footer .footer-newsletter p {
     color: #fff;
+    font-family: 'Open Sans';
+
   }
   
   #footer .footer-newsletter form {
@@ -111,6 +117,7 @@ body {
     border-radius: 50px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     text-align: left;
+    font-family: 'Open Sans';
   }
   
   #footer .footer-newsletter form input[type="email"] {
@@ -127,6 +134,7 @@ body {
     border: 0;
     background: none;
     font-size: 16px;
+    font-family: 'Open Sans';
     padding: 0 20px;
     background: #FA8072;
     color: #fff;
@@ -163,6 +171,7 @@ body {
 {
     text-align: left;
     font-size: 20px;
+    font-family: 'Open Sans';
     width: 100%;
 }
 #footer .column_1>hr,
@@ -174,6 +183,7 @@ body {
     border-radius: 25px;
     font-weight: bolder;
     text-align: left;
+    font-family: 'Open Sans';
     margin-bottom: 15px;
     margin-top: 0px;
     display: inline-block;
@@ -199,6 +209,7 @@ body {
     padding: 4px 2px;
     margin: 3px 0px;
     text-align: left;
+    font-family: 'Open Sans';
     font-size: 15px;
     width: 100%;
     color: #FFF8DE;
@@ -212,6 +223,7 @@ body {
     margin: 3px 0px;
     text-align: left;
     font-size: 15px;
+    font-family: 'Open Sans';
     width: 100%;
     color: #FA8072;
 }
@@ -234,6 +246,7 @@ body {
     width: 35px;
     height: 35px;
     transition: 0.3s;
+    font-family: 'Open Sans';
   }
   
   #footer .social-links a:hover {
@@ -255,6 +268,7 @@ body {
     width: 150px;
     height: 50px;
     text-align: center; 
+    font-family: 'Open Sans';
     line-height: 40px;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
