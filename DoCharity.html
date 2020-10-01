@@ -9,13 +9,16 @@
     <link rel="stylesheet" href="./assets/css/Docharity.css">
    
     <link rel="stylesheet" href="./assets/css/modal.css">
-    
     <!-- Vendor CSS Files -->
     <!-- Icon css link -->
     <link href="./assets/vendor/fontawesome/css/fontawesome.min.css"  rel="stylesheet">
     <link href="./assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" >
-   
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+
 </head>
 <body>
     <header>
@@ -36,7 +39,10 @@
                         <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html#aboutus">AboutUs</a>
+                        <a class="nav-link" href="./index.html#about">AboutUs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./needhelp.html">Need Help!</a>
                     </li>
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="./DoCharity.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DoCharity</a>
@@ -48,11 +54,14 @@
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ's</a>
+                        <a class="nav-link" href="./index.html#faq">FAQ's</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./contact.html">Contact Us</a>
                     </li>
+                    <div id="username">
+                    
+                    </div>
                 </ul>
             </div>
         </nav>
@@ -70,8 +79,8 @@
             <div class="donate-cards-title">
                 <h2>Emergency</h2>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
+            <div class="row" id="donate-cards-cont-emg">
+                <!-- <div class="col-sm-4">
                     <div class="card-box">
                         <div class="card-pic">
                             <img src="./assets/images/1.jpg" alt="">
@@ -126,132 +135,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-
-
-                <div class="col-sm-4">
-                    <div class="card-box">
-                        <div class="card-pic">
-                            <img src="./assets/images/1.jpg" alt="">
-                        </div>
-                        <div class="card-content">
-                            <h4>Cause Title for which the donation tobe done</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                               Ducimus quod nihil doloribus inventore tempora blanditiis
-                               eum qui ab nam saepe temporibus cum reiciendis nobis omnis, 
-                               facilis molestiae cumque facere aliquid?</p>
-                        </div>
-                        <div class="card-progressbar">
-
-
-
-                            <div class="row stat-row">
-                                <div class="col-4 stat-col1">
-                                    <div class="stat">
-                                        12000
-                                    </div>
-                                    <div class="stat-dis">
-                                        Funded
-                                    </div>
-                                </div>
-                                <div class="col-4 stat-col2">
-                                    <div class="stat">
-                                        12000
-                                    </div>
-                                    <div class="stat-dis">
-                                        pledged
-                                    </div>
-                                </div>
-                                <div class="col-4 stat-col3">
-                                    <div class="stat">
-                                        12000
-                                    </div>
-                                    <div class="stat-dis">
-                                        Days Remaining  
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="card-buttons">
-                            <div class="row">
-                                <div class="col-6 card-button1">
-                                    <button id="Emg-btn">View More</button>
-                                </div>
-                                <div class="col-6 card-button-emg">
-                                    <button >Donate</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="col-sm-4">
-                    <div class="card-box">
-                        <div class="card-pic">
-                            <img src="./assets/images/1.jpg" alt="">
-                        </div>
-                        <div class="card-content">
-                            <h4>Cause Title for which the donation tobe done</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                               Ducimus quod nihil doloribus inventore tempora blanditiis
-                               eum qui ab nam saepe temporibus cum reiciendis nobis omnis, 
-                               facilis molestiae cumque facere aliquid?</p>
-                        </div>
-                        <div class="card-progressbar">
-
-
-
-                            <div class="row stat-row">
-                                <div class="col-4 stat-col1">
-                                    <div class="stat">
-                                        12000
-                                    </div>
-                                    <div class="stat-dis">
-                                        Funded
-                                    </div>
-                                </div>
-                                <div class="col-4 stat-col2">
-                                    <div class="stat">
-                                        12000
-                                    </div>
-                                    <div class="stat-dis">
-                                        pledged
-                                    </div>
-                                </div>
-                                <div class="col-4 stat-col3">
-                                    <div class="stat">
-                                        12000
-                                    </div>
-                                    <div class="stat-dis">
-                                        Days Remaining  
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="card-buttons">
-                            <div class="row">
-                                <div class="col-6 card-button1">
-                                    <button id="Emg-btn">View More</button>
-                                </div>
-                                <div class="col-6 card-button-emg">
-                                    <button >Donate</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            
-            
-                
-
+                </div> -->
             
             </div>
 
@@ -261,9 +145,9 @@
 # Emergency Modal Class
 -------------------------------------------------------------- -->
 <!-- The Modal -->
-<div id="Emg-Modal" class="modal">
+<!-- <div id="Emg-Modal" class="modal"> -->
         <!-- Modal content -->
-    <div class="modal-content">
+    <!-- <div class="modal-content">
         <span class="close1">&times;</span>
         
         <div id="text">
@@ -282,7 +166,7 @@
             </div>
      </div>
     
-</div>
+</div> -->
 
 
 
@@ -296,8 +180,8 @@
             <div class="donate-cards-title">
                 <h2>Individual</h2>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
+            <div class="row" id="donate-cards-cont-ind">
+                <!-- <div class="col-sm-4">
                     <div class="card-box">
                         <div class="card-pic">
                             <img src="./assets/images/2.jpg" alt="">
@@ -352,148 +236,23 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
-
-
-                <div class="col-sm-4">
-                    <div class="card-box">
-                        <div class="card-pic">
-                            <img src="./assets/images/2.jpg" alt="">
-                        </div>
-                        <div class="card-content">
-                            <h4>Cause Title for which the donation tobe done</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Ducimus quod nihil doloribus inventore tempora blanditiis
-                            eum qui ab nam saepe temporibus cum reiciendis nobis omnis, 
-                            facilis molestiae cumque facere aliquid?</p>
-                        </div>
-                        <div class="card-progressbar">
-            
-            
-            
-                            <div class="row stat-row">
-                                <div class="col-4 stat-col1">
-                                    <div class="stat">
-                                        12000
-                                    </div>
-                                    <div class="stat-dis">
-                                        Funded
-                                    </div>
-                                </div>
-                                <div class="col-4 stat-col2">
-                                    <div class="stat">
-                                        12000
-                                    </div>
-                                    <div class="stat-dis">
-                                        pledged
-                                    </div>
-                                </div>
-                                <div class="col-4 stat-col3">
-                                    <div class="stat">
-                                        12000
-                                    </div>
-                                    <div class="stat-dis">
-                                        Days Remaining  
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="card-buttons">
-                            <div class="row">
-                                <div class="col-6 card-button2">
-                                    <button id="Ind-btn">View More</button>
-                                </div>
-                                <div class="col-6 card-button-ind">
-                                    <button >Donate</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="col-sm-4">
-                    <div class="card-box">
-                        <div class="card-pic">
-                            <img src="./assets/images/2.jpg" alt="">
-                        </div>
-                        <div class="card-content">
-                            <h4>Cause Title for which the donation tobe done</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Ducimus quod nihil doloribus inventore tempora blanditiis
-                            eum qui ab nam saepe temporibus cum reiciendis nobis omnis, 
-                            facilis molestiae cumque facere aliquid?</p>
-                        </div>
-                        <div class="card-progressbar">
-            
-            
-            
-                            <div class="row stat-row">
-                                <div class="col-4 stat-col1">
-                                    <div class="stat">
-                                        12000
-                                    </div>
-                                    <div class="stat-dis">
-                                        Funded
-                                    </div>
-                                </div>
-                                <div class="col-4 stat-col2">
-                                    <div class="stat">
-                                        12000
-                                    </div>
-                                    <div class="stat-dis">
-                                        pledged
-                                    </div>
-                                </div>
-                                <div class="col-4 stat-col3">
-                                    <div class="stat">
-                                        12000
-                                    </div>
-                                    <div class="stat-dis">
-                                        Days Remaining  
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="card-buttons">
-                            <div class="row">
-                                <div class="col-6 card-button2">
-                                    <button id="Ind-btn">View More</button>
-                                </div>
-                                <div class="col-6 card-button-ind">
-                                    <button >Donate</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            
-            
-                
-
-            
             </div>
-
         </div>
     </section>
 <!-- --------------------------------------------------------------
 # Individual Modal Class
 -------------------------------------------------------------- -->
 <!-- The Modal -->
- <div id="Ind-Modal" class="modal_1">
+ <!-- <div id="Ind-Modal" class="modal_1"> -->
 
         <!-- Modal content -->
-    <div class="modal-content_1">
+    <!-- <div class="modal-content_1">
         <span class="close2">&times;</span>
         
         <div id="text_1">
-            <h1> Cause Title<img src="./assets/images/WhatsApp Image 2020-09-21 at 7.27.04 PM.jpeg"></h1>
+            <h1> Cause Title<img src="./assets/images/emgmodal.jpeg"></h1>
             <h2>Why Should We DONATE ?</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolorem hic suscipit in architecto nihil natus laudantium, fugiat molestias dfghdffd rdgrdfg rfgrsfg rsfgsdfg fdgsdg sdgsdgds gdhdgc quas dolorum ab tenetur at? Quasi ab, tenetur rerum nobis delectus commodi eos recusandae veniam, quidem, cupiditate ipsa. Indsvtsh fdgddf fdhggfd ergdfgvd fgdfgdf dfgdfgdsf dfgsdfgdf fdgdfgdf dfgdfgdf sdfgdfgdf dfgdf culpa quis voluptatem nisi quisquam. Illo placeat possimus, doloribus obcaecati a deserunt </p>
         </div>
           
@@ -508,7 +267,7 @@
       
     </div>
     
-</div>
+</div> -->
 
 
 <!-- --------------------------------------------------------------
@@ -520,8 +279,8 @@
             <div class="donate-cards-title">
                 <h2>Organisation</h2>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
+            <div class="row" id="donate-cards-cont-org">
+                <!-- <div class="col-sm-4">
                     <div class="card-box">
                         <div class="card-pic">
                             <img src="./assets/images/3.jpg" alt="">
@@ -576,127 +335,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                
-                <div class="col-sm-4">
-                    <div class="card-box">
-                        <div class="card-pic">
-                            <img src="./assets/images/3.jpg" alt="">
-                        </div>
-                        <div class="card-content">
-                            <h4>Cause Title for which the donation tobe done</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                               Ducimus quod nihil doloribus inventore tempora blanditiis
-                               eum qui ab nam saepe temporibus cum reiciendis nobis omnis, 
-                               facilis molestiae cumque facere aliquid?</p>
-                        </div>
-                        <div class="card-progressbar">
-            
-            
-            
-                            <div class="row stat-row">
-                                <div class="col-4 stat-col1">
-                                    <div class="stat">
-                                        12000
-                                    </div>
-                                    <div class="stat-dis">
-                                        Funded
-                                    </div>
-                                </div>
-                                <div class="col-4 stat-col2">
-                                    <div class="stat">
-                                        12000
-                                    </div>
-                                    <div class="stat-dis">
-                                        pledged
-                                    </div>
-                                </div>
-                                <div class="col-4 stat-col3">
-                                    <div class="stat">
-                                        12000
-                                    </div>
-                                    <div class="stat-dis">
-                                        Days Remaining  
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="card-buttons">
-                            <div class="row">
-                                <div class="col-6 card-button3">
-                                    <button id="Org-btn">View More</button>
-                                </div>
-                                <div class="col-6 card-button-org">
-                                    <button >Donate</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-
-                <div class="col-sm-4">
-                    <div class="card-box">
-                        <div class="card-pic">
-                            <img src="./assets/images/3.jpg" alt="">
-                        </div>
-                        <div class="card-content">
-                            <h4>Cause Title for which the donation tobe done</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                               Ducimus quod nihil doloribus inventore tempora blanditiis
-                               eum qui ab nam saepe temporibus cum reiciendis nobis omnis, 
-                               facilis molestiae cumque facere aliquid?</p>
-                        </div>
-                        <div class="card-progressbar">
-            
-            
-            
-                            <div class="row stat-row">
-                                <div class="col-4 stat-col1">
-                                    <div class="stat">
-                                        12000
-                                    </div>
-                                    <div class="stat-dis">
-                                        Funded
-                                    </div>
-                                </div>
-                                <div class="col-4 stat-col2">
-                                    <div class="stat">
-                                        12000
-                                    </div>
-                                    <div class="stat-dis">
-                                        pledged
-                                    </div>
-                                </div>
-                                <div class="col-4 stat-col3">
-                                    <div class="stat">
-                                        12000
-                                    </div>
-                                    <div class="stat-dis">
-                                        Days Remaining  
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="card-buttons">
-                            <div class="row">
-                                <div class="col-6 card-button3">
-                                    <button id="Org-btn">View More</button>
-                                </div>
-                                <div class="col-6 card-button-org">
-                                    <button >Donate</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>            
-            
-                
-
+                </div> -->
             
             </div>
 
@@ -707,10 +346,11 @@
 # Organisation Modal Class
 -------------------------------------------------------------- -->
 <!-- The Modal -->
-<div id="Org-Modal" class="modal_2">
+
+<!-- <div id="Org-Modal" class="modal_2"> -->
 
         <!-- Modal content -->
-    <div class="modal-content_2">
+    <!-- <div class="modal-content_2">
         <span class="close3">&times;</span>
         <div id="text_2">
             <h1> Cause Title<img src="./assets/images/orgmodal.jpeg"></h1>
@@ -727,8 +367,17 @@
             </div>
     </div>
     
-</div>
+</div> -->
 
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modal-para"></p>
+      </div>
+  
+  </div>
 
     
 
@@ -839,7 +488,10 @@
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="assets/js/card.js"></script>
+    <script src="assets/js/login-logout.js"></script>
     <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/modal.js"></script>
+    
+    <!-- <script src="./assets/js/modal.js"></script> -->
 </body>
 </html>

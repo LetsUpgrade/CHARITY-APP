@@ -25,8 +25,8 @@ var folder = ["org_proof", "org_img", "head_proof", "org_head_proof"];
 
 const name = document.getElementById('name');
 const add = document.getElementById('add');
-const state = document.getElementById('state');
-const country = document.getElementById('country');
+// const state = document.getElementById('state');
+// const country = document.getElementById('country');
 const qual = document.getElementById('qual');
 const occ = document.getElementById('occ');
 const money = document.getElementById('need');
@@ -35,7 +35,7 @@ const occhead = document.getElementById('occhead');
 const income = document.getElementById('income');
 const email = document.getElementById('email');
 const mobile_num = document.getElementById('mobile_num');
-const para = document.getElementById('para');
+// const para = document.getElementById('para');
 
 const usersRef = database.ref('Individual');
 const autoId = usersRef.push().key;
@@ -89,8 +89,8 @@ async function push_data() {
         ID: `Individual/${autoId}`,
         ind_name: name.value,
         ind_add: add.value,
-        state_name: state.value,
-        country_name: country.value,
+        //state_name: state.value,
+        // country_name: country.value,
         qual_name: qual.value,
         occ_name: occ.value,
         money_name: money.value,
@@ -99,7 +99,7 @@ async function push_data() {
         income_name: income.value,
         email_name: email.value,
         mobile_numb: mobile_num.value,
-        para_name: para.value,
+        // para_name: para.value,
 
         user_id: uid,
         status: 'under verification',
