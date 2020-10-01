@@ -2,7 +2,7 @@
 
 
 /* The Close Button */
-.close1
+.close
 {
     color: #aaa;
     text-align: right;
@@ -33,8 +33,8 @@
     font-weight: bold;
     cursor: pointer;
    }
-.close1:hover, .close2:hover, .close3:hover
-.close1:focus, .close2:focus, .close3:focus
+.close:hover, .close2:hover, .close3:hover
+.close:focus, .close2:focus, .close3:focus
 {
     color: black !important;
     text-decoration: none;
