@@ -17,11 +17,11 @@ var keys;
 var loader = document.getElementById('loader');
 loader.style.display = "none";
 
-var org_proof = document.getElementById('uploadbutton1');
-var org_img = document.getElementById('uploadbutton2');
+var ind_proof = document.getElementById('uploadbutton1');
+var ind_img = document.getElementById('uploadbutton2');
 var head_proof = document.getElementById('uploadbutton3');
-var org_head_proof = document.getElementById('uploadbutton4');
-var folder = ["org_proof", "org_img", "head_proof", "org_head_proof"];
+var ind_head_proof = document.getElementById('uploadbutton4');
+var folder = ["ind_proof", "ind_img", "head_proof", "ind_head_proof"];
 
 const name = document.getElementById('name');
 const add = document.getElementById('add');
@@ -44,13 +44,13 @@ var uid;
 var storageRef = firebase.storage();
 
 
-org_proof.onchange = function () {
+ind_proof.onchange = function () {
     if (this.files[0].size > 512000) {
         alert("File is too big!,it should be less than 500kb");
         this.value = "";
     };
 };
-org_img.onchange = function () {
+ind_img.onchange = function () {
     if (this.files[0].size > 512000) {
         alert("File is too big!,it should be less than 500kb");
         this.value = "";
@@ -62,7 +62,7 @@ head_proof.onchange = function () {
         this.value = "";
     };
 };
-org_head_proof.onchange = function () {
+ind_head_proof.onchange = function () {
     if (this.files[0].size > 512000) {
         alert("File is too big!,it should be less than 500kb");
         this.value = "";
@@ -138,8 +138,8 @@ async function putStorageItem(item) {
     });
 }
 
-function org_reg() {
-    if (org_proof.value == "" || org_img.value == "" || head_proof.value == "" || org_head_proof.value == "") {
+function ind_reg() {
+    if (ind_proof.value == "" || ind_img.value == "" || head_proof.value == "" || ind_head_proof.value == "") {
         alert('Upload Document');
     }
     else {
