@@ -4,20 +4,22 @@ html, body{
     padding:0;
     height:100%;
     font-family: "Open Sans";
+    /* background-color: #000000; */
  }
 body {
     margin: 0;
     padding: 0;
 }
 .navbar{
-    background-color: rgba(0, 0, 0, 0.5) !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
     min-height: 75px;
     position: absolute;
     font-weight: bolder;
 }
 
 .navbar a{
-    color: #FFF8DE;
+    /* color: #FFF8DE; */
+    color: #46423b;
 }
 
 .navbar_logo {
@@ -35,7 +37,6 @@ body {
     vertical-align: top;
     width: 100px;
     height: 50px;
-
 }
 /* 
 #collapsibleNavId

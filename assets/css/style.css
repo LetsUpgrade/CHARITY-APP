@@ -30,7 +30,6 @@
   /* height: 900px; */
   overflow: hidden;
   background-color: rgba(0,0,0,0.5);
-
 }
 
 
@@ -51,7 +50,7 @@
 #about{
   /* height: 300px; */
   padding: 70px 0px;
-  background-color: #bba9da ;  /* background-image: url(../images/bla1.jpg); */
+  background-color: #9ECDFB ;  /* background-image: url(../images/bla1.jpg); */
   object-fit: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -76,7 +75,8 @@
 
 #what-we-do .right-image img {
 	width: 100%;
-	overflow: hidden;
+  overflow: hidden;
+  background-color: #9ECDFB;
 }
 
 #what-we-do h4 {
@@ -90,7 +90,7 @@
 #what-we-do p {
   margin-bottom: 30px;
   font-size: 20px;
-  color: #fff;
+  color: #000;
   
 }
 
@@ -100,6 +100,25 @@
 	margin-bottom: 15px;
 }
 
+#what-we-do .about-button-div
+{
+  padding-top: 20px;
+  line-height: 40px;
+  width: 160px;
+}
+
+#what-we-do .about-button-div button
+{
+  text-align: center;
+  background: #0f4374;
+  color: white;
+  transition: transform .2s; /* Animation */
+}
+ button:hover{
+  color: #0f4374;
+  background: rgb(0, 0, 0, 0.8);
+  transform: scale(1.1);
+}
 
 
 
@@ -132,11 +151,12 @@
   padding: 20px;
   margin-bottom: 30px;
   transition: 0.5s;
-  background-color: #bba9da;
+  background-color: #9ECDFB;
+
 }
 
 .iconBox  h3 {
-  color: #efefef !important;
+  color: #0f4374 !important;
   font-size: 25px;
   font-weight: bold;
 }
@@ -153,7 +173,7 @@
 
 
 .iconBox:hover {
-  box-shadow: 0 0 30px #937cb9, 0 0 30px #937cb9;
+  box-shadow: 0 0 30px #0D5183, 0 0 30px #0D5183;
 }
 
 .iconBox .icon {
@@ -221,12 +241,12 @@ button:hover {
   padding: 60px 0px;
 }
 #counter-section .container {
-  margin-top: 100px
+  margin-top: 0px;
 }
 
 #counter-section .counter-box {
   display: block;
-  background: #f6f6f6;
+  background: #9ECDFB;
   padding: 40px 20px 37px;
   text-align: center
 }
@@ -234,7 +254,7 @@ button:hover {
 #counter-section .counter-box p {
   margin: 5px 0 0;
   padding: 0;
-  color: #909090;
+  color: #000000;
   font-size: 18px;
   font-weight: 500
 }
@@ -242,25 +262,26 @@ button:hover {
 #counter-section.counter-box i {
   font-size: 100px;
   margin: 0 0 15px;
-  color: #d2d2d2
+  color: #0f4374;
 }
 
 #counter-section .counter {
   display: block;
   font-size: 32px;
   font-weight: 700;
-  color: #666;
+  color: #0f4374;
   line-height: 28px
 }
 
 #counter-section .counter-box.colored {
-  background: #3acf87
+  background: #0f4374;
 }
 
 #counter-section .counter-box.colored p,
 #counter-section .counter-box.colored i,
 #counter-section .counter-box.colored .counter {
-  color: #fff
+  color: #fff;
+
 }
 
 
@@ -355,18 +376,18 @@ button:hover {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: #0f4374;
+  color: #fff;
   transform: rotateY(180deg);
 }
 
 .flip-card-back button{
-  background: #FEAA71;
-  color: white;
+  background: #9ECDFB;
+  color: #000;
   transition: transform .2s; /* Animation */
 }
 .flip-card-back button:hover{
-  color: #FEAA71;
+  color: #9ECDFB;
   background: rgb(0, 0, 0, 0.8);
   transform: scale(1.1);
 }
@@ -377,7 +398,7 @@ button:hover {
   padding: 20px;
   margin-bottom: 30px;
   transition: 0.5s;
-  background-color: #bba9da;
+  background-color: #9ECDFB;
 }
 
 
@@ -385,7 +406,7 @@ button:hover {
   margin-top: 40px;
   padding-bottom: 20px;
   text-align: center;
-  color: #F7EB70;
+  color: #0f4374;
   font-weight: bold;
 }
 
@@ -408,7 +429,7 @@ button:hover {
   border-radius: 10px;
   /* text-align: center; */
   border-width: 0;
-  background: #543864;
+  background: #0f4374;
   color: #fff;
   font-weight: bold;
   letter-spacing: 4px;
@@ -419,7 +440,7 @@ button:hover {
 
 .flip-content a:hover{
   text-decoration: none;
-  background: #ffcef3;
+  background: #041d35;
   color: #fff;
   font-weight: bold;
   letter-spacing: 4px;
@@ -434,7 +455,7 @@ button:hover {
 #faq {
   padding: 60px 0px;
   margin: 0; 
-  background: #442e69;
+  background: #9ECDFB;
 
 }
 .faq .accordion-list {
@@ -446,7 +467,7 @@ button:hover {
   font-weight: 400;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #fff;
+  color: #000;
   font-family: "Poppins", sans-serif;
   text-align: center;
   font-weight: bold;

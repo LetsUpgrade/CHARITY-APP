@@ -92,7 +92,7 @@
     display: block;
     font-size: 32px;
     font-weight: 700;
-    color: #2e96fd;
+    color: #0f4374;
     line-height: 28px
   }
   
@@ -118,7 +118,7 @@
 
 #Org-help
 {
-    background-color: #e9e8e8;
+    background-color: #ffffff;
 }
 
 
@@ -138,7 +138,7 @@
 {
     font-size: 40px;
     font-weight: bold;
-    color: #50A4F9;
+    color: #000;
 }
 
 .need-help .help-content
@@ -156,7 +156,7 @@
 {
     font-size: 40px;
     font-weight: bold;
-    color: #50A4F9;
+    color: #000000;
     padding: 10px 0px;
 }
 
@@ -164,7 +164,7 @@
 {
     font-size: 25px;
     font-weight: bold;
-    color: #50A4F9;
+    color: #0f4374;
     padding: 10px 40px;
     text-align: left;
 }
@@ -179,7 +179,7 @@
 {
     font-size: 30px;
     font-weight: bold;
-    color: #50A4F9;
+    color: #000000;
     padding: 10px 0px;
 }
 
