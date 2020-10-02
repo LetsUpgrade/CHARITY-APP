@@ -30,71 +30,71 @@ const signInWithFacebookButton = document.getElementById('signInWithFacebook');
 const auth = firebase.auth();
 
 // Creates and render the captcha
-window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
-recaptchaVerifier.render().then(widgetId => {
-  window.recaptchaWidgetId = widgetId;
-})
+// window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
+// recaptchaVerifier.render().then(widgetId => {
+//   window.recaptchaWidgetId = widgetId;
+// })
 
-const sendVerificationCode = () => {
-  const phoneNumber = phoneNumberField.value;
-  const appVerifier = window.recaptchaVerifier;
+// const sendVerificationCode = () => {
+//   const phoneNumber = phoneNumberField.value;
+//   const appVerifier = window.recaptchaVerifier;
   
-  // Sends the 6 digit code to the user's phone
-  auth.signInWithPhoneNumber(phoneNumber, appVerifier)
-  .then(confirmationResult => {
-    const sentCodeId = confirmationResult.verificationId;
+//   // Sends the 6 digit code to the user's phone
+//   auth.signInWithPhoneNumber(phoneNumber, appVerifier)
+//   .then(confirmationResult => {
+//     const sentCodeId = confirmationResult.verificationId;
     
-    // Sign in if the verification code is set correctly
-    signInWithPhoneButton.addEventListener('click', () => signInWithPhone(sentCodeId));
-  })
-}
+//     // Sign in if the verification code is set correctly
+//     signInWithPhoneButton.addEventListener('click', () => signInWithPhone(sentCodeId));
+//   })
+// }
 
-const signInWithPhone = sentCodeId => {
-  const code = codeField.value;
-  // A credential object (contains user's data) is created after a comparison between the 6 digit code sent to the user's phone
-  // and the code typed by the user in the code field on the html form.
-  const credential = firebase.auth.PhoneAuthProvider.credential(sentCodeId, code);
-  auth.signInWithCredential(credential)
-  .then(() => {
-    //console.log('Signed in successfully !');
-    window.location.assign('./profile.html');
-  })
-  .catch(error => {
-    console.error(error);
-  })
-}
+// const signInWithPhone = sentCodeId => {
+//   const code = codeField.value;
+//   // A credential object (contains user's data) is created after a comparison between the 6 digit code sent to the user's phone
+//   // and the code typed by the user in the code field on the html form.
+//   const credential = firebase.auth.PhoneAuthProvider.credential(sentCodeId, code);
+//   auth.signInWithCredential(credential)
+//   .then(() => {
+//     //console.log('Signed in successfully !');
+//     window.location.assign('./profile.html');
+//   })
+//   .catch(error => {
+//     console.error(error);
+//   })
+// }
 
-getCodeButton.addEventListener('click', sendVerificationCode);
+// getCodeButton.addEventListener('click', sendVerificationCode);
 
 
-const signInWithFacebook = () => {
-  const facebookProvider = new firebase.auth.FacebookAuthProvider();
-  //Or auth.signInWithRedirect(facebookProvider)
-  auth.signInWithPopup(facebookProvider)
-  .then(() => {
-    console.log('Signed in successfully !');
-  })
-  .catch(error => {
-    console.error(error);
-  });
-}
+// const signInWithFacebook = () => {
+//   const facebookProvider = new firebase.auth.FacebookAuthProvider();
+//   //Or auth.signInWithRedirect(facebookProvider)
+//   auth.signInWithPopup(facebookProvider)
+//   .then(() => {
+//     console.log('Signed in successfully !');
+//   })
+//   .catch(error => {
+//     console.error(error);
+//   });
+// }
 
-signInWithFacebookButton.addEventListener('click', signInWithFacebook);
+// signInWithFacebookButton.addEventListener('click', signInWithFacebook);
 
-const signInWithGoogle = () => {
-  const googleProvider = new firebase.auth.GoogleAuthProvider();
+// const signInWithGoogle = () => {
+//   const googleProvider = new firebase.auth.GoogleAuthProvider();
 
-  auth.signInWithPopup(googleProvider)
-  .then(() => {
-    //console.log('You\'re now signed in !');
-    window.location.assign('./profile.html');
-  })
-  .catch(error => {
-    console.error(error);
-  });
-}
+//   auth.signInWithPopup(googleProvider)
+//   .then(() => {
+//     //console.log('You\'re now signed in !');
+//     window.location.assign('./profile.html');
+//   })
+//   .catch(error => {
+//     console.error(error);
+//   });
+// }
 
-signInWithGoogleButton.addEventListener('click', signInWithGoogle);
+// signInWithGoogleButton.addEventListener('click', signInWithGoogle);
 
 //Sign in function
 const signInWithEmailFunction = () => {
@@ -173,22 +173,22 @@ passwordField.addEventListener('blur', () => {
     labels.item(1).className = "unfocused-field"
 });
 
-phoneNumberField.addEventListener('focus', () => {
-  if(!phoneNumberField.value)
-    labels.item(2).className = "focused-field"
-})
+// phoneNumberField.addEventListener('focus', () => {
+//   if(!phoneNumberField.value)
+//     labels.item(2).className = "focused-field"
+// })
 
-codeField.addEventListener('focus', () => {
-  if(!codeField.value)
-    labels.item(3).className = "focused-field"
-})
+// codeField.addEventListener('focus', () => {
+//   if(!codeField.value)
+//     labels.item(3).className = "focused-field"
+// })
 
-phoneNumberField.addEventListener('blur', () => {
-  if(!phoneNumberField.value)
-  labels.item(2).className = "unfocused-field"
-})
+// phoneNumberField.addEventListener('blur', () => {
+//   if(!phoneNumberField.value)
+//   labels.item(2).className = "unfocused-field"
+// })
 
-codeField.addEventListener('blur', () => {
-  if(!codeField.value)
-  labels.item(3).className = "unfocused-field"
-})
+// codeField.addEventListener('blur', () => {
+//   if(!codeField.value)
+//   labels.item(3).className = "unfocused-field"
+// })

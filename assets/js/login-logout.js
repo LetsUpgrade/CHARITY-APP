@@ -34,6 +34,42 @@ function logOut(){
     })
 }
 
+// emergency register
+function emg_register(){
+    auth.onAuthStateChanged((user)=>{
+        if (user) {
+        //   User is signed in.
+            let user = firebase.auth().currentUser;
+            let uid;
+            if(user != null){
+                uid = user.uid;
+            }
+            window.location.assign('../emergency_form.html')
+        } else {
+            alert('LOGIN/SIGN UP');
+            window.location.assign('FireAuth/public/index.html');
+        }
+    });
+}
+
+// individual register
+function ind_register(){
+    auth.onAuthStateChanged((user)=>{
+        if (user) {
+        //   User is signed in.
+            let user = firebase.auth().currentUser;
+            let uid;
+            if(user != null){
+                uid = user.uid;
+            }
+            window.location.assign('../individual.html')
+        } else {
+            alert('LOGIN/SIGN UP');
+            window.location.assign('FireAuth/public/index.html');
+        }
+    });
+}
+
 // organization register
 function org_register(){
     auth.onAuthStateChanged((user)=>{
