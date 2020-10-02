@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHARITY-APP</title>
+    <title>LetsCharit</title>
     <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="./assets/images/logo/logoLU2.2.png"/>
+
 
     <!-- style css file --> 
     <link rel="stylesheet" href="./assets/css/contact.css">
@@ -41,7 +43,7 @@
                   <a href="index.html"></a>Charity -App<img src="" alt="" class="img-fluid"/></a>
                    <h1 class="text-light"><a href="index.html"><span>Delicious</span></a></h1> 
                 </div> -->
-            <a class="navbar-brand navbar_logo" href="./index.html">CHARITY-APP</a>
+            <a class="navbar-brand navbar_logo" href="./index.html"><img src="./assets/images/logo/logo2.3.png" alt=""></a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -55,23 +57,26 @@
                         <a class="nav-link" href="./index.html#about">AboutUs</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="./index.html#aboutus">Need Help!</a>
+                      <a class="nav-link" href="./needhelp.html">Need Help!</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="./DoCharity.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DoCharity</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Emergency</a>
-                            <a class="dropdown-item" href="#">Individual</a>
-                            <a class="dropdown-item" href="#">Organization</a>
+                            <a class="dropdown-item" href="./DoCharity.html#Emergency-donate-cards">Emergency</a>
+                            <a class="dropdown-item" href="./DoCharity.html#Individual-donate-cards">Individual</a>
+                            <a class="dropdown-item" href="./DoCharity.html#Organisation-donate-cards">Organization</a>
                         </div>
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="#faq">FAQ's</a>
+                        <a class="nav-link" href="./index.html#faq">FAQ's</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="./contact.html">Contact Us</a>
                     </li>
+                    <div id="username">
+                    
+                  </div>
                 </ul>
             </div>
         </nav>
@@ -172,7 +177,9 @@
     </div>
 
     <!-- map  -->
-    <div id="googleMap" style="width:100%;height:400px;"></div>
+    <div id="googleMap" style="width:100%;height:450px;padding-left: 20%;padding-right: 20%;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15083.737258093224!2d72.9990513!3d19.0666254!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6b24d231fdb7ed1!2sLetsUpgrade!5e0!3m2!1sen!2sin!4v1601576824479!5m2!1sen!2sin" width=100% height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
 
     <!-- ======= Footer ======= -->
     <!-- Footer -->
@@ -257,6 +264,28 @@
     <!-- End Footer -->
   
     <a href="#" class="back-to-top"><i class='fas fa-arrow-up'></i></a>
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+
+    <script>
+      var firebaseConfig = {
+            apiKey: "AIzaSyDQRPjwzQY6wO1e0oxQMamKRPW7td_wQbs",
+            authDomain: "charity-app-e31cc.firebaseapp.com",
+            databaseURL: "https://charity-app-e31cc.firebaseio.com",
+            projectId: "charity-app-e31cc",
+            storageBucket: "charity-app-e31cc.appspot.com",
+            messagingSenderId: "233446000003",
+            appId: "1:233446000003:web:d253ffd11f923d21a422b6",
+            measurementId: "G-NJ0H9ZQ056"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="assets/js/login-logout.js"></script>
+
 
     <script src="./assets/vendor/jquery/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 /*--------------------------------------------------------------
 # Top Carousel
 --------------------------------------------------------------*/
@@ -14,7 +16,7 @@
   overflow: auto;
   position: relative;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 70vh;
   /* object-fit: cover; */
   /* object-fit: cover; */
   /* object-fit:scale-down; */
@@ -25,7 +27,7 @@
   background-repeat: no-repeat;
   right: 0; 
   bottom: 0;
-  height: 900px;
+  /* height: 900px; */
   overflow: hidden;
   background-color: rgba(0,0,0,0.5);
 

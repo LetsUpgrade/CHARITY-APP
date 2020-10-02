@@ -30,6 +30,7 @@
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
 * {
 	margin: 0px; 
 	padding: 0px; 
@@ -38,12 +39,12 @@
 
 body, html {
 	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
+	font-family: Dosis, sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Poppins-Regular;
+	font-family: Dosis;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -68,7 +69,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: Poppins-Regular;
+	font-family: Dosis;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -137,7 +138,7 @@ iframe {
 /*==================================================================
 [ Text ]*/
 .txt1 {
-  font-family: Poppins-Regular;
+  font-family: Dosis;
   font-size: 18px;
   line-height: 1.2;
   color: #fff;
@@ -145,7 +146,7 @@ iframe {
 }
 
 .txt2 {
-  font-family: Poppins-Regular;
+  font-family: Dosis;
   font-size: 15px;
   line-height: 1.6;
   color: #999999;
@@ -153,7 +154,7 @@ iframe {
 }
 
 .txt3 {
-  font-family: Poppins-Regular;
+  font-family: Dosis;
   font-size: 15px;
   line-height: 1.6;
   color: #00ad5f;
@@ -200,9 +201,9 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 105px;
   background: #f2f2f2;
-  margin: 150px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
 .wrap-contact100 {
