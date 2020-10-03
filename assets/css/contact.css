@@ -30,6 +30,7 @@
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
 
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
 * {
 	margin: 0px; 
 	padding: 0px; 
@@ -38,12 +39,12 @@
 
 body, html {
 	height: 100%;
-	font-family: Poppins-Regular, sans-serif;
+	font-family: Dosis, sans-serif;
 }
 
 /*---------------------------------------------*/
 a {
-	font-family: Poppins-Regular;
+	font-family: Dosis;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -68,7 +69,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-	font-family: Poppins-Regular;
+	font-family: Dosis;
 	font-size: 14px;
 	line-height: 1.7;
 	color: #666666;
@@ -79,6 +80,47 @@ ul, li {
 	margin: 0px;
 	list-style-type: none;
 }
+
+#help-banner
+{
+    background-color: #9ECDFB;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+#help-banner .header-image
+{
+    /* height: 400px; */
+}
+
+#help-banner .header-image img
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#help-banner .header-content
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#help-banner .header-content h1
+{
+    font-size: 50px;
+    font-weight: bold;
+    color: #0f4374;
+}
+
+#help-banner .header-content p
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: #0C5183;
+}
+
 
 
 /*---------------------------------------------*/
@@ -106,15 +148,15 @@ textarea:focus:-moz-placeholder { color:transparent; }
 textarea:focus::-moz-placeholder { color:transparent; }
 textarea:focus:-ms-input-placeholder { color:transparent; }
 
-input::-webkit-input-placeholder { color: #adadad;}
-input:-moz-placeholder { color: #adadad;}
-input::-moz-placeholder { color: #adadad;}
-input:-ms-input-placeholder { color: #adadad;}
+input::-webkit-input-placeholder { color: #08243f;}
+input:-moz-placeholder { color: #08243f;}
+input::-moz-placeholder { color: #08243f;}
+input:-ms-input-placeholder { color: #08243f;}
 
-textarea::-webkit-input-placeholder { color: #adadad;}
-textarea:-moz-placeholder { color: #adadad;}
-textarea::-moz-placeholder { color: #adadad;}
-textarea:-ms-input-placeholder { color: #adadad;}
+textarea::-webkit-input-placeholder { color: #08243f;}
+textarea:-moz-placeholder { color: #08243f;}
+textarea::-moz-placeholder { color: #08243f;}
+textarea:-ms-input-placeholder { color: #08243f;}
 
 /*---------------------------------------------*/
 button {
@@ -137,7 +179,7 @@ iframe {
 /*==================================================================
 [ Text ]*/
 .txt1 {
-  font-family: Poppins-Regular;
+  font-family: Dosis;
   font-size: 18px;
   line-height: 1.2;
   color: #fff;
@@ -145,7 +187,7 @@ iframe {
 }
 
 .txt2 {
-  font-family: Poppins-Regular;
+  font-family: Dosis;
   font-size: 15px;
   line-height: 1.6;
   color: #999999;
@@ -153,10 +195,10 @@ iframe {
 }
 
 .txt3 {
-  font-family: Poppins-Regular;
+  font-family: Dosis;
   font-size: 15px;
   line-height: 1.6;
-  color: #00ad5f;
+  color: #9ECDFB;
   text-align: center;
 }
 
@@ -200,14 +242,14 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 15px;
-  background: #f2f2f2;
-  margin: 150px 0px;
+  padding: 105px;
+  background: #ffffff;
+  margin: 0px 0px 0px 0px;
 }
 
 .wrap-contact100 {
   width: 1120px;
-  background: #fff;
+  background: #9ECDFB;
   overflow: hidden;
   display: -webkit-box;
   display: -webkit-flex;
@@ -266,10 +308,11 @@ iframe {
   display: block;
   font-family: Poppins-Regular;
   font-size: 30px;
-  color: #333333;
+  color: #0f4374;
   line-height: 1.2;
   text-align: center;
   padding-bottom: 33px;
+  font-weight: bold;
 }
 
 
@@ -280,7 +323,7 @@ iframe {
 .wrap-input100 {
   width: 100%;
   position: relative;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #000000;
 }
 
 .rs1-wrap-input100,
@@ -294,8 +337,9 @@ iframe {
 
 .label-input100 {
   font-family: Poppins-Regular;
-  font-size: 12px;
-  color: #555555;
+  font-size: 15px;
+  font-weight: bold;
+  color: #0f4374;
   line-height: 1.5;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -308,7 +352,7 @@ iframe {
   align-items: center;
   width: 100%;
   min-height: 55px;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #000000;
   border-bottom: none; 
   padding: 10px 25px;
   margin-top: 15px;
@@ -321,7 +365,7 @@ iframe {
   background: transparent;
   font-family: Poppins-Regular;
   font-size: 18px;
-  color: #666666;
+  color: #ffffff;
   line-height: 1.2;
   padding: 0 25px;
 }
@@ -347,7 +391,7 @@ textarea.input100 {
   top: -1px;
   left: -1px;
   pointer-events: none;
-  border: 1px solid #00ad5f;
+  border: 1px solid #0f4374;
 
   visibility: hidden;
   opacity: 0;
@@ -403,7 +447,7 @@ textarea.input100 {
   min-width: 200px;
   height: 50px;
   border-radius: 2px;
-  background: #00ad5f;
+  background: #0f4374;
 
   font-family: Montserrat-Bold;
   font-size: 12px;
@@ -419,7 +463,8 @@ textarea.input100 {
 }
 
 .contact100-form-btn:hover {
-  background: #333333;
+  background: #072642;
+  color: #ffffff;
 }
 
 

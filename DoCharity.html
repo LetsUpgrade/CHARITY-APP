@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHARITY-APP</title>
+    <title>LetsCharit</title>
     <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="icon" href="./assets/images/logo/logoLU2.2.png"/>
+
     <link rel="stylesheet" href="./assets/css/header_footer.css">
-    <link rel="stylesheet" href="./assets/css/Docharity.css">
-   
+    <link rel="stylesheet" href="./assets/css/Docharity.css">   
     <link rel="stylesheet" href="./assets/css/modal.css">
     <!-- Vendor CSS Files -->
     <!-- Icon css link -->
@@ -28,7 +29,7 @@
                   <a href="index.html"></a>Charity -App<img src="" alt="" class="img-fluid"/></a>
                    <h1 class="text-light"><a href="index.html"><span>Delicious</span></a></h1> 
                 </div> -->
-            <a class="navbar-brand navbar_logo" href="./index.html">CHARITY-APP</a>
+            <a class="navbar-brand navbar_logo" href="./index.html"><img src="./assets/images/logo/logo2.3.png" alt=""></a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,14 +43,14 @@
                         <a class="nav-link" href="./index.html#about">AboutUs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./needhelp.html">Need Help!</a>
+                      <a class="nav-link" href="./needhelp.html">Need Help!</a>
                     </li>
                     <li class="nav-item dropdown active">
                         <a class="nav-link dropdown-toggle" href="./DoCharity.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DoCharity</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Emergency</a>
-                            <a class="dropdown-item" href="#">Individual</a>
-                            <a class="dropdown-item" href="#">Organization</a>
+                            <a class="dropdown-item" href="./DoCharity.html#Emergency-donate-cards">Emergency</a>
+                            <a class="dropdown-item" href="./DoCharity.html#Individual-donate-cards">Individual</a>
+                            <a class="dropdown-item" href="./DoCharity.html#Organisation-donate-cards">Organization</a>
                         </div>
                     </li>
                     
@@ -60,12 +61,33 @@
                         <a class="nav-link" href="./contact.html">Contact Us</a>
                     </li>
                     <div id="username">
+
+    
+                  </div>
                     
                     </div>
+
                 </ul>
             </div>
         </nav>
     </header>
+
+
+    <section id="help-banner">
+        <div class="help-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 header-image">
+                        <img src="./assets/images/unnamed.jpg" alt="">
+                    </div>
+                    <div class="col-sm-6 header-content">
+                        <h1>Do Charity</h1>
+                        <p>Content which will tell about our registration funda......................................</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 <!-- --------------------------------------------------------------
@@ -272,7 +294,7 @@
 
 <!-- --------------------------------------------------------------
 # Organisation
--------------------------------------------------------------- -->
+----------------------------------------------------------------->
 
     <section id="Organisation-donate-cards" class="donate-cards">
         <div class="container">
@@ -475,7 +497,25 @@
     
     <a href="#" class="back-to-top"><i class='fas fa-arrow-up'></i></a>
 
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
 
+    <script>
+      var firebaseConfig = {
+            apiKey: "AIzaSyDQRPjwzQY6wO1e0oxQMamKRPW7td_wQbs",
+            authDomain: "charity-app-e31cc.firebaseapp.com",
+            databaseURL: "https://charity-app-e31cc.firebaseio.com",
+            projectId: "charity-app-e31cc",
+            storageBucket: "charity-app-e31cc.appspot.com",
+            messagingSenderId: "233446000003",
+            appId: "1:233446000003:web:d253ffd11f923d21a422b6",
+            measurementId: "G-NJ0H9ZQ056"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+    </script>   
+    <script src="assets/js/login-logout.js"></script>
     <script src="./assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

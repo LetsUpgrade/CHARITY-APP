@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHARITY-APP</title>
+    <title>LetsCharit</title>
     <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="icon" href="./assets/images/logo/logoLU2.2.png"/>
     <!-- !-- style css file --> 
@@ -53,9 +53,9 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="./DoCharity.html" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DoCharity</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Emergency</a>
-                            <a class="dropdown-item" href="#">Individual</a>
-                            <a class="dropdown-item" href="#">Organization</a>
+                            <a class="dropdown-item" href="./DoCharity.html#Emergency-donate-cards">Emergency</a>
+                            <a class="dropdown-item" href="./DoCharity.html#Individual-donate-cards">Individual</a>
+                            <a class="dropdown-item" href="./DoCharity.html#Organisation-donate-cards">Organization</a>
                         </div>
                     </li>
                     
@@ -73,8 +73,8 @@
         </nav>
     </header>
 
-
     <section id="top-carousel">
+
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -83,14 +83,14 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./assets/images/" class="d-block w-100" alt="...">
+            <img src="./assets/images/images (4).jpeg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./assets/images/markus-winkler-wLBVAF-kMR0-unsplash.jpg" class="d-block w-100" alt="...">
+            <img src="./assets/images/" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -114,6 +114,37 @@
         </a>
       </div>
     </section>
+
+
+    <section id="counter-section">
+      <div class="container">
+        <div class="row counter-row">
+            <div class="four col-md-3">
+                <div class="counter-box colored"> <i class="fas fa-smile"></i> <span class="counter" data-target="60000">0</span>
+                    <p>Total Donations</p>
+                </div>
+            </div>
+            <div class="four col-md-3">
+                <div class="counter-box"> <i class="fa fa-group"></i> <span class="counter" data-target="60000">0</span>
+                    <p>Organisation</p>
+                </div>
+            </div>
+            <div class="four col-md-3">
+                <div class="counter-box"> <i class="fa fa-shopping-cart"></i> <span class="counter" data-target="60000">0</span>
+                    <p>Individual</p>
+                </div>
+            </div>
+            <div class="four col-md-3">
+                <div class="counter-box"> <i class="fa fa-user"></i> <span class="counter" data-target="60000">0</span>
+                    <p>Emergency</p>
+                </div>
+            </div>
+        </div>
+      </div>      
+    </section>
+    
+    
+    
 
 
     <!-- Causes -->
@@ -213,7 +244,7 @@
                 <div class="col-md-6">
                     <div class="left-text">
                         <!-- <h4>New offers just arrived,<br>Get it now and take profit.</h4> -->
-                        <p>“website-name” is a small initiative of a group of around 10 people across different parts 
+                        <p>LetsCharit is a small initiative of a group of around 10 people across different parts 
                           of India getting together just to make a wish came true that we can support our nation to be a 
                           better place for everyone. For doing such we create a place where you can donate for any cause 
                           that you would like and be a part of our family. <br>
@@ -235,10 +266,13 @@
                             </li>
                         </ul> -->
                     </div>
+                    <div class="about-button-div">
+                      <button class = "about-button">Read more</button>
+                    </div>
                 </div>
                 <div class="col-md-6">
                     <div class="right-image">
-                        <img src="./assets/images/what-we-do-right-image.png" alt="">
+                        <img src="./assets/images/aboutus.svg" alt="">
                     </div>
                 </div>
             </div>
@@ -249,36 +283,7 @@
 
 
 
-    <section id="counter-section">
-      <div class="container">
-        <div class="row counter-row">
-            <div class="four col-md-3">
-                <div class="counter-box colored"> <i class="fas fa-smile"></i> <span class="counter" data-target="60000">0</span>
-                    <p>Total Donations</p>
-                </div>
-            </div>
-            <div class="four col-md-3">
-                <div class="counter-box"> <i class="fa fa-group"></i> <span class="counter" data-target="60000">0</span>
-                    <p>Organisation</p>
-                </div>
-            </div>
-            <div class="four col-md-3">
-                <div class="counter-box"> <i class="fa fa-shopping-cart"></i> <span class="counter" data-target="60000">0</span>
-                    <p>Individual</p>
-                </div>
-            </div>
-            <div class="four col-md-3">
-                <div class="counter-box"> <i class="fa fa-user"></i> <span class="counter" data-target="60000">0</span>
-                    <p>Emergency</p>
-                </div>
-            </div>
-        </div>
-      </div>      
-    </section>
-    
-    
-    
-
+   
     
 
   <!-- news carousel  -->
@@ -465,10 +470,10 @@
       <div class="accordion-list">
         <ul>
           <li data-aos="fade-up">
-            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#accordion-list-1">What is “website-name” and how does it works? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#accordion-list-1">What is LetsCharit and how does it works? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
             <div id="accordion-list-1" class="collapse show" data-parent=".accordion-list">
               <p>
-              “website-name” is a non-profit organization which directly connect donor with the one for whom he/she donates.
+              LetsCharit is a non-profit organization which directly connect donor with the one for whom he/she donates.
                <br>Which means there is no third party interference between needy people and people who helps them that 
                is donor. They get direct benifits.
                 
@@ -476,10 +481,10 @@
             </div>
           </li>
           <li data-aos="fade-up" data-aos-delay="100">
-            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#accordion-list-2" class="collapsed">What kinds of charities does “website-name” recommend? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#accordion-list-2" class="collapsed">What kinds of charities does LetsCharit recommend? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
             <div id="accordion-list-2" class="collapse" data-parent=".accordion-list">
               <p>
-                “website-name” recommends three types of charities which is for individual,emergency and organizations.
+                LetsCharit recommends three types of charities which is for individual,emergency and organizations.
                 <!-- <a href="#">individual<a>, <a href="#">emergency<a> and <a href="#">organizations<a>.    -->
               </p>
             </div>
