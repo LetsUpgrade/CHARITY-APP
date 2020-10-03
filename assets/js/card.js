@@ -12,7 +12,7 @@
 // firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 
-var keys_org,keys_emg,key_ind;
+var keys_org,keys_emg,keys_ind;
 
 function gotData_org(data) {
     const snap = data.val();
@@ -40,7 +40,7 @@ function errData_emg(err) {
 
 function gotData_ind(data) {
     const snap = data.val();
-    keys_emg = Object.keys(snap); 
+    keys_ind = Object.keys(snap); 
     console.log("keys:",keys_ind)
 }
 function errData_ind(err) {
