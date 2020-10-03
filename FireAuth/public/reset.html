@@ -20,7 +20,7 @@
               <label for="mail">Email</label> <br>
               <input type="email" id="mail" name="mail"/>
             </div>
-            <button id="resetPassword">Confirm</button>
+            <button onclick="resetPassword()">Confirm</button>
           </fieldset>
       </section>
       <div class="feedbackContainer success">
@@ -32,6 +32,24 @@
         <p class="feedbackMessage">Signing up failed</p>
       </div>
     </main> 
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase-auth.js"></script>
+
+    <script>
+      var firebaseConfig = {
+            apiKey: "AIzaSyDQRPjwzQY6wO1e0oxQMamKRPW7td_wQbs",
+            authDomain: "charity-app-e31cc.firebaseapp.com",
+            databaseURL: "https://charity-app-e31cc.firebaseio.com",
+            projectId: "charity-app-e31cc",
+            storageBucket: "charity-app-e31cc.appspot.com",
+            messagingSenderId: "233446000003",
+            appId: "1:233446000003:web:d253ffd11f923d21a422b6",
+            measurementId: "G-NJ0H9ZQ056"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+    </script>
     <script src="./js/reset.js"></script>   
   </body>
 </html>

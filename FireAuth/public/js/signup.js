@@ -36,7 +36,6 @@ const signUpFunction = () => {
             Name: name,
             Contact: contact,
             Email: email,
-            Password: password,
             Donation:0,
         }
         ref.child(uid).set(userData);

@@ -1,15 +1,15 @@
-var firebaseConfig = {
-    apiKey: "AIzaSyDQRPjwzQY6wO1e0oxQMamKRPW7td_wQbs",
-    authDomain: "charity-app-e31cc.firebaseapp.com",
-    databaseURL: "https://charity-app-e31cc.firebaseio.com",
-    projectId: "charity-app-e31cc",
-    storageBucket: "charity-app-e31cc.appspot.com",
-    messagingSenderId: "233446000003",
-    appId: "1:233446000003:web:d253ffd11f923d21a422b6",
-    measurementId: "G-NJ0H9ZQ056"
-  };
+// var firebaseConfig = {
+//     apiKey: "AIzaSyDQRPjwzQY6wO1e0oxQMamKRPW7td_wQbs",
+//     authDomain: "charity-app-e31cc.firebaseapp.com",
+//     databaseURL: "https://charity-app-e31cc.firebaseio.com",
+//     projectId: "charity-app-e31cc",
+//     storageBucket: "charity-app-e31cc.appspot.com",
+//     messagingSenderId: "233446000003",
+//     appId: "1:233446000003:web:d253ffd11f923d21a422b6",
+//     measurementId: "G-NJ0H9ZQ056"
+//   };
 
-firebase.initializeApp(firebaseConfig);
+// firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 
 var keys_org,keys_emg,key_ind;

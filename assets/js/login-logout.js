@@ -1,6 +1,6 @@
 var username=document.getElementById('username');
-const auth = firebase.auth();
-auth.onAuthStateChanged((user)=>{
+const auth1 = firebase.auth();
+auth1.onAuthStateChanged((user)=>{
     if (user) {
     //   User is signed in.
         let user = firebase.auth().currentUser;
@@ -25,7 +25,7 @@ auth.onAuthStateChanged((user)=>{
     }
 });
 function logOut(){
-    auth.signOut()
+    auth1.signOut()
     .then(() => {
         window.location.replace('./index.html');
     })
@@ -36,7 +36,7 @@ function logOut(){
 
 // emergency register
 function emg_register(){
-    auth.onAuthStateChanged((user)=>{
+    auth1.onAuthStateChanged((user)=>{
         if (user) {
         //   User is signed in.
             let user = firebase.auth().currentUser;
@@ -54,7 +54,7 @@ function emg_register(){
 
 // individual register
 function ind_register(){
-    auth.onAuthStateChanged((user)=>{
+    auth1.onAuthStateChanged((user)=>{
         if (user) {
         //   User is signed in.
             let user = firebase.auth().currentUser;
@@ -72,7 +72,7 @@ function ind_register(){
 
 // organization register
 function org_register(){
-    auth.onAuthStateChanged((user)=>{
+    auth1.onAuthStateChanged((user)=>{
         if (user) {
         //   User is signed in.
             let user = firebase.auth().currentUser;
